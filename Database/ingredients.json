@@ -1,0 +1,53 @@
+{
+	"sugar":{
+		"displayName": "sugar",
+		"cost": 69,
+		"health":{
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 1 
+		},
+		"type": "carbohydrate",
+		"substitutes":{
+			"honey": 1.5,
+			"molasses": 0.1,
+			"powderedSugar": 3
+		},
+		"specialized": 0,
+		"restrictions":[
+		]
+	},
+	
+	"salt":{
+		"displayName": "salt",
+		"cost": 21,
+		"health":{
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 0
+		},
+		"type": "seasoning",
+		"substitutes":{
+		},
+		"specialized": 0,
+		"restrictions":[
+		]
+	},
+	"chicken":{
+		"displayName": "chicken",
+		"cost": 100,
+		"health":{
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 50
+		},
+		"type": "meat",
+		"substitutes":{
+		},
+		"specialized": 0,
+		"restrictions":[
+			"vegitarian",
+			"vegan"
+		]
+	}
+}
