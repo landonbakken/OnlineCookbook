@@ -18,17 +18,14 @@ searchInput.addEventListener("input", e => {
   for(let recipe in recipes){
     let data = recipes[recipe]
     let div = document.getElementById(recipe)
+    let show = true
 
-    let show = false
-    if(value == []){
-      show = true
-    }
-    else{
+    if(!(value.length == 1 && value[0] == "")){
       for(let wordID in value){
         let word = value[wordID]
-        if(!word.includes(" ") && word.length > 0){
-          if(data["displayName"].toLowerCase().includes(word) || data["type"].toLowerCase().includes(word)){
-            show = true;
+        if(word.length > 0){
+          if(!(data["displayName"].toLowerCase().includes(word) || data["type"].toLowerCase().includes(word))){
+            show = false
           }
         }
       }

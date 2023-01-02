@@ -2,16 +2,21 @@
   display: flex;
   flex-direction: column;
   gap: .25rem;
+  background-color: white;
 }
 
 input {
   font-size: 1rem;
 }
 
+.body{
+  background-color: darkgray;
+}
+
 .recipe-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: .25rem;
+  gap: .4rem;
   margin-top: 1rem;
 }
 
