@@ -8,13 +8,14 @@ app.use(express.static("public"));
 app.use("/css", express.static(__dirname + 'public/css'));
 app.use("/js", express.static(__dirname + 'public/js'));
 app.use("/img", express.static(__dirname + 'public/img'));
-app.use("/files", express.static(__dirname + 'public/files'));
+//app.use("/database", express.static(__dirname + 'public/database'));
 
 app.set('views', './views');
 
 app.get("", (req, res) => {
 	res.sendFile(__dirname + "/views/search.html");
 });
+
 
 
 app.listen(port, host, () => {

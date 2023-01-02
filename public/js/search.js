@@ -15,9 +15,11 @@ searchInput.addEventListener("input", e => {
 })
 
 fetch("https://jsonplaceholder.typicode.com/users")
+//fetch("/database/ingredients.json")()
   .then(res => res.json())
   .then(data => {
     recipes = data.map(recipe => {
+      recipes = data
       const card = recipeCardTemplate.content.cloneNode(true).children[0]
       const header = card.querySelector("[data-header]")
       const body = card.querySelector("[data-body]")
