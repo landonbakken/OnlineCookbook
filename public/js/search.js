@@ -5,6 +5,9 @@ const searchInput = document.querySelector("[data-search]")
 let recipes = []
 let ingredients = []
 
+function updateSettings(setting){
+  console.log(setting)
+}
 async function getJsonData() {
 	let file = await fetch("/database/ingredients")
 	ingredients = await file.json()
