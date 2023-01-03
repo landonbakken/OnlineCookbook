@@ -4,13 +4,17 @@ const searchInput = document.querySelector("[data-search]")
 
 let recipes = []
 let ingredients = []
-let meals = []
+//let meals = []
 let allInfo = []
 let cards = []
+let value = ""
 
 let showIngredients = true
-let showMeals = true
+document.getElementById("ingredients").checked = showIngredients
+//let showMeals = true
+//document.getElementById("meals").checked = showMeals
 let showRecipes = true
+document.getElementById("recipes").checked = showRecipes
 
 function updateSettings(setting){
   let checked = document.getElementById(setting).checked
@@ -18,9 +22,9 @@ function updateSettings(setting){
   if(setting == "ingredients"){
     showIngredients = checked
   }
-  if(setting == "meals"){
-    showMeals = checked
-  }
+  //if(setting == "meals"){
+  //  showMeals = checked
+  //}
   if(setting == "recipes"){
     showRecipes = checked
   }
@@ -34,18 +38,18 @@ async function getJsonData() {
 }
 
 searchInput.addEventListener("input", e => {
-  const value = e.target.value.toLowerCase().split(" ")
-  showOrHide(ingredients, value)
-  showOrHide(recipes, value)
+  value = e.target.value.toLowerCase().split(" ")
   updateList()
 })
 
 function updateList(){
-  showHide(ingredients, showIngredients)
-  showHide(recipes, showRecipes)
+  showOrHide(ingredients, value)
+  showOrHide(recipes, value)
+  hide(ingredients, showIngredients)
+  hide(recipes, showRecipes)
 }
 
-function showHide(dataList, show){
+function hide(dataList, show){
   if(!show){
     for(let dataID in dataList){
       let div = document.getElementById(dataID)

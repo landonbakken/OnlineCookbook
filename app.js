@@ -15,12 +15,24 @@ app.set('views', './views');
 app.get("", (req, res) => {
 	res.sendFile(__dirname + "/views/search.html");
 });
+app.get("/recipe/:recipe", (req, res) => {
+	res.sendFile(__dirname + "/views/recipe.html")
+});
+app.get("/meal", (req, res) => {
+	res.sendFile(__dirname + "/views/meal.html")
+});
+app.get("/ingredient", (req, res) => {
+	res.sendFile(__dirname + "/views/ingredient.html")
+});
+
+//database
 app.get("/database/ingredients", (req, res) => {
 	res.sendFile(__dirname + "/public/database/ingredients.json");
 });
 app.get("/database/recipes", (req, res) => {
 	res.sendFile(__dirname + "/public/database/recipes.json");
 });
+
 
 
 

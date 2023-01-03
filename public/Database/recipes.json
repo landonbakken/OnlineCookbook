@@ -3,9 +3,9 @@
 		"displayName": "Salmon",
 		"totalTime": 43,
 		"ingredients":{
-			"salmon": 350,
+			"fish": 350,
 			"salt": 5,
-			"limeJuice": 10,
+			"limejuice": 10,
 			"cilantro": 20
 		},
 		"type": "Main Course",
@@ -15,8 +15,6 @@
 		"difficulty": 5,
 		"effortTime": 15,
 		"defaultServings": 5,
-		"substitutes":[
-		],
 		"cookersNotes":[
 			"Very Tasty and not too hard to make",
 			"Served with rice and a vegetable"
