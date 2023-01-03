@@ -9,6 +9,7 @@
 			"cilantro": 20
 		},
 		"type": "Main Course",
+		"parent": "recipes",
 		"time": "dinner",
 		"ethnicity": "None",
 		"difficulty": 5,

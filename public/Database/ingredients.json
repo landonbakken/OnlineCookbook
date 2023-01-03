@@ -8,6 +8,7 @@
 			"calories": -1 
 		},
 		"type": "carbohydrate",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -26,6 +27,7 @@
 			"calories": -1
 		},
 		"type": "seasoning",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -43,6 +45,7 @@
 			"calories": -1
 		},
 		"type": "meat",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -60,6 +63,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -77,6 +81,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -94,6 +99,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -111,6 +117,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -128,6 +135,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -145,6 +153,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -162,6 +171,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -179,6 +189,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -196,6 +207,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -213,6 +225,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -230,6 +243,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -247,6 +261,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -264,6 +279,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -281,6 +297,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -298,6 +315,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -315,6 +333,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -332,6 +351,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -349,6 +369,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -366,6 +387,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -383,6 +405,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -400,6 +423,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -417,6 +441,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -434,6 +459,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
@@ -451,6 +477,7 @@
 			"calories": -1
 		},
 		"type": "spice",
+		"parent": "ingredients",
 		"substitutes":{
 		},
 		"specialized": -1,
