@@ -3,14 +3,13 @@
 		"displayName": "Salmon",
 		"totalTime": 43,
 		"ingredients":{
-			"fish": 350,
 			"salt": 5,
-			"limejuice": 10,
+			"sugar": 200,
 			"cilantro": 20
 		},
 		"type": "Main Course",
 		"parent": "recipes",
-		"time": "dinner",
+		"eatTime": "dinner",
 		"ethnicity": "None",
 		"difficulty": 5,
 		"effortTime": 15,

@@ -18,10 +18,10 @@ app.get("", (req, res) => {
 app.get("/recipe/:recipe", (req, res) => {
 	res.sendFile(__dirname + "/views/recipe.html")
 });
-app.get("/meal", (req, res) => {
+app.get("/meal/:meal", (req, res) => {
 	res.sendFile(__dirname + "/views/meal.html")
 });
-app.get("/ingredient", (req, res) => {
+app.get("/ingredient/:ingredient", (req, res) => {
 	res.sendFile(__dirname + "/views/ingredient.html")
 });
 

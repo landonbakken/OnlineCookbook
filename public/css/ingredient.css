@@ -1,0 +1,27 @@
+.title {
+  font-size: 40px;
+  margin: 0px;
+}
+
+.small-title {
+  color: #777;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.small {
+  color: #777;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.info {
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+body {
+  margin: 0px;
+}/*# sourceMappingURL=ingredient.css.map */

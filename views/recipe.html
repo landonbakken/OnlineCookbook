@@ -10,24 +10,27 @@
 </head>
 <body>
 	<input type="button" value="Back" onclick="history.back()">
-	<p id="name" class="title">Food Name</p>
-	<p id="type" class="small-title">Main course</p>
-	<p id="eatTime" class="small-title">Dinner</p>
-	<p id="cookTime" class="info">Total Cook Time: 1 hour 15 minutes</p>
-	<p id="effortTime" class="info">Effort Time: 30 minutes</p>
-	<p id="defaultServings" class="small">(for 5 servings)</p>
-	<p id="ethnicity" class="info">Ethnicity: Merican</p>
-	<p id="difficulty" class="info">Difficulty: 5/10</p>
+	<p id="name" class="title"></p>
+	<p id="type" class="small-title"></p>
+	<p id="eatTime" class="small-title"></p>
+	<p id="totalTime" class="info"></p>
+	<p id="effortTime" class="info"></p>
+	<p id="defaultServings" class="small"></p>
+	<p id="ethnicity" class="info"></p>
+	<p id="difficulty" class="info"></p>
 
 	<p>Ingredients:</p>
-	<div id="ingredients">
-		<p><a href = "/ingredients/fish0">Fish0</a>: 250 grams</p>
-		<p><a href = "/ingredients/fish1">Fish1</a>: 251 grams</p>
-		<p><a href = "/ingredients/fish2">Fish2</a>: 252 grams</p>
-		<p><a href = "/ingredients/fish3">Fish3</a>: 253 grams</p>
-		<p><a href = "/ingredients/fish4">Fish4</a>: 254 grams</p>
-	</div>
-	<div id="direction">List</div>
-	<div id="cookersNotes">List</div>
+	<ul id="ingredients">
+		<li><a href = "/ingredients/fish0">Fish0</a>: 250 grams</li>
+	</ul>
+
+	<p>Directions:</p>
+	<ul id="directions">
+		<li>None</li>
+	</ul>
+	<p>Cooker's Notes:</p>
+	<ul id="cookersNotes">
+		<li>None</li>
+	</ul>
 </body>
 </html>
