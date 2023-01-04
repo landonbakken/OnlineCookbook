@@ -10,11 +10,16 @@
 		"type": "carbohydrate",
 		"parent": "ingredients",
 		"substitutes":{
+			"salt": 0.1,
+			"chicken": 2.3
 		},
 		"specialized": -1,
 		"restrictions":[
+			"none"
 		],
 		"notes":[
+			"very sweet, but unhealthy",
+			"has many substitutes"
 		]
 	},
 	
