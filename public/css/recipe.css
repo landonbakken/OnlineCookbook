@@ -8,7 +8,7 @@
 }
 
 #totalTime, #ethnicity, #ingredients, #cookersNotes {
-  background-color: rgb(116, 116, 116);
+  background-color: rgb(235, 235, 235);
 }
 
 ul[title]::before {
@@ -60,14 +60,6 @@ ul {
 
 li {
   list-style-type: none;
-}
-
-#grid {
-  display: grid;
-  grid-template-columns: 200px auto;
-  margin-left: 0px;
-  background-color: lightgray;
-  height: 100rem;
 }
 
 body {

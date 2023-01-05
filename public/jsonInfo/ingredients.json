@@ -10,8 +10,6 @@
 		"type": "carbohydrate",
 		"parent": "ingredients",
 		"substitutes":{
-			"salt": 0.1,
-			"chicken": 2.3
 		},
 		"specialized": -1,
 		"restrictions":[
@@ -167,8 +165,8 @@
 		"notes":[
 		]
 	},
-	"garlicpoweder":{
-		"displayName": "Garlic Poweder",
+	"garlicpowder":{
+		"displayName": "Garlic Powder",
 		"cost": -1,
 		"health":{
 			"sugars": -1,
@@ -239,7 +237,7 @@
 		"notes":[
 		]
 	},
-	"nutmegpowder":{
+	"NutmegPowder":{
 		"displayName": "Nutmeg Powder",
 		"cost": -1,
 		"health":{
@@ -257,7 +255,7 @@
 		"notes":[
 		]
 	},
-	"redpepperflakes":{
+	"RedPepperFlakes":{
 		"displayName": "Red Pepper Flakes",
 		"cost": -1,
 		"health":{
@@ -275,7 +273,7 @@
 		"notes":[
 		]
 	},
-	"corianderpowder":{
+	"CorianderPowder":{
 		"displayName": "Coriander Powder",
 		"cost": -1,
 		"health":{

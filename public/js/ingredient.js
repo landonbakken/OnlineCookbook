@@ -1,14 +1,15 @@
 const substituteTemplate = document.querySelector("[substitute-template]")
 const healthTemplate = document.querySelector("[health-template]")
+const emptyJson = JSON.parse("{}")
 
 let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
 let ingredients = ""
 
 async function getJsonData() {
-	let file = await fetch("/database/recipes")
+	let file = await fetch("/jsonInfo/recipes")
 	recipes = await file.json()
-	file = await fetch("/database/ingredients")
+	file = await fetch("/jsonInfo/ingredients")
 	ingredients = await file.json()
 	data = ingredients[id]
 }
@@ -19,7 +20,7 @@ getJsonData().then(() => {
 	document.getElementById("cost").textContent = "$" + data.cost + " per gram"
 	//document.getElementById("specialized").textContent = "How specialized: " + data.specialized
 	
-	let healthList = document.getElementById("health");
+	/*let healthList = document.getElementById("health");
 	for(let healthID in data.health){
 		let info = data.health[healthID]
 		const card = healthTemplate.content.cloneNode(true).children[0]
@@ -29,10 +30,12 @@ getJsonData().then(() => {
 		//header.href = "/ingredient/"
 		//body.textContent = healthdata
 		healthList.append(card)
-	}
+	}*/
 
 	let substituteList = document.getElementById("substitues");
+
 	for(let substituteID in data.substitutes){
+		console.log(substituteID)
 		let ratio = data.substitutes[substituteID]
 		const card = substituteTemplate.content.cloneNode(true).children[0]
     	const header = card.querySelector("[data-header]")

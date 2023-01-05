@@ -31,9 +31,9 @@ function updateSettings(setting){
   updateList()
 }
 async function getJsonData() {
-  let file = await fetch("/database/ingredients")
+  let file = await fetch("/jsonInfo/ingredients")
 	ingredients = await file.json()
-  file = await fetch("/database/recipes") //CHANGE THIS TO RECIPES WHEN JSON IS BIGGER
+  file = await fetch("/jsonInfo/recipes")
   recipes = await file.json()
 }
 
@@ -88,7 +88,7 @@ function showOrHide(dataList, value){
 
 //fetch("https://jsonplaceholder.typicode.com/users")
 getJsonData().then(() => {
-  for(let recipe in recipes){ //CHANGE INGREDIENTS TO RECIPES!!!!!!!!
+  for(let recipe in recipes){
     let data = recipes[recipe]
     const card = recipeCardTemplate.content.cloneNode(true).children[0]
     const header = card.querySelector("[data-header]")
@@ -99,7 +99,8 @@ getJsonData().then(() => {
     body.textContent = data["type"]
     recipeCardContainer.append(card)
   }
-  for(let ingredient in ingredients){ //CHANGE INGREDIENTS TO RECIPES!!!!!!!!
+  for(let ingredient in ingredients){
+    console.log(ingredient)
     let data = ingredients[ingredient]
     const card = recipeCardTemplate.content.cloneNode(true).children[0]
     const header = card.querySelector("[data-header]")

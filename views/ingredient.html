@@ -6,43 +6,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/ingredient.css">
 	<script src="/js/ingredient.js" defer></script>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 	<title>Document</title>
 </head>
 <body>
-	<div id="grid">
-		<div id="settings">Settings:
-		</div>
-		<div id="info">
-			<input type="button" value="Back" onclick="history.back()">
-			<p id="name" class="title"></p>
-			<p id="type" class="small-title"></p>
-			<p id="cost" class="info"></p>
-			<!--<p id="specialized" class="info"></p>-->
+	<div id="info">
+		<input type="button" value="Back" onclick="history.back()">
+		<p id="name" class="title"></p>
+		<p id="type" class="small-title"></p>
+		<p id="cost" class="info"></p>
+		<!--<p id="specialized" class="info"></p>-->
 
-			<ul id="restrictions" title="Restrictions: ">
-			</ul>
+		<ul id="restrictions" title="Restrictions: ">
+		</ul>
 
-			<ul id="health" title="Health:">
-			</ul>
+		<!--<ul id="health" title="Health:">
+		</ul>!-->
 
-			<ul id="substitues" title="Substitutes:">
-			</ul>
+		<ul id="substitues" title="Substitutes:">
+		</ul>
 
-			<ul id="notes" title="Notes:">
-			</ul>
+		<ul id="notes" title="Notes:">
+		</ul>
 
-			<template substitute-template>
-				<li class="card" id="">
-					<a class="header" href = "" data-header></a>
-					<div class="body" data-body></div>
-				</li>
-			</template>
-			<template health-template>
-				<li class="card" id="">
-					<div class="header" data-header></div>
-				</li>
-			</template>
-		</div>
+		<template substitute-template>
+			<li class="card" id="">
+				<a class="header" href = "" data-header></a>
+				<div class="body" data-body></div>
+			</li>
+		</template>
+		<template health-template>
+			<li class="card" id="">
+				<div class="header" data-header></div>
+			</li>
+		</template>
 	</div>
 
 </body>

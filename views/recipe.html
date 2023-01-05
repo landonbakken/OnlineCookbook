@@ -5,52 +5,38 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/recipe.css">
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 	<script src="/js/recipe.js" defer></script>
 	<title>Document</title>
 </head>
 <body>
-	<div id="grid">
-		<div id="settings">
-			<p class="title">Settings:</p>
-			<p class="small-title">Include:</p>
-			<div class="setting-div">
-			<label for="ingredients">Ingredients:</label> 
-			<input type="checkbox" id="ingredients" onclick="updateSettings('ingredients')">
-			</div>
-			<div class="setting-div">
-			<label for="recipes">Recipes:</label> 
-			<input type="checkbox" id="recipes" onclick="updateSettings('recipes')">
-			</div>
-		</div>
-		<div id="info">
-			<input type="button" value="Back" onclick="history.back()">
-			<p id="name" class="title"></p>
-			<p id="type" class="small-title"></p>
-			<p id="eatTime" class="small-title"></p>
-			<p id="totalTime" class="info"></p>
-			<p id="effortTime" class="info"></p>
-			<p id="defaultServings" class="small"></p>
-			<p id="ethnicity" class="info"></p>
-			<p id="difficulty" class="info"></p>
+	<div id="info">
+		<input type="button" value="Back" onclick="history.back()">
+		<p id="name" class="title"></p>
+		<p id="type" class="small-title"></p>
+		<p id="eatTime" class="small-title"></p>
+		<p id="totalTime" class="info"></p>
+		<p id="effortTime" class="info"></p>
+		<p id="defaultServings" class="small"></p>
+		<p id="ethnicity" class="info"></p>
+		<p id="difficulty" class="info"></p>
 
-			<ul id="ingredients" title="Ingredients:">
-			</ul>
+		<ul id="ingredients" title="Ingredients:">
+		</ul>
 
 
-			<ul id="directions" title="Directions:">
-			</ul>
+		<ul id="directions" title="Directions:">
+		</ul>
 
-			<ul id="cookersNotes" title="Cooker's Notes:">
-			</ul>
-			
-			<template ingredient-list-template>
-				<li class="listPeice">
-					<a class="header" href = "" ingredient-link></a>
-					<div class="body" ingredient-measurement></div>
-				</li>
-			</template>
-		</div>
+		<ul id="cookersNotes" title="Cooker's Notes:">
+		</ul>
+		
+		<template ingredient-list-template>
+			<li class="listPeice">
+				<a class="header" href = "" ingredient-link></a>
+				<div class="body" ingredient-measurement></div>
+			</li>
+		</template>
 	</div>
-	
 </body>
 </html>
