@@ -1,4 +1,5 @@
 const substituteTemplate = document.querySelector("[substitute-template]")
+const healthTemplate = document.querySelector("[health-template]")
 
 let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
@@ -18,6 +19,18 @@ getJsonData().then(() => {
 	document.getElementById("cost").textContent = "$" + data.cost + " per grams"
 	//document.getElementById("specialized").textContent = "How specialized: " + data.specialized
 	
+	let healthList = document.getElementById("health");
+	for(let healthID in data.health){
+		let info = data.health[healthID]
+		const card = healthTemplate.content.cloneNode(true).children[0]
+    	const header = card.querySelector("[data-header]")
+    	//const body = card.querySelector("[data-body]")
+		header.textContent = healthID + ": " + info
+		//header.href = "/ingredient/"
+		//body.textContent = healthdata
+		healthList.append(card)
+	}
+
 	let substituteList = document.getElementById("substitues");
 	for(let substituteID in data.substitutes){
 		let ratio = data.substitutes[substituteID]
