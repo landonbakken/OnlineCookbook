@@ -237,7 +237,7 @@
 		"notes":[
 		]
 	},
-	"NutmegPowder":{
+	"nutmegpowder":{
 		"displayName": "Nutmeg Powder",
 		"cost": -1,
 		"health":{
@@ -255,7 +255,7 @@
 		"notes":[
 		]
 	},
-	"RedPepperFlakes":{
+	"redpepperflakes":{
 		"displayName": "Red Pepper Flakes",
 		"cost": -1,
 		"health":{
@@ -273,7 +273,7 @@
 		"notes":[
 		]
 	},
-	"CorianderPowder":{
+	"corianderpowder":{
 		"displayName": "Coriander Powder",
 		"cost": -1,
 		"health":{
