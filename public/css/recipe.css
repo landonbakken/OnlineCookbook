@@ -1,4 +1,4 @@
-#totalTime, #ethnicity {
+#totalTime, #ethnicity, #effortTime, #difficulty {
   margin-top: 20px;
 }
 
@@ -7,7 +7,7 @@
   margin: 0px;
 }
 
-#totalTime, #defaultServings, #difficulty, #directions {
+#totalTime, #ethnicity, #ingredients, #cookersNotes {
   background-color: rgb(116, 116, 116);
 }
 
@@ -18,10 +18,20 @@ ul[title]::before {
   font-size: 20px;
 }
 
+ul {
+  padding-left: 0px;
+}
+
+.header {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+
 .body {
   margin: 0;
   font-size: 15px;
-  color: rgb(93, 93, 93);
+  color: rgb(43, 43, 43);
 }
 
 .title {
@@ -52,7 +62,16 @@ li {
   list-style-type: none;
 }
 
+#grid {
+  display: grid;
+  grid-template-columns: 200px auto;
+  margin-left: 0px;
+  background-color: lightgray;
+  height: 100rem;
+}
+
 body {
-  background-color: gray;
+  height: 100rem;
+  background-color: lightgray;
   margin: 0px;
 }/*# sourceMappingURL=recipe.css.map */

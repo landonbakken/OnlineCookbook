@@ -9,31 +9,48 @@
 	<title>Document</title>
 </head>
 <body>
-	<input type="button" value="Back" onclick="history.back()">
-	<p id="name" class="title"></p>
-	<p id="type" class="small-title"></p>
-	<p id="eatTime" class="small-title"></p>
-	<p id="totalTime" class="info"></p>
-	<p id="effortTime" class="info"></p>
-	<p id="defaultServings" class="small"></p>
-	<p id="ethnicity" class="info"></p>
-	<p id="difficulty" class="info"></p>
+	<div id="grid">
+		<div id="settings">
+			<p class="title">Settings:</p>
+			<p class="small-title">Include:</p>
+			<div class="setting-div">
+			<label for="ingredients">Ingredients:</label> 
+			<input type="checkbox" id="ingredients" onclick="updateSettings('ingredients')">
+			</div>
+			<div class="setting-div">
+			<label for="recipes">Recipes:</label> 
+			<input type="checkbox" id="recipes" onclick="updateSettings('recipes')">
+			</div>
+		</div>
+		<div id="info">
+			<input type="button" value="Back" onclick="history.back()">
+			<p id="name" class="title"></p>
+			<p id="type" class="small-title"></p>
+			<p id="eatTime" class="small-title"></p>
+			<p id="totalTime" class="info"></p>
+			<p id="effortTime" class="info"></p>
+			<p id="defaultServings" class="small"></p>
+			<p id="ethnicity" class="info"></p>
+			<p id="difficulty" class="info"></p>
 
-	<ul id="ingredients" title="Ingredients">
-	</ul>
+			<ul id="ingredients" title="Ingredients:">
+			</ul>
 
-	<template ingredient-list-template>
-		<li class="listPeice">
-			<a href = "/ingredients/fish0" ingredient-link>Fish0:</a>
-			<div ingredient-measurement> 250 grams<br><br></div>
-		</li>
-	</template>
 
-	<ul id="directions" title="Directions">
-	</ul>
+			<ul id="directions" title="Directions:">
+			</ul>
 
-	<ul id="cookersNotes" title="Cooker's Notes:">
-	</ul>
+			<ul id="cookersNotes" title="Cooker's Notes:">
+			</ul>
+			
+			<template ingredient-list-template>
+				<li class="listPeice">
+					<a class="header" href = "" ingredient-link></a>
+					<div class="body" ingredient-measurement></div>
+				</li>
+			</template>
+		</div>
+	</div>
 	
 </body>
 </html>

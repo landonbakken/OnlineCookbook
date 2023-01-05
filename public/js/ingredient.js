@@ -16,7 +16,7 @@ async function getJsonData() {
 getJsonData().then(() => {
 	document.getElementById("name").textContent = data.displayName + ":"
 	document.getElementById("type").textContent = data.type
-	document.getElementById("cost").textContent = "$" + data.cost + " per grams"
+	document.getElementById("cost").textContent = "$" + data.cost + " per gram"
 	//document.getElementById("specialized").textContent = "How specialized: " + data.specialized
 	
 	let healthList = document.getElementById("health");
