@@ -8,30 +8,25 @@ async function getJsonData() {
 	let file = await fetch("/database/recipes")
 	recipes = await file.json()
 	file = await fetch("/database/ingredients")
-	data = await file.json()
-	data = data[id]
-	console.log(data)
+	ingredients = await file.json()
+	data = ingredients[id]
 }
 
 getJsonData().then(() => {
 	document.getElementById("name").textContent = data.displayName + ":"
 	document.getElementById("type").textContent = data.type
 	document.getElementById("cost").textContent = "$" + data.cost + " per grams"
-	document.getElementById("specialized").textContent = "How specialized: " + data.specialized
-	//document.getElementById("restrictions").textContent = "Effort Time: " + data.effortTime + " minutes"
-	//document.getElementById("health").textContent = "(for " + data.defaultServings + " servings)"
-	//document.getElementById("substoitutes").textContent = "Ethnicity: " + data.ethnicity
-	//document.getElementById("notes").textContent = "Difficulty: " + data.difficulty + "/10"
+	//document.getElementById("specialized").textContent = "How specialized: " + data.specialized
 	
 	let substituteList = document.getElementById("substitues");
-	for(let substitueID in data.substitutes){
-		let substitute = data.substitutes[substitueID]
+	for(let substituteID in data.substitutes){
+		let ratio = data.substitutes[substituteID]
 		const card = substituteTemplate.content.cloneNode(true).children[0]
     	const header = card.querySelector("[data-header]")
     	const body = card.querySelector("[data-body]")
-		header.textContent = substitute
-		header.href = "/ingredient/" + substitute
-		body.textContent = substitute + " to 1"
+		header.textContent = ingredients[substituteID].displayName
+		header.href = "/ingredient/" + substituteID
+		body.textContent = "Multiply by " + ratio
 		substituteList.append(card)
 	}
 

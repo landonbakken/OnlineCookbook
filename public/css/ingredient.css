@@ -1,5 +1,32 @@
-#cost {
-  margin-top: 20px;
+body {
+  background-color: gray;
+  margin: 0px;
+}
+
+#cost, .class, #substitutes, #health, #restrictions, #notes {
+  margin-top: 15px;
+  font-size: 18px;
+  color: black;
+}
+
+#cost, #health, #notes, #healthTitle, #notesTitle {
+  background-color: rgb(116, 116, 116);
+}
+
+.card {
+  margin: 0px;
+}
+
+.header {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+
+.body {
+  margin: 0;
+  font-size: 15px;
+  color: rgb(93, 93, 93);
 }
 
 .title {
@@ -8,14 +35,14 @@
 }
 
 .small-title {
-  color: #777;
-  font-size: 15px;
+  color: rgb(93, 93, 93);
+  font-size: 20px;
   margin: 0px;
 }
 
 .small {
-  color: #777;
-  font-size: 15px;
+  color: rgb(93, 93, 93);
+  font-size: 20px;
   margin: 0px;
 }
 
@@ -24,8 +51,4 @@
   margin-top: 5px;
   font-size: 20px;
   color: black;
-}
-
-body {
-  margin: 0px;
 }/*# sourceMappingURL=ingredient.css.map */
