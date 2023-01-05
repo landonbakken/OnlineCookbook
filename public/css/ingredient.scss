@@ -9,8 +9,16 @@ body{
 	color: black;
 }	
 
-#cost, #health, #notes, #healthTitle, #notesTitle{
+#cost, #health, #notes{
 	background-color: rgb(116, 116, 116);
+} 
+
+ul[title]::before {
+    content: attr(title);
+	display: block;
+    font-weight: bold;
+	font-size: 20px;
+    //padding: 4px;
 }
 
 .card{
