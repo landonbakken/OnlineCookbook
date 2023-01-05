@@ -3,7 +3,11 @@ body {
   margin: 0px;
 }
 
-#cost, .class, #substitutes, #health, #restrictions, #notes {
+li {
+  list-style-type: none;
+}
+
+.class, #substitutes, #health, #restrictions, #notes {
   margin-top: 15px;
   font-size: 18px;
   color: black;
@@ -53,7 +57,7 @@ ul[title]::before {
   margin: 0px;
 }
 
-.info {
+#cost {
   margin: 0px;
   margin-top: 5px;
   font-size: 20px;
