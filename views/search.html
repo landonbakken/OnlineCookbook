@@ -4,37 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/search.css">
   <script src="/js/search.js" defer></script>
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <title>Search</title>
 </head>
 <body>
   <div class="grid-body">
-    <div class="sidebar">
-      <div class="sidebar-wrapper">
-        <p class="title">Settings:</p>
-        <p class="small-title">Include:</p>
-        <div class="setting-div">
-          <label for="ingredients">Ingredients:</label> 
-          <input type="checkbox" id="ingredients" onclick="updateSettings('ingredients')">
-        </div>
-        <div class="setting-div">
-          <label for="recipes">Recipes:</label> 
-          <input type="checkbox" id="recipes" onclick="updateSettings('recipes')">
-        </div>
-        <!--<div class="setting-div">
-          <label for="meals">Meals:</label> 
-          <input type="checkbox" id="meals" onclick="updateSettings('meals')">
-        </div>-->
+    <div class="sidebar-wrapper">
+      <p class="title">Settings:</p>
+      <p class="small-title">Include:</p>
+      <div class="setting-div">
+        <label for="ingredients">Ingredients:</label> 
+        <input type="checkbox" id="ingredients" onclick="updateSettings('ingredients')">
       </div>
+      <div class="setting-div">
+        <label for="recipes">Recipes:</label> 
+        <input type="checkbox" id="recipes" onclick="updateSettings('recipes')">
+      </div>
+      <!--<div class="setting-div">
+        <label for="meals">Meals:</label> 
+        <input type="checkbox" id="meals" onclick="updateSettings('meals')">
+      </div>-->
     </div>
     <div>
       <div class="search-wrapper">
         <label for="search" class="title">Search:</label>
         <input type="search" id="search" data-search>
       </div>
-      <div class="recipe-cards" data-recipe-cards-container></div>
+      <div class="recipe-cards" data-recipe-cards-container>
+      </div>
     </div>
   </div>
     <template data-recipe-template>

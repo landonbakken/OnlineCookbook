@@ -1,8 +1,10 @@
 const ingredientTemplate = document.querySelector("[ingredient-list-template]")
+const servingsInput = document.querySelector("[input-servings]")
 
 let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
 let ingredients = ""
+let servings = ""
 
 async function getJsonData() {
 	let file = await fetch("/jsonInfo/ingredients")
@@ -10,8 +12,20 @@ async function getJsonData() {
 	file = await fetch("/jsonInfo/recipes")
 	data = await file.json()
 	data = data[id]
-	console.log(data)
+	//console.log(data)
 }
+
+servingsInput.addEventListener("input", e => {
+	servings = e.target.value
+	let measurementList = document.getElementsByClassName("body")
+	for(let measurementID in measurementList){
+		let measurement = measurementList[measurementID]
+		console.log(measurement)
+	}
+	//for(let ingredientID in ingredientList.children){
+	//	console.log(ingredientList.children[ingredientID].children[1])
+	//}
+})
 
 getJsonData().then(() => {
 	document.getElementById("name").textContent = data.displayName + ":"

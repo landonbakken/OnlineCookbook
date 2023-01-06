@@ -8,14 +8,10 @@ input {
   font-size: 1rem;
 }
 
-.sidebar {
-  background-color: gray;
-  margin: 0px;
-  height: 100%;
-}
-
 .sidebar-wrapper {
-  margin: 10px;
+  background-color: gray;
+  min-height: 100%;
+  margin: 0px;
   display: inline-block;
 }
 
@@ -39,8 +35,7 @@ input {
 }
 
 body {
-  position: fixed;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   margin: 0px;
 }
@@ -49,7 +44,7 @@ body {
   display: grid;
   grid-template-columns: 200px auto;
   margin-left: 0px;
-  height: 100%;
+  min-height: 100%;
   background-color: lightgray;
   bottom: 0px;
 }
@@ -80,4 +75,4 @@ body {
 
 .hide {
   display: none;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=search.css.map */
