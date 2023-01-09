@@ -21,6 +21,7 @@ servingsInput.addEventListener("input", e => {
 	for(let measurementID in measurementList){
 		let measurement = measurementList[measurementID]
 		console.log(measurement)
+		measurement.textContent = "testing (:"
 	}
 	//for(let ingredientID in ingredientList.children){
 	//	console.log(ingredientList.children[ingredientID].children[1])
