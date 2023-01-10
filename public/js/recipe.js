@@ -1,5 +1,6 @@
 const ingredientTemplate = document.querySelector("[ingredient-list-template]")
 const servingsInput = document.querySelector("[input-servings]")
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
 let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
@@ -15,15 +16,14 @@ async function getJsonData() {
 	//console.log(data)
 }
 
+
 servingsInput.addEventListener("input", e => {
 	servings = e.target.value
 	let measurementList = document.getElementsByClassName("body")
 	for(let measurementID in measurementList){
 		let measurement = measurementList[measurementID]
 		//console.log(measurement)
-		measurement.textContent = data.ingredients[measurement.id]
-		console.log(data.ingredients[measurement.id])
-		console.log(measurement.id)
+		measurement.textContent = data.ingredients[measurement.id] * servings / data.defaultServings + " grams"
 	}
 	//for(let ingredientID in ingredientList.children){
 	//	console.log(ingredientList.children[ingredientID].children[1])
@@ -31,6 +31,7 @@ servingsInput.addEventListener("input", e => {
 })
 
 getJsonData().then(() => {
+	servingsInput.value = data.defaultServings
 	document.getElementById("name").textContent = data.displayName + ":"
 	document.getElementById("type").textContent = data.type
 	document.getElementById("eatTime").textContent = data.eatTime
@@ -49,7 +50,7 @@ getJsonData().then(() => {
 		header.textContent = info.displayName
 		header.href = "/ingredient/" + ingredientID
 		body.textContent = data.ingredients[ingredientID] + " grams"
-		card.id = ingredientID
+		body.id = ingredientID
 		ingredientList.append(card)
 	}
 
