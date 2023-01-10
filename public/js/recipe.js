@@ -20,8 +20,10 @@ servingsInput.addEventListener("input", e => {
 	let measurementList = document.getElementsByClassName("body")
 	for(let measurementID in measurementList){
 		let measurement = measurementList[measurementID]
-		console.log(measurement)
-		measurement.textContent = "testing (:"
+		//console.log(measurement)
+		measurement.textContent = data.ingredients[measurement.id]
+		console.log(data.ingredients[measurement.id])
+		console.log(measurement.id)
 	}
 	//for(let ingredientID in ingredientList.children){
 	//	console.log(ingredientList.children[ingredientID].children[1])
@@ -47,6 +49,7 @@ getJsonData().then(() => {
 		header.textContent = info.displayName
 		header.href = "/ingredient/" + ingredientID
 		body.textContent = data.ingredients[ingredientID] + " grams"
+		card.id = ingredientID
 		ingredientList.append(card)
 	}
 
