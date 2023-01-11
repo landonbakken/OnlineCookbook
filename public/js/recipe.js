@@ -19,7 +19,7 @@ async function getJsonData() {
 function correctServings(sentence){
 	let stringBuilder = ""
 	let letterID = 0
-	while(letterID < sentence.length - 1){
+	while(letterID < sentence.length){
 		if(sentence[letterID] == "{"){
 			let measurementBuilder = ""
 			letterID++
@@ -51,7 +51,7 @@ servingsInput.addEventListener("input", e => {
 	for(let measurementID in measurementList){
 		let measurement = measurementList[measurementID]
 		//console.log(measurement)
-		measurement.textContent = data.ingredients[measurement.id] * servings / data.defaultServings + " grams"
+		measurement.textContent = data.ingredients[measurement.id].amount * servings / data.defaultServings + " " + data.ingredients[measurement.id].unit
 	}
 	setNotes()
 	//for(let ingredientID in ingredientList.children){
@@ -79,7 +79,7 @@ getJsonData().then(() => {
     	const body = card.querySelector("[ingredient-measurement]")
 		header.textContent = info.displayName
 		header.href = "/ingredient/" + ingredientID
-		body.textContent = data.ingredients[ingredientID] + " grams"
+		body.textContent = data.ingredients[ingredientID].amount * servings / data.defaultServings + " " + data.ingredients[ingredientID].unit
 		body.id = ingredientID
 		ingredientList.append(card)
 	}

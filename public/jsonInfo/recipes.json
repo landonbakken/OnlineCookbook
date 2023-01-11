@@ -3,8 +3,14 @@
 		"displayName": "Salmon",
 		"totalTime": 43,
 		"ingredients":{
-			"salt": 7,
-			"sugar": 200
+			"salt":{
+				"amount": 20,
+				"unit": "grams"
+			},
+			"sugar":{
+				"amount": 13,
+				"unit": "cups"
+			}
 		},
 		"type": "Main Course",
 		"parent": "recipes",
@@ -27,18 +33,50 @@
 		"displayName": "Chocolate Chip Cookies",
 		"totalTime": 30,
 		"ingredients":{
-			"butter": 1,
-			"sugar": 1,
-			"brownsugar": 1,
-			"eggs": 2,
-			"vanillaextract": 2,
-			"bakingsoda": 1,
-			"hotwater": 2,
-			"salt": 0.5,
-			"allpurposeflour": 3,
-			"chocolatechips": 2,
-			"choppedwalnuts": 1
-
+			"butter":{
+				"amount": 13,
+				"unit": "cups"
+			},
+			"sugar":{
+				"amount": 1,
+				"unit": "grams"
+			},
+			"brownsugar":{
+				"amount": 13,
+				"unit": "cups"
+			},
+			"eggs":{
+				"amount": 13,
+				"unit": "cups"
+			},
+			"vanillaextract":{
+				"amount": 13,
+				"unit": "cups"
+			},
+			"bakingsoda":{
+				"amount": 13,
+				"unit": "cups"
+			},
+			"hotwater":{
+				"amount": 13,
+				"unit": "cups"
+			},
+			"salt":{
+				"amount": 13,
+				"unit": "cups"
+			},
+			"allpurposeflour":{
+				"amount": 13,
+				"unit": "cups"
+			},
+			"chocolatechips":{
+				"amount": 13,
+				"unit": "cups"
+			},
+			"choppedwalnuts":{
+				"amount": 13,
+				"unit": "cups"
+			}
 		},
 		"type": "Desert",
 		"parent": "recipes",
