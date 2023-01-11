@@ -1,6 +1,6 @@
 const ingredientTemplate = document.querySelector("[ingredient-list-template]")
 const servingsInput = document.querySelector("[input-servings]")
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+const nums = "1234567890"
 
 let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
@@ -19,6 +19,10 @@ async function getJsonData() {
 
 servingsInput.addEventListener("input", e => {
 	servings = e.target.value
+	if(!nums.includes(servings[servings.length - 1])){
+		servingsInput.value = servings.substring(0, servings.length - 1)
+	}
+	servings = servingsInput.value	
 	let measurementList = document.getElementsByClassName("body")
 	for(let measurementID in measurementList){
 		let measurement = measurementList[measurementID]
