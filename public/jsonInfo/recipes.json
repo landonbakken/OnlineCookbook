@@ -22,5 +22,40 @@
 			"Make food",
 			"Eat food"
 		]
+	},
+	"chocolatechipcookies":{
+		"displayName": "Chocolate Chip Cookies",
+		"totalTime": 30,
+		"ingredients":{
+			"butter": 1,
+			"sugar": 1,
+			"brownsugar": 1,
+			"eggs": 2,
+			"vanillaextract": 2,
+			"bakingsoda": 1,
+			"hotwater": 2,
+			"salt": 0.5,
+			"allpurposeflour": 3,
+			"chocolatechips": 2,
+			"choppedwalnuts": 1
+
+		},
+		"type": "Desert",
+		"parent": "recipes",
+		"eatTime": "any time",
+		"ethnicity": "None",
+		"difficulty": 1,
+		"effortTime": 10,
+		"defaultServings": 48,
+		"cookersNotes":[
+			"Very Tasty and not too hard to make",
+			"Served with rice and a vegetable"
+		],
+		"directions":[
+			"Preheat the oven to 350 degrees farenheight (175 degrees celcius)",
+			"Beat butter, white sugar, and brown sugar with an electric mixer in a large bowl until smooth. Beat in eggs, one at a time, then stir in vanilla. Dissolve baking soda in hot water. Add to batter along with salt. Stir in flour, chocolate chips, and walnuts.",
+			"Drop spoonfuls of dough 2 inches apart onto ungreased baking sheets.",
+			"Bake in the preheated oven until edges are nicely browned, about 10 minutes. Cool on the baking sheets briefly before removing to a wire rack to cool completely."
+		]
 	}
 }

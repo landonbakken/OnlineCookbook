@@ -488,5 +488,185 @@
 		],
 		"notes":[
 		]
+	},
+	"butter":{
+		"displayName": "Butter",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "diary",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"bakingsoda":{
+		"displayName": "Baking Soda",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "other",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"eggs":{
+		"displayName": "Eggs",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "dairy",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"vanillaextract":{
+		"displayName": "Vanilla Extract",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "extract",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"allpurposeflour":{
+		"displayName": "All Purpose Flour",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "grain",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"chocolatechips":{
+		"displayName": "Chocolate Chips",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "other",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"choppedwalnuts":{
+		"displayName": "Chopped Walnuts",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "other",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"brownsugar":{
+		"displayName": "Brown Sugar",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "carbohydrate",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"water":{
+		"displayName": "Water",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "other",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"hotwater":{
+		"displayName": "Hot Water",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "other",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
 	}
 }
