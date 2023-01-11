@@ -16,6 +16,22 @@ async function getJsonData() {
 	//console.log(data)
 }
 
+function correctServings(sentence){
+	for(let letterID in sentence.length - 1){
+
+		let letter = sentence[letterID]
+		///console.log(letter)
+		if(letter == "{"){
+			let i = 1
+			while(sentence[letterID + i] != "}" && i < 100	){
+				//console.log(sentence[letterID + i])
+				i++
+				console.log(sentence[letterID])
+			}
+		}
+	}
+	return sentence
+}
 
 servingsInput.addEventListener("input", e => {
 	servings = e.target.value
@@ -60,7 +76,7 @@ getJsonData().then(() => {
 
 	let cookersNotesList = document.getElementById("cookersNotes")
 	for(let noteID in data.cookersNotes){
-		let note = data.cookersNotes[noteID]
+		let note = correctServings(data.cookersNotes[noteID])
 		let li = document.createElement("li")
 		li.innerText = note
 		cookersNotesList.appendChild(li)
