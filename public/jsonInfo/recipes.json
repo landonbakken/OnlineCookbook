@@ -14,12 +14,12 @@
 		"effortTime": 15,
 		"defaultServings": 5,
 		"cookersNotes":[
-			"Very Tasty and not {this is a test} too hard to make",
+			"Very Tasty and not too hard to make",
 			"Served with rice and a vegetable"
 		],
 		"directions":[
 			"Get food",
-			"Make {29} food",
+			"Make food",
 			"Eat food"
 		]
 	}

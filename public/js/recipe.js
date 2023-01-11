@@ -17,20 +17,28 @@ async function getJsonData() {
 }
 
 function correctServings(sentence){
-	for(let letterID in sentence.length - 1){
-
-		let letter = sentence[letterID]
-		///console.log(letter)
-		if(letter == "{"){
-			let i = 1
-			while(sentence[letterID + i] != "}" && i < 100	){
-				//console.log(sentence[letterID + i])
-				i++
-				console.log(sentence[letterID])
+	let stringBuilder = ""
+	let letterID = 0
+	while(letterID < sentence.length - 1){
+		if(sentence[letterID] == "{"){
+			let measurementBuilder = ""
+			letterID++
+			while(sentence[letterID] != "}"){
+				measurementBuilder += sentence[letterID]
+				//console.log("letter:" + sentence[letterID])
+				//console.log("id:" + letterID)
+				letterID++
 			}
+			measurementBuilder = parseInt(measurementBuilder) * servings / data.defaultServings
+			//console.log("Built string:" + measurementBuilder)
+			stringBuilder += measurementBuilder
 		}
+		else if(sentence[letterID] != "}"){
+			stringBuilder += sentence[letterID]
+		}
+		letterID++
 	}
-	return sentence
+	return stringBuilder
 }
 
 servingsInput.addEventListener("input", e => {
@@ -45,6 +53,7 @@ servingsInput.addEventListener("input", e => {
 		//console.log(measurement)
 		measurement.textContent = data.ingredients[measurement.id] * servings / data.defaultServings + " grams"
 	}
+	setNotes()
 	//for(let ingredientID in ingredientList.children){
 	//	console.log(ingredientList.children[ingredientID].children[1])
 	//}
@@ -52,6 +61,7 @@ servingsInput.addEventListener("input", e => {
 
 getJsonData().then(() => {
 	servingsInput.value = data.defaultServings
+	servings = data.defaultServings
 	document.getElementById("name").textContent = data.displayName + ":"
 	document.getElementById("type").textContent = data.type
 	document.getElementById("eatTime").textContent = data.eatTime
@@ -73,8 +83,12 @@ getJsonData().then(() => {
 		body.id = ingredientID
 		ingredientList.append(card)
 	}
+	setNotes()
+})
 
+function setNotes(){
 	let cookersNotesList = document.getElementById("cookersNotes")
+	cookersNotesList.innerHTML = ""
 	for(let noteID in data.cookersNotes){
 		let note = correctServings(data.cookersNotes[noteID])
 		let li = document.createElement("li")
@@ -83,10 +97,11 @@ getJsonData().then(() => {
 	}
 
 	let directionsList = document.getElementById("directions")
+	directionsList.innerHTML = ""
 	for(let noteID in data.directions){
-		let note = data.directions[noteID]
+		let note = correctServings(data.directions[noteID])
 		let li = document.createElement("li")
 		li.innerText = note
 		directionsList.appendChild(li)
 	}
-})
+}
