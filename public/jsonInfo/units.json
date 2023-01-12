@@ -1,0 +1,18 @@
+{
+	"volume":{
+		"teaspoon": 1,
+		"tablespoon": 1,
+		"quart": 1,
+		"ounce": 1,
+		"pint": 1,
+		"cup": 1,
+		"liter": 1,
+		"gallon": 1
+	},
+	"weight":{
+		"gram": 1,
+		"kilogram": 1,
+		"ounce": 1,
+		"pound": 1
+	}
+}

@@ -25,12 +25,9 @@ function correctServings(sentence){
 			letterID++
 			while(sentence[letterID] != "}"){
 				measurementBuilder += sentence[letterID]
-				//console.log("letter:" + sentence[letterID])
-				//console.log("id:" + letterID)
 				letterID++
 			}
 			measurementBuilder = parseInt(measurementBuilder) * servings / data.defaultServings
-			//console.log("Built string:" + measurementBuilder)
 			stringBuilder += measurementBuilder
 		}
 		else if(sentence[letterID] != "}"){
@@ -51,16 +48,12 @@ servingsInput.addEventListener("input", e => {
 	for(let measurementID in measurementList){
 		let measurement = measurementList[measurementID]
 		console.log(measurement)
-		//console.log(measurement)
 		measurement.textContent = (data.ingredients[measurement.id].amount * servings / data.defaultServings).toFixed(2) + " " + data.ingredients[measurement.id].unit
 		if(data.ingredients[measurement.id].amount * servings / data.defaultServings != 1){
 			measurement.textContent += "s"
 		}
 	}
 	setNotes()
-	//for(let ingredientID in ingredientList.children){
-	//	console.log(ingredientList.children[ingredientID].children[1])
-	//}
 })
 
 getJsonData().then(() => {
