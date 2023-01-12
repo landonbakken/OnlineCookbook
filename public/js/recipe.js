@@ -50,8 +50,12 @@ servingsInput.addEventListener("input", e => {
 	let measurementList = document.getElementsByClassName("body")
 	for(let measurementID in measurementList){
 		let measurement = measurementList[measurementID]
+		console.log(measurement)
 		//console.log(measurement)
-		measurement.textContent = data.ingredients[measurement.id].amount * servings / data.defaultServings + " " + data.ingredients[measurement.id].unit
+		measurement.textContent = (data.ingredients[measurement.id].amount * servings / data.defaultServings).toFixed(2) + " " + data.ingredients[measurement.id].unit
+		if(data.ingredients[measurement.id].amount * servings / data.defaultServings != 1){
+			measurement.textContent += "s"
+		}
 	}
 	setNotes()
 	//for(let ingredientID in ingredientList.children){
@@ -80,6 +84,9 @@ getJsonData().then(() => {
 		header.textContent = info.displayName
 		header.href = "/ingredient/" + ingredientID
 		body.textContent = data.ingredients[ingredientID].amount * servings / data.defaultServings + " " + data.ingredients[ingredientID].unit
+		if(data.ingredients[ingredientID].amount * servings / data.defaultServings != 1){
+			body.textContent += "s"
+		}
 		body.id = ingredientID
 		ingredientList.append(card)
 	}
