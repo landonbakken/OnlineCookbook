@@ -1,18 +1,28 @@
 {
 	"volume":{
-		"teaspoon": 1,
-		"tablespoon": 1,
-		"quart": 1,
-		"ounce": 1,
-		"pint": 1,
-		"cup": 1,
-		"liter": 1,
-		"gallon": 1
+		"imperial":{
+			"teaspoon": 768,
+			"tablespoon": 256,
+			"quart": 4,
+			"ounce": 128,
+			"pint": 8,
+			"cup": 15.77,
+			"gallon": 1
+		},
+		"metric":{
+			"liter": 3.785,
+			"mililliter": 3785.41
+		}
+
 	},
 	"weight":{
-		"gram": 1,
-		"kilogram": 1,
-		"ounce": 1,
-		"pound": 1
+		"imperial":{
+			"ounce": 35.27,
+			"pound": 2.205
+		},
+		"metric":{
+			"gram": 1000,
+			"kilogram": 1
+		}
 	}
 }
