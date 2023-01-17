@@ -6,6 +6,7 @@ let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
 let ingredients = ""
 let servings = ""
+let measurementList = []
 
 async function getJsonData() {
 	let file = await fetch("/jsonInfo/ingredients")
@@ -14,6 +15,12 @@ async function getJsonData() {
 	data = await file.json()
 	data = data[id]
 	//console.log(data)
+}
+
+function bestUnit(amount, currentUnit){
+	let measurementString = amount + " " + currentUnit
+	console.log(measurementString)
+	return measurementString
 }
 
 function correctServings(sentence){
@@ -43,15 +50,12 @@ servingsInput.addEventListener("input", e => {
 	if(!nums.includes(servings[servings.length - 1])){
 		servingsInput.value = servings.substring(0, servings.length - 1)
 	}
-	servings = servingsInput.value	
-	let measurementList = document.getElementsByClassName("body")
+	servings = servingsInput.value
+	console.log(measurementList)
 	for(let measurementID in measurementList){
 		let measurement = measurementList[measurementID]
 		console.log(measurement)
-		measurement.textContent = (data.ingredients[measurement.id].amount * servings / data.defaultServings).toFixed(2) + " " + data.ingredients[measurement.id].unit
-		if(data.ingredients[measurement.id].amount * servings / data.defaultServings != 1){
-			measurement.textContent += "s"
-		}
+		measurement.textContent = bestUnit(data.ingredients[measurement.id].amount * servings / data.defaultServings, data.ingredients[measurement.id].unit)
 	}
 	setNotes()
 })
@@ -82,6 +86,7 @@ getJsonData().then(() => {
 		}
 		body.id = ingredientID
 		ingredientList.append(card)
+		measurementList.append(body)
 	}
 	setNotes()
 })
