@@ -95,5 +95,35 @@
 			"Drop spoonfuls of dough 2 inches apart onto ungreased baking sheets.",
 			"Bake in the preheated oven until edges are nicely browned, about 10 minutes. Cool on the baking sheets briefly before removing to a wire rack to cool completely."
 		]
+	},
+	"chickentikkamasala":{
+		"displayName": "Chicken Tikka Masala",
+		"totalTime": 45,
+		"ingredients":{
+			"salt":{
+				"amount": 20,
+				"unit": "grams"
+			},
+			"sugar":{
+				"amount": 13,
+				"unit": "cups"
+			}
+		},
+		"type": "Main Course",
+		"parent": "recipes",
+		"eatTime": "dinner",
+		"ethnicity": "Indian",
+		"difficulty": 6,
+		"effortTime": 15,
+		"defaultServings": 5,
+		"cookersNotes":[
+			"Very Tasty and not too hard to make",
+			"Served with rice and a vegetable"
+		],
+		"directions":[
+			"Get food",
+			"Make food",
+			"Eat food"
+		]
 	}
 }

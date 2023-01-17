@@ -6,6 +6,7 @@ let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
 let ingredients = ""
 let servings = ""
+let units = ""
 let measurementList = []
 
 async function getJsonData() {
@@ -13,14 +14,14 @@ async function getJsonData() {
 	ingredients = await file.json()
 	file = await fetch("/jsonInfo/recipes")
 	data = await file.json()
+	file = await fetch("/jsonInfo/units")
+	units = await file.json()
 	data = data[id]
 	//console.log(data)
 }
 
 function bestUnit(amount, currentUnit){
-	let measurementString = amount + " " + currentUnit
-	console.log(measurementString)
-	return measurementString
+	return amount + " " + currentUnit
 }
 
 function correctServings(sentence){
@@ -86,7 +87,7 @@ getJsonData().then(() => {
 		}
 		body.id = ingredientID
 		ingredientList.append(card)
-		measurementList.append(body)
+		measurementList.push(body)
 	}
 	setNotes()
 })

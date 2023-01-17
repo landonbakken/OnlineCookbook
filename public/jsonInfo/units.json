@@ -3,22 +3,22 @@
 		"imperial":{
 			"teaspoon": 768,
 			"tablespoon": 256,
-			"quart": 4,
 			"ounce": 128,
+			"cup": 16,
 			"pint": 8,
-			"cup": 15.77,
+			"quart": 4,
 			"gallon": 1
 		},
 		"metric":{
-			"liter": 3.785,
-			"mililliter": 3785.41
+			"milliliter": 1000,
+			"liter": 1
 		}
 
 	},
 	"weight":{
 		"imperial":{
-			"ounce": 35.27,
-			"pound": 2.205
+			"ounce": 16,
+			"pound": 1
 		},
 		"metric":{
 			"gram": 1000,
