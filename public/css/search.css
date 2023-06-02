@@ -30,6 +30,12 @@ input {
   font-weight: 200;
 }
 
+.search-setting-header {
+  font-size: 25px;
+  font-weight: 200;
+  height: 5px;
+}
+
 .search-wrapper {
   margin: 10px;
 }

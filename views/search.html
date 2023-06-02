@@ -13,7 +13,7 @@
   <div class="grid-body">
     <div class="sidebar-wrapper">
       <p class="title">Settings:</p>
-      <p class="small-title">Include:</p>
+      <p class="search-setting-header">Include:</p>
       <div class="setting-div">
         <label for="ingredients">Ingredients:</label> 
         <input type="checkbox" id="ingredients" onclick="updateSettings('ingredients')">
@@ -21,6 +21,17 @@
       <div class="setting-div">
         <label for="recipes">Recipes:</label> 
         <input type="checkbox" id="recipes" onclick="updateSettings('recipes')">
+      </div>
+      <p class="search-setting-header">Add Info:</p>
+      <div class="setting-div">
+        <a href="/add/ingredient">
+          <button>Add Ingredient</button>
+        </a>
+      </div>
+      <div class="setting-div">
+        <a href="/add/recipe">
+          <button>Add Recipe</button>
+        </a>
       </div>
       <!--<div class="setting-div">
         <label for="meals">Meals:</label> 
