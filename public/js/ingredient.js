@@ -7,9 +7,9 @@ let data = ""
 let ingredients = ""
 
 async function getJsonData() {
-	let file = await fetch("/jsonInfo/recipes")
+	let file = await fetch("/jsonInfo/recipes.json")
 	recipes = await file.json()
-	file = await fetch("/jsonInfo/ingredients")
+	file = await fetch("/jsonInfo/ingredients.json")
 	ingredients = await file.json()
 	data = ingredients[id]
 }

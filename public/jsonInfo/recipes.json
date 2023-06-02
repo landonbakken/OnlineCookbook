@@ -5,11 +5,11 @@
 		"ingredients":{
 			"salt":{
 				"amount": 20,
-				"unit": "grams"
+				"unit": "gram"
 			},
 			"sugar":{
 				"amount": 13,
-				"unit": "cups"
+				"unit": "cup"
 			}
 		},
 		"type": "Main Course",
@@ -100,13 +100,23 @@
 		"displayName": "Chicken Tikka Masala",
 		"totalTime": 45,
 		"ingredients":{
+			"crust":{
+				"salt":{
+					"amount": 20,
+					"unit": "gram"
+				},
+				"sugar":{
+					"amount": 13,
+					"unit": "cup"
+				}
+			},
 			"salt":{
 				"amount": 20,
-				"unit": "grams"
+				"unit": "gram"
 			},
 			"sugar":{
 				"amount": 13,
-				"unit": "cups"
+				"unit": "cup"
 			}
 		},
 		"type": "Main Course",
@@ -118,7 +128,7 @@
 		"defaultServings": 5,
 		"cookersNotes":[
 			"Very Tasty and not too hard to make",
-			"Served with rice and a vegetable"
+			"Served with rice and a vegetables"
 		],
 		"directions":[
 			"Get food",

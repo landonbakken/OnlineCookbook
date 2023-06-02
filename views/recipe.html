@@ -17,9 +17,9 @@
 		<p id="eatTime" class="small-title"></p>
 
 		<div class="servings-wrapper">
-        	<label for="servings" >Servings:</label>
-        	<input type="servings" id="servings" input-servings>
-      	</div>
+			<label for="servings" >Servings:</label>
+			<input type="servings" id="servings" input-servings>
+		</div>
 
 		<p id="totalTime" class="info"></p>
 		<p id="effortTime" class="info"></p>
@@ -38,9 +38,14 @@
 		</ul>
 		
 		<template ingredient-list-template>
-			<li class="list-piece" id="">
+			<li class="list-piece">
 				<a class="header" href = "" ingredient-link></a>
 				<div class="measurements" ingredient-measurement></div>
+			</li>
+		</template>
+		<template sub-list-header-template>
+			<li class="sub-list-header" sub-list-header>
+				
 			</li>
 		</template>
 	</div>

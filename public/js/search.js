@@ -31,9 +31,9 @@ function updateSettings(setting){
   updateList()
 }
 async function getJsonData() {
-  let file = await fetch("/jsonInfo/ingredients")
+  let file = await fetch("/jsonInfo/ingredients.json")
 	ingredients = await file.json()
-  file = await fetch("/jsonInfo/recipes")
+  file = await fetch("/jsonInfo/recipes.json")
   recipes = await file.json()
 }
 

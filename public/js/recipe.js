@@ -1,4 +1,5 @@
 const ingredientTemplate = document.querySelector("[ingredient-list-template]")
+const subListHeaderTemplate = document.querySelector("[sub-list-header-template]")
 const servingsInput = document.querySelector("[input-servings]")
 const nums = "1234567890"
 
@@ -12,16 +13,19 @@ let measurementList = []
 async function getJsonData() {
 	let file = await fetch("/jsonInfo/ingredients")
 	ingredients = await file.json()
-	file = await fetch("/jsonInfo/recipes")
+	file = await fetch("/jsonInfo/recipes.json")
 	data = await file.json()
-	file = await fetch("/jsonInfo/units")
+	file = await fetch("/jsonInfo/units.json")
 	units = await file.json()
 	data = data[id]
 	//console.log(data)
 }
 
 function bestUnit(amount, currentUnit){
-	return amount + " " + currentUnit
+	if(amount != 1){
+		return amount + " " + currentUnit + "s" //placeholder that does nothing currently
+	}
+	return amount + " " + currentUnit //placeholder that does nothing currently
 }
 
 function correctServings(sentence){
@@ -75,19 +79,46 @@ getJsonData().then(() => {
 	
 	let ingredientList = document.getElementById("ingredients");
 	for(let ingredientID in data.ingredients){
-		let info = ingredients[ingredientID]
-		const card = ingredientTemplate.content.cloneNode(true).children[0]
-    	const header = card.querySelector("[ingredient-link]")
-    	const body = card.querySelector("[ingredient-measurement]")
-		header.textContent = info.displayName
-		header.href = "/ingredient/" + ingredientID
-		body.textContent = data.ingredients[ingredientID].amount * servings / data.defaultServings + " " + data.ingredients[ingredientID].unit
-		if(data.ingredients[ingredientID].amount * servings / data.defaultServings != 1){
-			body.textContent += "s"
+		if(data.ingredients[ingredientID].amount == undefined){ //sub list
+			const subListHeader = subListHeaderTemplate.content.cloneNode(true).children[0]
+			console.log(subListHeader);
+			subListHeader.textContent = ingredientID + ":"
+			ingredientList.append(subListHeader)
+			
+			let subIngredientList = data.ingredients[ingredientID];
+			for(let subIngredientID in subIngredientList){
+				let info = ingredients[subIngredientID];
+				const card = ingredientTemplate.content.cloneNode(true).children[0]
+				const header = card.querySelector("[ingredient-link]")
+				const body = card.querySelector("[ingredient-measurement]")
+				header.textContent = info.displayName
+				header.href = "/ingredient/" + subIngredientID
+				body.textContent = subIngredientList[subIngredientID].amount * servings / data.defaultServings + " " + subIngredientList[subIngredientID].unit
+				if(subIngredientList[subIngredientID].amount * servings / data.defaultServings != 1){
+					body.textContent += "s"
+				}
+				body.id = subIngredientID
+				card.classList.add('sub-list-piece')
+				card.classList.remove('list-piece')
+				ingredientList.append(card)
+				measurementList.push(body)
+			}
 		}
-		body.id = ingredientID
-		ingredientList.append(card)
-		measurementList.push(body)
+		else{
+			let info = ingredients[ingredientID]
+			const card = ingredientTemplate.content.cloneNode(true).children[0]
+			const header = card.querySelector("[ingredient-link]")
+			const body = card.querySelector("[ingredient-measurement]")
+			header.textContent = info.displayName
+			header.href = "/ingredient/" + ingredientID
+			body.textContent = data.ingredients[ingredientID].amount * servings / data.defaultServings + " " + data.ingredients[ingredientID].unit
+			if(data.ingredients[ingredientID].amount * servings / data.defaultServings != 1){
+				body.textContent += "s"
+			}
+			body.id = ingredientID
+			ingredientList.append(card)
+			measurementList.push(body)
+		}
 	}
 	setNotes()
 })
