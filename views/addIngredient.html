@@ -12,34 +12,60 @@
 <body>
 	<div id="info">
 		<input type="button" value="Back" onclick="history.back()">
-		<p id="name" class="title"></p>
-		<p id="type" class="small-title"></p>
-		<p id="cost" class="info"></p>
-		<!--<p id="specialized" class="info"></p>-->
-
-		<ul id="restrictions" title="Restrictions: ">
-		</ul>
-
-		<!--<ul id="health" title="Health:">
-		</ul>!-->
-
-		<ul id="substitues" title="Substitutes:">
-		</ul>
-
-		<ul id="notes" title="Notes:">
-		</ul>
-
-		<template substitute-template>
-			<li class="card" id="">
-				<a class="header" href = "" data-header></a>
-				<div class="body" data-body></div>
+		<br>
+		<div id="info-set">
+			<li id="name-set">
+				<label for="name-input">New Ingredient Name:</label>
+				<br>
+				<input type="text" id="name-input">
 			</li>
-		</template>
-		<template health-template>
-			<li class="card" id="">
-				<div class="header" data-header></div>
+			<li id="cost-set">
+				<label for="cost-input">Cost per gram (usd):</label>
+				<br>
+				<input type="text" id="cost-input">
 			</li>
-		</template>
+			<li id="health-set">
+				<div>Health:</div>
+				<li id="health-calorie-set">
+					<label for="health-calorie-input">Calories/gram:</label>
+					<br>
+					<input type="text" id="health-input">
+				</li>
+				<li id="health-saturatedfats-set">
+					<label for="health-saturatedfats-input">Saturated Fats/gram:</label>
+					<br>
+					<input type="text" id="health-saturatedfats-input">
+				</li>
+				<br>
+			</li>
+			<li id="type-set">
+				<label for="type-input">Type (carbohydrate, diary...):</label>
+				<br>
+				<input type="text" id="type-input">
+			</li>
+			<li id="substitute-set">
+				<label for="substitute-input">Substitutes:</label>
+				<br>
+				<input type="text" id="substitute-input">
+			</li>
+			<li id="specialized-set">
+				<label for="specialized-input">Is specialized (can it not be found in a general food store):</label>
+				<br>
+				<input type="checkbox" id="specialized-input">
+			</li>
+			<li id="restrictions-set">
+				<label for="restrictions-input">Restrictions (vegan, vegitarian...):</label>
+				<br>
+				<input type="text" id="restrictions-input">
+			</li>
+			<li id="notes-set">
+				<label for="notes-input">Notes (Pack when measuring, can be toxic if not cooked right...):</label>
+				<br>
+				<input type="text" id="notes-input">
+			</li>
+		</div>
+		<br>
+		<input type="button" value="Submit" onclick="addIngredient()">
 	</div>
 
 </body>
