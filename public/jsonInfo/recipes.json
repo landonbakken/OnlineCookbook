@@ -1,4 +1,54 @@
 {
+	"chocolatesauce":{
+		"displayName": "Chocolate Sauce",
+		"totalTime": 10,
+		"ingredients":{
+			"sugar":{
+				"amount": 1,
+				"unit": "cup"
+			},
+			"cocoapowder":{
+				"amount": 1,
+				"unit": "cup"
+			},
+			"vanillaextract":{
+				"amount": 2,
+				"unit": "teaspoon"
+			},
+			"butter":{
+				"amount": 0.5,
+				"unit": "cup"
+			},
+			"milk":{
+				"amount": 1,
+				"unit": "cup"
+			}
+		},
+		"type": "condiment",
+		"parent": "recipes",
+		"eatTime": "dessert",
+		"ethnicity": "None",
+		"difficulty": 2,
+		"effortTime": 10,
+		"defaultServings": 20,
+		"cookersNotes":[
+			"Any milk works, but the more cream in the milk the better (not buttermilk)",
+			"Change the amount of vanilla extract added based on the quality",
+			"Really easy to store in a quart mason jar - fits perfect"
+		],
+		"directions":[
+			"Get a medium small pot and a wisk",
+			"Pre-cut up the stick of butter",
+			"add and mix the dry ingredients",
+			"pour in the milk",
+			"turn on the heat to meadium",
+			"mix until there isnt any powder floating on top",
+			"add the cut up butter",
+			"keep mixing until there isnt any butter chunks left",
+			"add vanilla extract",
+			"wait until sauce is cool then enjoy :D"
+		]
+	},
 	"salmon":{
 		"displayName": "Salmon",
 		"totalTime": 43,

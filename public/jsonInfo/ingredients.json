@@ -20,6 +20,43 @@
 			"has many substitutes"
 		]
 	},
+	"milk":{
+		"displayName": "Milk",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1 
+		},
+		"type": "dairy",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+		],
+		"notes":[
+		]
+	},
+	"cocoapowder":{
+		"displayName": "Cocoa Powder",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1 
+		},
+		"type": "carbohydrate",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+			"none"
+		],
+		"notes":[
+		]
+	},
 	
 	"salt":{
 		"displayName": "Salt",
