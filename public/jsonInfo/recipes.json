@@ -107,7 +107,7 @@
 				"amount": 1,
 				"unit": "teaspoon"
 			},
-			"hotwater":{
+			"water":{
 				"amount": 2,
 				"unit": "teaspoon"
 			},
@@ -136,8 +136,7 @@
 		"effortTime": 15,
 		"defaultServings": 48,
 		"cookersNotes":[
-			"Very Tasty and not too hard to make",
-			"Served with rice and a vegetable"
+			"The water added must be hot"
 		],
 		"directions":[
 			"Preheat the oven to 350 degrees farenheight (175 degrees celcius)",
