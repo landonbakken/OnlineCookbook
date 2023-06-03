@@ -95,6 +95,9 @@ getJsonData().then(() => {
     const body = card.querySelector("[data-body]")
     card.id = recipe
     header.textContent = data["displayName"]
+    if(data["needsMoreInfo"] != false){
+      header.textContent += "*";
+    }
     header.href = "/recipe/" + recipe
     body.textContent = data["type"]
     recipeCardContainer.append(card)
@@ -107,6 +110,9 @@ getJsonData().then(() => {
     const body = card.querySelector("[data-body]")
     card.id = ingredient
     header.textContent = data["displayName"]
+    if(data["needsMoreInfo"] != false){
+      header.textContent += "*";
+    }
     header.href = "/ingredient/" + ingredient
     body.textContent = data["type"]
     recipeCardContainer.append(card)

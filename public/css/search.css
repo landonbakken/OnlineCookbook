@@ -81,4 +81,9 @@ body {
 
 .hide {
   display: none;
+}
+
+.small-info {
+  font-size: 12px;
+  margin-left: 5px;
 }/*# sourceMappingURL=search.css.map */

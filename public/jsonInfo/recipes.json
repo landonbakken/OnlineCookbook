@@ -1,5 +1,6 @@
 {
 	"chocolatesauce":{
+		"needsMoreInfo": false,
 		"displayName": "Chocolate Sauce",
 		"totalTime": 10,
 		"ingredients":{
