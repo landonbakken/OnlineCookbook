@@ -1,691 +1,577 @@
 {
-	"sugar":{
+	"sugar": {
 		"displayName": "Sugar",
-		"cost": -1,
-		"health":{
-			"sugars": -1,
+		"cost": "-1",
+		"health": {
 			"saturated fats": -1,
-			"calories": -1 
+			"calories": -1
 		},
 		"type": "carbohydrate",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
+		"restrictions": [
 			"none"
 		],
-		"notes":[
-			"very sweet, but unhealthy",
-			"has many substitutes"
+		"notes": [
+			"none"
 		]
 	},
-	"milk":{
+	"milk": {
 		"displayName": "Milk",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
-			"calories": -1 
+			"calories": -1
 		},
 		"type": "dairy",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"cocoapowder":{
+	"cocoapowder": {
 		"displayName": "Cocoa Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
-			"calories": -1 
+			"calories": -1
 		},
 		"type": "carbohydrate",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
+		"restrictions": [
 			"none"
 		],
-		"notes":[
-		]
+		"notes": []
 	},
-	
-	"salt":{
+	"salt": {
 		"displayName": "Salt",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "seasoning",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"chicken":{
+	"chicken": {
 		"displayName": "Chicken",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "meat",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"groundcumin":{
+	"groundcumin": {
 		"displayName": "Ground Cumin",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"basil":{
+	"basil": {
 		"displayName": "Basil",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"cinnamon":{
+	"cinnamon": {
 		"displayName": "Cinnamon",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"bayleaves":{
+	"bayleaves": {
 		"displayName": "Bay Leaves",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"smokedpaprika":{
+	"smokedpaprika": {
 		"displayName": "Smoked Paprika",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"thyme":{
+	"thyme": {
 		"displayName": "Thyme",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"garlicpowder":{
+	"garlicpowder": {
 		"displayName": "Garlic Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"oregano":{
+	"oregano": {
 		"displayName": "Oregano",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"onionpowder":{
+	"onionpowder": {
 		"displayName": "Onion Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"rosemary":{
+	"rosemary": {
 		"displayName": "Rosemary",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"nutmegpowder":{
+	"nutmegpowder": {
 		"displayName": "Nutmeg Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"redpepperflakes":{
+	"redpepperflakes": {
 		"displayName": "Red Pepper Flakes",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"corianderpowder":{
+	"corianderpowder": {
 		"displayName": "Coriander Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"cayennepepper":{
+	"cayennepepper": {
 		"displayName": "Cayenne Pepper",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"groundcloves":{
+	"groundcloves": {
 		"displayName": "Ground Cloves",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"tumeric":{
+	"tumeric": {
 		"displayName": "Tumeric",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"currypowder":{
+	"currypowder": {
 		"displayName": "Currry Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"yellowmustard":{
+	"yellowmustard": {
 		"displayName": "Yellow Mustard",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"cardamonpowder":{
+	"cardamonpowder": {
 		"displayName": "Cardamon Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"cajunseasoning":{
+	"cajunseasoning": {
 		"displayName": "Cajun Seasoning",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"allspicepowder":{
+	"allspicepowder": {
 		"displayName": "Allspice Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"chilipowder":{
+	"chilipowder": {
 		"displayName": "Chili Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"gingerpowder":{
+	"gingerpowder": {
 		"displayName": "Ginger Powder",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"blackpepper":{
+	"blackpepper": {
 		"displayName": "Black Pepper",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"butter":{
+	"butter": {
 		"displayName": "Butter",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "diary",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"bakingsoda":{
+	"bakingsoda": {
 		"displayName": "Baking Soda",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "other",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"eggs":{
+	"eggs": {
 		"displayName": "Eggs",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "dairy",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"vanillaextract":{
+	"vanillaextract": {
 		"displayName": "Vanilla Extract",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "extract",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"allpurposeflour":{
+	"allpurposeflour": {
 		"displayName": "All Purpose Flour",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "grain",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"chocolatechips":{
+	"chocolatechips": {
 		"displayName": "Chocolate Chips",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "other",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"choppedwalnuts":{
+	"choppedwalnuts": {
 		"displayName": "Chopped Walnuts",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "other",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"brownsugar":{
+	"brownsugar": {
 		"displayName": "Brown Sugar",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "carbohydrate",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	},
-	"water":{
+	"water": {
 		"displayName": "Water",
 		"cost": -1,
-		"health":{
+		"health": {
 			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "other",
 		"parent": "ingredients",
-		"substitutes":{
-		},
+		"substitutes": {},
 		"specialized": -1,
-		"restrictions":[
-		],
-		"notes":[
-		]
+		"restrictions": [],
+		"notes": []
 	}
 }

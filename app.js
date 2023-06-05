@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser')
-
+const fs = require("fs");
 
 const app = express();
 const port = 4080;
@@ -39,9 +39,19 @@ app.get("/add/recipe", (req, res) => {
 
 //recieve info
 app.post("/recieve", (req, res) => {
-    console.log("Recieved data: ", req.body);
     res.send('Data received');
+    //console.log("Recieved data: ", req.body);
+	addToJsonFile(req.body, __dirname + "/public/jsonInfo/ingredients.json")
 });
+
+function addToJsonFile(addition, filename){
+	let jsonFile = fs.readFileSync(filename);
+	let info = JSON.parse(jsonFile);
+	//console.log(info);
+	info[Object.keys(addition)[0]] = addition[Object.keys(addition)[0]];
+	jsonFile = JSON.stringify(info, null, "\t");
+	fs.writeFileSync(filename,jsonFile);
+}
 
 //jsonInfo
 app.get("/jsonInfo/ingredients", (req, res) => {
