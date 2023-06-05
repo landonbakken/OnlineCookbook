@@ -51,11 +51,14 @@ async function httpGetAsync(theUrl, callback) {
 }
 
 function submitInfo(){
-	httpGetAsync(urlToSendTo, function(response) {
-		// Log the received response
-		console.log("Received: ", response);
-	});
-	window.location.href = "/";
+	if(document.getElementById("name-input").value != ""){
+		httpGetAsync(urlToSendTo, function(response) {
+			// Log the received response
+			console.log("Received: ", response);
+		});
+		window.location.href = "/";
+	}
+	console.log(document.getElementById("restrictions-input").value.replace(/(\r\n|\n|\r)/gm, "~"));
 }
 
 function editIngredient(ingredientID){
