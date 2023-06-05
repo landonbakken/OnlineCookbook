@@ -98,7 +98,7 @@ getJsonData().then(() => {
     if(data["needsMoreInfo"] != false){
       header.textContent += "*";
     }
-    header.href = "/recipe/" + recipe
+    card.href = "/recipe/" + recipe
     body.textContent = data["type"]
     recipeCardContainer.append(card)
   }
@@ -113,7 +113,7 @@ getJsonData().then(() => {
     if(data["needsMoreInfo"] != false){
       header.textContent += "*";
     }
-    header.href = "/ingredient/" + ingredient
+    card.href = "/ingredient/" + ingredient
     body.textContent = data["type"]
     recipeCardContainer.append(card)
   }

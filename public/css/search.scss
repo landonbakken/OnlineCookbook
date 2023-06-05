@@ -68,6 +68,11 @@ body{
   height: 100px;
 }
 
+.card:hover{
+  background-color: rgb(183, 183, 183);
+  scale: 1.03;
+}
+
 .card > .header {
   margin-bottom: .25rem;
 }
@@ -81,6 +86,8 @@ a{
   color: black;
   text-decoration: none;
 }
+
+
 
 .hide {
   display: none;
