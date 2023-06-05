@@ -61,7 +61,7 @@ function submitInfo(){
 function editIngredient(ingredientID){
 	console.log("Editing ingredient with ID " + ingredientID);
 	getJsonData(ingredientID, function(data){
-		setValues(data["displayName"].toLowerCase().replace(" ", ""), data["cost"], data["type"], data["specialized"], data["needsMoreInfo"]);
+		setValues(data["displayName"], data["cost"], data["type"], data["specialized"], data["needsMoreInfo"]);
 	});
 }
 
