@@ -82,18 +82,22 @@
 	},
 	"groundcumin": {
 		"displayName": "Ground Cumin",
-		"cost": -1,
+		"cost": "-1",
 		"health": {
-			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
 		"substitutes": {},
-		"specialized": -1,
-		"restrictions": [],
-		"notes": []
+		"specialized": false,
+		"restrictions": [
+			"none"
+		],
+		"notes": [
+			"none"
+		],
+		"needsMoreInfo": true
 	},
 	"basil": {
 		"displayName": "Basil",

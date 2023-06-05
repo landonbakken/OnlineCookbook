@@ -18,10 +18,6 @@ li {
   color: black;
 }
 
-#cost, #health, #notes {
-  background-color: rgb(235, 235, 235);
-}
-
 ul[title]::before {
   content: attr(title);
   display: block;

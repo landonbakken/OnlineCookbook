@@ -16,11 +16,7 @@ li{
 	margin-top: 15px;
 	font-size: 18px;
 	color: black;
-}	
-
-#cost, #health, #notes{
-	background-color: rgb(235, 235, 235);
-} 
+}
 
 ul[title]::before {
     content: attr(title);

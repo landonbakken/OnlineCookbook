@@ -79,6 +79,11 @@ body {
   color: #777;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .hide {
   display: none;
 }
