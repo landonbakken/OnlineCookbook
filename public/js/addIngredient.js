@@ -13,6 +13,8 @@ async function httpGetAsync(theUrl, callback) {
 	var displayName = document.getElementById("name-input").value;
 	var cost = document.getElementById("cost-input").value;
 	var type = document.getElementById("type-input").value;
+	var specialized = document.getElementById("specialized-input").checked;
+	var needsMoreInfo = document.getElementById("needs-more-info-input").checked;
 
 	//add to json file
 	var jsonFile = JSON.parse("{}");
@@ -23,9 +25,10 @@ async function httpGetAsync(theUrl, callback) {
 	jsonFile[IDName]["type"] = type;
 	jsonFile[IDName]["parent"] = "ingredients";
 	jsonFile[IDName]["substitutes"] = {};
-	jsonFile[IDName]["specialized"] = -1;
+	jsonFile[IDName]["specialized"] = specialized;
 	jsonFile[IDName]["restrictions"] = ["none"];
 	jsonFile[IDName]["notes"] = ["none"];
+	jsonFile[IDName]["needsMoreInfo"] = needsMoreInfo;
 
 	console.log(jsonFile);
 
@@ -47,8 +50,9 @@ async function httpGetAsync(theUrl, callback) {
 function submitInfo(){
 	httpGetAsync(urlToSendTo, function(response) {
 		// Log the received response
-		console.log("received ... ", response);
+		console.log("Received: ", response);
 	});
+	window.location.href = "/";
 }
 
 function setValues(nameInput, cost, typeInput, isSpecialized){

@@ -9,13 +9,14 @@
 		"type": "carbohydrate",
 		"parent": "ingredients",
 		"substitutes": {},
-		"specialized": -1,
+		"specialized": false,
 		"restrictions": [
 			"none"
 		],
 		"notes": [
 			"none"
-		]
+		],
+		"needsMoreInfo": true
 	},
 	"milk": {
 		"displayName": "Milk",
