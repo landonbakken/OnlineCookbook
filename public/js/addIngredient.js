@@ -14,37 +14,57 @@ function httpGetAsync(theUrl, callback) {
             // Call the callback function with the response text
             callback(xmlHttp.responseText);
     }
-    
-    // Open a POST request to the specified URL
+
+	//target json file:
+	/*"sugar":{
+		"displayName": "Sugar",
+		"cost": -1,
+		"health":{
+			"sugars": -1,
+			"saturated fats": -1,
+			"calories": -1 
+		},
+		"type": "carbohydrate",
+		"parent": "ingredients",
+		"substitutes":{
+		},
+		"specialized": -1,
+		"restrictions":[
+			"none"
+		],
+		"notes":[
+			"very sweet, but unhealthy",
+			"has many substitutes"
+		]
+	},*/
+
+	//get all data from page
+	var IDName = document.getElementById("name-input").value.toLowerCase().replace(" ", "");
+	var displayName = document.getElementById("name-input").value;
+	var cost = document.getElementById("cost-input").value;
+	var type = document.getElementById("type-input").value;
+	var specialized = -1;
+	if(document.getElementById("specialized-input").value == "on"){
+		specialized = 1;
+	}
+
+	//add to json file
+	var jsonFile = {};
+	jsonFile[IDName] = {};
+	jsonFile[IDName]["displayName"] = displayName;
+	jsonFile[IDName]["cost"] = cost;
+	jsonFile[IDName]["health"] = {"saturated fats": -1, "calories": -1 };
+	jsonFile[IDName]["type"] = type;
+	jsonFile[IDName]["parent"] = "ingredients";
+	jsonFile[IDName]["substitutes"] = {};
+	jsonFile[IDName]["specialized"] = specialized;
+	jsonFile[IDName]["restrictions"] = ["none"];
+	jsonFile[IDName]["notes"] = ["none"];
+
+	//send the json file
     xmlHttp.open("POST", theUrl, true); // true for asynchronous
 	xmlHttp.setRequestHeader("Content-Type", "application/json");
-    
-    // Send the JSON data as the request body
-	const dataToSend = JSON.stringify({
-			"sugar":{
-				"displayName": "Sugar",
-				"cost": -1,
-				"health":{
-					"sugars": -1,
-					"saturated fats": -1,
-					"calories": -1 
-				},
-				"type": "carbohydrate",
-				"parent": "ingredients",
-				"substitutes":{
-				},
-				"specialized": -1,
-				"restrictions":[
-					"none"
-				],
-				"notes":[
-					"very sweet, but unhealthy",
-					"has many substitutes"
-				]
-			}
-		}	
-	);
-    xmlHttp.send(dataToSend);
+    xmlHttp.send(JSON.stringify(jsonFile));
 }
 
 function submitInfo(){
