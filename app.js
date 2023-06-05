@@ -1,4 +1,7 @@
 const express = require('express');
+const bodyParser = require('body-parser')
+const jsonParser = bodyParser.json()
+
 
 const app = express();
 const port = 4080;
@@ -9,9 +12,11 @@ app.use("/css", express.static(__dirname + 'public/css'));
 app.use("/js", express.static(__dirname + 'public/js'));
 app.use("/img", express.static(__dirname + 'public/img'));
 app.use("/jsonInfo", express.static(__dirname + 'public/jsonInfo'));
+app.use(express.bodyParser());
 
 app.set('views', './views');
 
+//info pages
 app.get("", (req, res) => {
 	res.sendFile(__dirname + "/views/search.html");
 });
@@ -24,11 +29,19 @@ app.get("/meal/:meal", (req, res) => {
 app.get("/ingredient/:ingredient", (req, res) => {
 	res.sendFile(__dirname + "/views/ingredient.html")
 });
+
+//edit pages
 app.get("/add/ingredient", (req, res) => {
 	res.sendFile(__dirname + "/views/addIngredient.html")
 });
 app.get("/add/recipe", (req, res) => {
 	res.sendFile(__dirname + "/views/addRecipe.html")
+});
+
+//recieve info
+app.post("/recieve", (req, res) => {
+    console.log(req.body);
+    res.send('Data received');
 });
 
 //jsonInfo
@@ -40,8 +53,7 @@ app.get("/jsonInfo/recipes", (req, res) => {
 });
 
 
-
-
+//start
 app.listen(port, host, () => {
 	console.log("Server started on port " + port);
 });
