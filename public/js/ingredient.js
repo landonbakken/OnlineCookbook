@@ -6,6 +6,10 @@ let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
 let ingredients = ""
 
+function editIngredient(){
+	window.location.href = "/add/ingredient/" + id;
+}
+
 async function getJsonData() {
 	let file = await fetch("/jsonInfo/recipes.json")
 	recipes = await file.json()

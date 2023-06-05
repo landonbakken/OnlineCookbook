@@ -1,6 +1,6 @@
 {
 	"sugar": {
-		"displayName": "Sugar",
+		"displayName": "sugar",
 		"cost": "-1",
 		"health": {
 			"saturated fats": -1,
@@ -9,7 +9,7 @@
 		"type": "carbohydrate",
 		"parent": "ingredients",
 		"substitutes": {},
-		"specialized": false,
+		"specialized": true,
 		"restrictions": [
 			"none"
 		],

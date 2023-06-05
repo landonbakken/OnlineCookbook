@@ -103,7 +103,7 @@ getJsonData().then(() => {
     recipeCardContainer.append(card)
   }
   for(let ingredient in ingredients){
-    console.log(ingredient)
+    //console.log(ingredient)
     let data = ingredients[ingredient]
     const card = recipeCardTemplate.content.cloneNode(true).children[0]
     const header = card.querySelector("[data-header]")

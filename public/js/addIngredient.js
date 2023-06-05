@@ -2,6 +2,11 @@ console.log("js be working");
 var splitURL = window.location.href.split("/");
 const urlToSendTo = "http://" + splitURL[2] + "/recieve";
 
+//if specific ingredient in the url set those values
+if(document.URL.split("/")[document.URL.split("/").length - 1] != "ingredient"){
+	editIngredient(document.URL.split("/")[document.URL.split("/").length - 1]);
+}
+
 // Define a function to send an HTTP request asynchronously
 async function httpGetAsync(theUrl, callback) {
     // Create a new XMLHttpRequest object
@@ -30,8 +35,6 @@ async function httpGetAsync(theUrl, callback) {
 	jsonFile[IDName]["notes"] = ["none"];
 	jsonFile[IDName]["needsMoreInfo"] = needsMoreInfo;
 
-	console.log(jsonFile);
-
 	//send the json file
     xmlHttp.open("POST", theUrl, true); // true for asynchronous
 	xmlHttp.setRequestHeader("Content-Type", "application/json");
@@ -55,12 +58,23 @@ function submitInfo(){
 	window.location.href = "/";
 }
 
-function setValues(nameInput, cost, typeInput, isSpecialized){
+function editIngredient(ingredientID){
+	console.log("Editing ingredient with ID " + ingredientID);
+	getJsonData(ingredientID, function(data){
+		setValues(data["displayName"].toLowerCase().replace(" ", ""), data["cost"], data["type"], data["specialized"], data["needsMoreInfo"]);
+	});
+}
+
+async function getJsonData(id, callback) {
+	let file = await fetch("/jsonInfo/ingredients.json")
+	let ingredients = await file.json()
+	callback(ingredients[id]);
+}
+
+function setValues(nameInput, cost, typeInput, isSpecialized, needsMoreInfo){
 	document.getElementById("name-input").value = nameInput;
 	document.getElementById("cost-input").value = cost;
 	document.getElementById("type-input").value = typeInput;
-	document.getElementById("specialized-input").value = isSpecialized;
+	document.getElementById("specialized-input").checked = isSpecialized;
+	document.getElementById("specialized-input").checked = needsMoreInfo;
 }
-
-setValues("Sugar", -1, "carbohydrate", "off");
-// Call the function with the URL and a callback function

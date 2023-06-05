@@ -33,9 +33,12 @@ app.get("/ingredient/:ingredient", (req, res) => {
 app.get("/add/ingredient", (req, res) => {
 	res.sendFile(__dirname + "/views/addIngredient.html")
 });
-app.get("/add/recipe", (req, res) => {
-	res.sendFile(__dirname + "/views/addRecipe.html")
+app.get("/add/ingredient/:ingredient", (req, res) => {
+	res.sendFile(__dirname + "/views/addIngredient.html")
 });
+/*app.get("/add/recipe", (req, res) => {
+	res.sendFile(__dirname + "/views/addRecipe.html")
+});*/
 
 //recieve info
 app.post("/recieve", (req, res) => {
