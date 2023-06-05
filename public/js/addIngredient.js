@@ -17,10 +17,10 @@ function httpGetAsync(theUrl, callback) {
     
     // Open a POST request to the specified URL
     xmlHttp.open("POST", theUrl, true); // true for asynchronous
+	xmlHttp.setRequestHeader("Content-Type", "application/json");
     
     // Send the JSON data as the request body
-    xmlHttp.send(JSON.stringify(
-		{
+	const dataToSend = JSON.stringify({
 			"sugar":{
 				"displayName": "Sugar",
 				"cost": -1,
@@ -43,7 +43,8 @@ function httpGetAsync(theUrl, callback) {
 				]
 			}
 		}	
-	));
+	);
+    xmlHttp.send(dataToSend);
 }
 
 function submitInfo(){

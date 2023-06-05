@@ -1,18 +1,17 @@
 const express = require('express');
 const bodyParser = require('body-parser')
-const jsonParser = bodyParser.json()
 
 
 const app = express();
 const port = 4080;
 const host = "0.0.0.0";
 
+app.use(bodyParser.json());
 app.use(express.static("public"));
 app.use("/css", express.static(__dirname + 'public/css'));
 app.use("/js", express.static(__dirname + 'public/js'));
 app.use("/img", express.static(__dirname + 'public/img'));
 app.use("/jsonInfo", express.static(__dirname + 'public/jsonInfo'));
-app.use(express.bodyParser());
 
 app.set('views', './views');
 
@@ -40,7 +39,7 @@ app.get("/add/recipe", (req, res) => {
 
 //recieve info
 app.post("/recieve", (req, res) => {
-    console.log(req.body);
+    console.log("Recieved data: ", req.body);
     res.send('Data received');
 });
 
