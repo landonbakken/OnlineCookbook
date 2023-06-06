@@ -17,8 +17,8 @@ async function httpGetAsync(theUrl, callback) {
 	var IDName = document.getElementById("name-input").value.toLowerCase().replaceAll(" ", "");
 	console.log(IDName);
 	var displayName = document.getElementById("name-input").value;
-	var totalTime = document.getElementById("total-time-input").checked;
-	var effortTime = document.getElementById("effort-time-input").checked;
+	var totalTime = document.getElementById("total-time-input").value;
+	var effortTime = document.getElementById("effort-time-input").value;
 	var type = document.getElementById("type-input").value;
 	var ethnicity = document.getElementById("ethnicity-input").value
 	var difficulty = document.getElementById("difficulty-input").value
@@ -82,6 +82,7 @@ async function getJsonData(id, callback) {
 }
 
 function setValues(data){
+	console.log(data);
 	document.getElementById("name-input").value = data["displayName"];
 	document.getElementById("total-time-input").value = data["totalTime"];
 	document.getElementById("effort-time-input").value = data["effortTime"];

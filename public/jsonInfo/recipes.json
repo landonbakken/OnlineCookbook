@@ -148,8 +148,8 @@
 	},
 	"chickentikkamasala": {
 		"displayName": "Chicken Tikka Masala",
-		"totalTime": false,
-		"effortTime": false,
+		"totalTime": "1",
+		"effortTime": "2",
 		"ingredients": {
 			"crust": {
 				"salt": {
