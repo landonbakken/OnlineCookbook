@@ -38,6 +38,7 @@ getJsonData().then(() => {
 
 	let substituteList = document.getElementById("substitues");
 
+	/*
 	for(let substituteID in data.substitutes){
 		console.log(substituteID)
 		let ratio = data.substitutes[substituteID]
@@ -48,7 +49,7 @@ getJsonData().then(() => {
 		header.href = "/ingredient/" + substituteID
 		body.textContent = "Multiply by " + ratio
 		substituteList.append(card)
-	}
+	}*/
 
 	let restrictionList = document.getElementById("restrictions")
 	for(let restrictionID in data.restrictions){

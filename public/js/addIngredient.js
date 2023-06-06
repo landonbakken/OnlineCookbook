@@ -20,6 +20,12 @@ async function httpGetAsync(theUrl, callback) {
 	var type = document.getElementById("type-input").value;
 	var specialized = document.getElementById("specialized-input").checked;
 	var needsMoreInfo = document.getElementById("needs-more-info-input").checked;
+	var restrictionList = document.getElementById("restrictions-input").value.replace(/(\r\n|\n|\r)/gm, "~").split("~")
+	var restrictionList = document.getElementById("restrictions-input").value.replace(/(\r\n|\n|\r)/gm, "~").split("~")
+	var notesList = document.getElementById("notes-input").value.replace(/(\r\n|\n|\r)/gm, "~").split("~")
+
+	//restrictions:
+	
 
 	//add to json file
 	var jsonFile = JSON.parse("{}");
@@ -31,8 +37,8 @@ async function httpGetAsync(theUrl, callback) {
 	jsonFile[IDName]["parent"] = "ingredients";
 	jsonFile[IDName]["substitutes"] = {};
 	jsonFile[IDName]["specialized"] = specialized;
-	jsonFile[IDName]["restrictions"] = ["none"];
-	jsonFile[IDName]["notes"] = ["none"];
+	jsonFile[IDName]["restrictions"] = restrictionList;
+	jsonFile[IDName]["notes"] = notesList;
 	jsonFile[IDName]["needsMoreInfo"] = needsMoreInfo;
 
 	//send the json file
@@ -58,7 +64,6 @@ function submitInfo(){
 		});
 		window.location.href = "/";
 	}
-	console.log(document.getElementById("restrictions-input").value.replace(/(\r\n|\n|\r)/gm, "~"));
 }
 
 function editIngredient(ingredientID){
