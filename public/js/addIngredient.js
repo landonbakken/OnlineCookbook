@@ -24,9 +24,6 @@ async function httpGetAsync(theUrl, callback) {
 	var restrictionList = document.getElementById("restrictions-input").value.replace(/(\r\n|\n|\r)/gm, "~").split("~")
 	var notesList = document.getElementById("notes-input").value.replace(/(\r\n|\n|\r)/gm, "~").split("~")
 
-	//restrictions:
-	
-
 	//add to json file
 	var jsonFile = JSON.parse("{}");
 	jsonFile[IDName] = JSON.parse("{}");
@@ -86,19 +83,15 @@ function setValues(data){
 	document.getElementById("specialized-input").checked = data["specialized"];
 	document.getElementById("specialized-input").checked = data["needsMoreInfo"];
 	
-	var restrictionList = data["restrictions"];
-	for(var restriction = 0; restriction < restrictionList.length; restriction++){
-		document.getElementById("restrictions-input").value += restrictionList[restriction];
-		if(restriction != restrictionList.length - 1){
-			document.getElementById("restrictions-input").value += "\n"
-		}
-	}
+	fillTextboxWithList(data["restrictions"], "restrictions-input");
+	fillTextboxWithList(data["notes"], "notes-input");
+}
 
-	var noteList = data["notes"];
-	for(var note = 0; note < noteList.length; note++){
-		document.getElementById("notes-input").value += noteList[note];
-		if(note != noteList.length - 1){
-			document.getElementById("notes-input").value += "\n"
+function fillTextboxWithList(objectList, elementID){
+	for(var object = 0; object < objectList.length; object++){
+		document.getElementById(elementID).value += objectList[object];
+		if(object != objectList.length - 1){
+			document.getElementById(elementID).value += "\n"
 		}
 	}
 }
