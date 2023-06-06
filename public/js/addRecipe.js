@@ -15,7 +15,6 @@ async function httpGetAsync(theUrl, callback) {
 
 	//get all data from page
 	var IDName = document.getElementById("name-input").value.toLowerCase().replaceAll(" ", "");
-	console.log(IDName);
 	var displayName = document.getElementById("name-input").value;
 	var totalTime = document.getElementById("total-time-input").value;
 	var effortTime = document.getElementById("effort-time-input").value;
@@ -65,7 +64,7 @@ function submitInfo(){
 			// Log the received response
 			console.log("Received: ", response);
 		});
-		//window.location.href = "/";
+		window.location.href = "/";
 	}
 }
 
@@ -82,7 +81,6 @@ async function getJsonData(id, callback) {
 }
 
 function setValues(data){
-	console.log(data);
 	document.getElementById("name-input").value = data["displayName"];
 	document.getElementById("total-time-input").value = data["totalTime"];
 	document.getElementById("effort-time-input").value = data["effortTime"];

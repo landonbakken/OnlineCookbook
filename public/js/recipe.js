@@ -85,7 +85,7 @@ getJsonData().then(() => {
 	for(let ingredientID in data.ingredients){
 		if(data.ingredients[ingredientID].amount == undefined){ //sub list
 			const subListHeader = subListHeaderTemplate.content.cloneNode(true).children[0]
-			console.log(subListHeader);
+			//console.log(subListHeader);
 			subListHeader.textContent = ingredientID + ":"
 			ingredientList.append(subListHeader)
 			
