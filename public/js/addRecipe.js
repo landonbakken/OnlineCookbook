@@ -88,7 +88,7 @@ function setValues(data){
 	document.getElementById("type-input").value = data["type"];
 	document.getElementById("ethnicity-input").value = data["ethnicity"]
 	document.getElementById("difficulty-input").value = data["difficulty"]
-	document.getElementById("servings-input").value = data["servings"]
+	document.getElementById("servings-input").value = data["defaultServings"]
 	fillTextboxWithList(data["directions"], "directions-input");
 	fillTextboxWithList(data["cookersNotes"], "notes-input");
 	document.getElementById("needs-more-info-input").checked = data["needsMoreInfo"];

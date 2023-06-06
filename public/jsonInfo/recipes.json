@@ -166,7 +166,7 @@
 		"parent": "recipes",
 		"ethnicity": "Indian",
 		"difficulty": "6",
-		"defaultServings": "undefined",
+		"defaultServings": "5",
 		"directions": [
 			"Get food",
 			"Make food",
