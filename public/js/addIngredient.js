@@ -69,7 +69,7 @@ function submitInfo(){
 function editIngredient(ingredientID){
 	//console.log("Editing ingredient with ID " + ingredientID);
 	getJsonData(ingredientID, function(data){
-		setValues(data["displayName"], data["cost"], data["type"], data["specialized"], data["needsMoreInfo"]);
+		setValues(data);
 	});
 }
 
@@ -79,10 +79,26 @@ async function getJsonData(id, callback) {
 	callback(ingredients[id]);
 }
 
-function setValues(nameInput, cost, typeInput, isSpecialized, needsMoreInfo){
-	document.getElementById("name-input").value = nameInput;
-	document.getElementById("cost-input").value = cost;
-	document.getElementById("type-input").value = typeInput;
-	document.getElementById("specialized-input").checked = isSpecialized;
-	document.getElementById("specialized-input").checked = needsMoreInfo;
+function setValues(data){
+	document.getElementById("name-input").value = data["displayName"];
+	document.getElementById("cost-input").value = data["cost"];
+	document.getElementById("type-input").value = data["type"];
+	document.getElementById("specialized-input").checked = data["specialized"];
+	document.getElementById("specialized-input").checked = data["needsMoreInfo"];
+	
+	var restrictionList = data["restrictions"];
+	for(var restriction = 0; restriction < restrictionList.length; restriction++){
+		document.getElementById("restrictions-input").value += restrictionList[restriction];
+		if(restriction != restrictionList.length - 1){
+			document.getElementById("restrictions-input").value += "\n"
+		}
+	}
+
+	var noteList = data["notes"];
+	for(var note = 0; note < noteList.length; note++){
+		document.getElementById("notes-input").value += noteList[note];
+		if(note != noteList.length - 1){
+			document.getElementById("notes-input").value += "\n"
+		}
+	}
 }
