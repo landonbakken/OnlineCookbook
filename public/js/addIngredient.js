@@ -14,7 +14,7 @@ async function httpGetAsync(theUrl, callback) {
     
 
 	//get all data from page
-	var IDName = document.getElementById("name-input").value.toLowerCase().replace(" ", "");
+	var IDName = document.getElementById("name-input").value.toLowerCase().replaceAll(" ", "");
 	var displayName = document.getElementById("name-input").value;
 	var cost = document.getElementById("cost-input").value;
 	var type = document.getElementById("type-input").value;

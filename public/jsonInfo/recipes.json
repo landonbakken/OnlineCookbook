@@ -1,26 +1,26 @@
 {
-	"chocolatesauce":{
+	"chocolatesauce": {
 		"needsMoreInfo": false,
 		"displayName": "Chocolate Sauce",
 		"totalTime": 10,
-		"ingredients":{
-			"sugar":{
+		"ingredients": {
+			"sugar": {
 				"amount": 1,
 				"unit": "cup"
 			},
-			"cocoapowder":{
+			"cocoapowder": {
 				"amount": 1,
 				"unit": "cup"
 			},
-			"vanillaextract":{
+			"vanillaextract": {
 				"amount": 2,
 				"unit": "teaspoon"
 			},
-			"butter":{
+			"butter": {
 				"amount": 0.5,
 				"unit": "cup"
 			},
-			"milk":{
+			"milk": {
 				"amount": 1,
 				"unit": "cup"
 			}
@@ -32,12 +32,12 @@
 		"difficulty": 2,
 		"effortTime": 10,
 		"defaultServings": 20,
-		"cookersNotes":[
+		"cookersNotes": [
 			"Any milk works, but the more cream in the milk the better (not buttermilk)",
 			"Change the amount of vanilla extract added based on the quality",
 			"Really easy to store in a quart mason jar - fits perfect"
 		],
-		"directions":[
+		"directions": [
 			"Get a medium small pot and a wisk",
 			"Pre-cut up the stick of butter",
 			"add and mix the dry ingredients",
@@ -50,15 +50,15 @@
 			"wait until sauce is cool then enjoy :D"
 		]
 	},
-	"salmon":{
+	"salmon": {
 		"displayName": "Salmon",
 		"totalTime": 43,
-		"ingredients":{
-			"salt":{
+		"ingredients": {
+			"salt": {
 				"amount": 20,
 				"unit": "gram"
 			},
-			"sugar":{
+			"sugar": {
 				"amount": 13,
 				"unit": "cup"
 			}
@@ -70,61 +70,61 @@
 		"difficulty": 5,
 		"effortTime": 15,
 		"defaultServings": 5,
-		"cookersNotes":[
+		"cookersNotes": [
 			"Very Tasty and not too hard to make",
 			"Served with rice and a vegetable"
 		],
-		"directions":[
+		"directions": [
 			"Get food",
 			"Make food",
 			"Eat food"
 		]
 	},
-	"chocolatechipcookies":{
+	"chocolatechipcookies": {
 		"displayName": "Chocolate Chip Cookies",
 		"totalTime": 30,
-		"ingredients":{
-			"butter":{
+		"ingredients": {
+			"butter": {
 				"amount": 1,
 				"unit": "cup"
 			},
-			"sugar":{
+			"sugar": {
 				"amount": 1,
 				"unit": "cup"
 			},
-			"brownsugar":{
+			"brownsugar": {
 				"amount": 1,
 				"unit": "cup"
 			},
-			"eggs":{
+			"eggs": {
 				"amount": 2,
 				"unit": "egg"
 			},
-			"vanillaextract":{
+			"vanillaextract": {
 				"amount": 2,
 				"unit": "teaspoon"
 			},
-			"bakingsoda":{
+			"bakingsoda": {
 				"amount": 1,
 				"unit": "teaspoon"
 			},
-			"water":{
+			"water": {
 				"amount": 2,
 				"unit": "teaspoon"
 			},
-			"salt":{
+			"salt": {
 				"amount": 0.5,
 				"unit": "teaspoon"
 			},
-			"allpurposeflour":{
+			"allpurposeflour": {
 				"amount": 3,
 				"unit": "cup"
 			},
-			"chocolatechips":{
+			"chocolatechips": {
 				"amount": 2,
 				"unit": "cup"
 			},
-			"choppedwalnuts":{
+			"choppedwalnuts": {
 				"amount": 1,
 				"unit": "cup"
 			}
@@ -136,54 +136,47 @@
 		"difficulty": 1,
 		"effortTime": 15,
 		"defaultServings": 48,
-		"cookersNotes":[
+		"cookersNotes": [
 			"The water added must be hot"
 		],
-		"directions":[
+		"directions": [
 			"Preheat the oven to 350 degrees farenheight (175 degrees celcius)",
 			"Beat butter, white sugar, and brown sugar with an electric mixer in a large bowl until smooth. Beat in eggs, one at a time, then stir in vanilla. Dissolve baking soda in hot water. Add to batter along with salt. Stir in flour, chocolate chips, and walnuts.",
 			"Drop spoonfuls of dough 2 inches apart onto ungreased baking sheets.",
 			"Bake in the preheated oven until edges are nicely browned, about 10 minutes. Cool on the baking sheets briefly before removing to a wire rack to cool completely."
 		]
 	},
-	"chickentikkamasala":{
+	"chickentikkamasala": {
 		"displayName": "Chicken Tikka Masala",
-		"totalTime": 45,
-		"ingredients":{
-			"crust":{
-				"salt":{
+		"totalTime": false,
+		"effortTime": false,
+		"ingredients": {
+			"crust": {
+				"salt": {
 					"amount": 20,
 					"unit": "gram"
-				},
-				"sugar":{
-					"amount": 13,
-					"unit": "cup"
 				}
 			},
-			"salt":{
+			"salt": {
 				"amount": 20,
 				"unit": "gram"
-			},
-			"sugar":{
-				"amount": 13,
-				"unit": "cup"
 			}
 		},
 		"type": "Main Course",
 		"parent": "recipes",
-		"eatTime": "dinner",
 		"ethnicity": "Indian",
-		"difficulty": 6,
-		"effortTime": 15,
-		"defaultServings": 5,
-		"cookersNotes":[
-			"Very Tasty and not too hard to make",
-			"Served with rice and a vegetables"
-		],
-		"directions":[
+		"difficulty": "6",
+		"defaultServings": "undefined",
+		"directions": [
 			"Get food",
 			"Make food",
 			"Eat food"
-		]
+		],
+		"cookersNotes": [
+			"Very Tasty and not too hard to make",
+			"Served with rice and a vegetables",
+			"tasty"
+		],
+		"needsMoreInfo": true
 	}
 }

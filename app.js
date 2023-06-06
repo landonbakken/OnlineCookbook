@@ -36,6 +36,12 @@ app.get("/add/ingredient", (req, res) => {
 app.get("/add/ingredient/:ingredient", (req, res) => {
 	res.sendFile(__dirname + "/views/addIngredient.html")
 });
+app.get("/add/recipe", (req, res) => {
+	res.sendFile(__dirname + "/views/addRecipe.html")
+});
+app.get("/add/recipe/:recipe", (req, res) => {
+	res.sendFile(__dirname + "/views/addRecipe.html")
+});
 /*app.get("/add/recipe", (req, res) => {
 	res.sendFile(__dirname + "/views/addRecipe.html")
 });*/
@@ -43,8 +49,17 @@ app.get("/add/ingredient/:ingredient", (req, res) => {
 //recieve info
 app.post("/recieve", (req, res) => {
     res.send('Data received');
-    //console.log("Recieved data: ", req.body);
-	addToJsonFile(req.body, __dirname + "/public/jsonInfo/ingredients.json")
+	const parent = req.body[Object.keys(req.body)[0]]["parent"];
+    console.log("Recieved data: ", parent);
+	if(parent == "recipes"){
+		addToJsonFile(req.body, __dirname + "/public/jsonInfo/recipes.json")
+	}
+	else if(parent == "ingredients"){
+		addToJsonFile(req.body, __dirname + "/public/jsonInfo/ingredients.json")
+	}
+	else{
+		console.log("Uknown parent: " + parent);
+	}
 });
 
 function addToJsonFile(addition, filename){
