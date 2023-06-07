@@ -171,6 +171,105 @@
 					"unit": "teaspoon",
 					"amount": "1"
 				}
+			},
+			"sugar": {
+				"unit": "teaspoon",
+				"amount": "6"
+			}
+		}
+	},
+	"rhubarbcrisp": {
+		"displayName": "Rhubarb Crisp",
+		"totalTime": "90",
+		"effortTime": "30",
+		"type": "Dessert",
+		"parent": "recipes",
+		"ethnicity": "None",
+		"difficulty": "3",
+		"defaultServings": "8",
+		"directions": [
+			"Preheat the oven to 350˚. Butter a 2-quart baking dish. ",
+			"",
+			"For the filling: ",
+			"Combine the rhubarb, strawberries, ginger, and cinnamon and toss in a large bowl. ",
+			"Whisk together the brown sugar, flour, and salt in a small bowl; add it to the rhubarb mixture and mix well.",
+			"",
+			"For the topping: ",
+			"Mix together the flour, oats, brown sugar, granulated sugar, and salt in a separate large bowl. ",
+			"Cut 1 1/2 sticks of the butter into cubes, then work the butter into the flour mixture using a pastry cutter or 2 knives. ",
+			"Stir in the pecans.",
+			"",
+			"Adding everything together:",
+			"Pour the rhubarb filling into the baking dish and sprinkle with the topping. ",
+			"Cut the remaining 1/2 stick butter into cubes and dot the top of the crisp with it. ",
+			"Bake until the fruit is bubbly and the topping is golden brown and crisp, 50 to 60 minutes."
+		],
+		"cookersNotes": [
+			"Really good with vanilla ice cream",
+			"Both strawberries and rhubarb are sliced thick-ish",
+			"Do less strawberries if you want it to be more tart (and vise-versa)"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"Filling": {
+				"rhubarb": {
+					"unit": "cup",
+					"amount": "3"
+				},
+				"strawberries": {
+					"unit": "cup",
+					"amount": "3"
+				},
+				"gingerpowder": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"cinnamon": {
+					"unit": "teaspoon",
+					"amount": ".5"
+				},
+				"brownsugar": {
+					"unit": "cup",
+					"amount": ".75"
+				},
+				"allpurposeflour": {
+					"unit": "cup",
+					"amount": ".25"
+				},
+				"salt": {
+					"unit": "teaspoon",
+					"amount": ".5"
+				}
+			},
+			"Topping": {
+				"allpurposeflour": {
+					"unit": "cup",
+					"amount": "1"
+				},
+				"oats": {
+					"unit": "cup",
+					"amount": "1"
+				},
+				"brownsugar": {
+					"unit": "cup",
+					"amount": ".5"
+				},
+				"sugar": {
+					"unit": "cup",
+					"amount": ".5"
+				},
+				"salt": {
+					"unit": "pinch",
+					"amount": "1"
+				},
+				"butter": {
+					"unit": "cup",
+					"amount": "1"
+				},
+				"pecans": {
+					"unit": "cup",
+					"amount": ".5"
+				}
 			}
 		}
 	}

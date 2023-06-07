@@ -92,13 +92,15 @@ async function httpGetAsync(theUrl, callback) {
     }
 }
 
-function submitInfo(){
+function submitInfo(goToHome = true){
 	if(document.getElementById("name-input").value != ""){
 		httpGetAsync(urlToSendTo, function(response) {
 			// Log the received response
 			console.log("Received: ", response);
 		});
-		//window.location.href = "/";
+		if(goToHome){
+			window.location.href = "/";
+		}
 	}
 }
 

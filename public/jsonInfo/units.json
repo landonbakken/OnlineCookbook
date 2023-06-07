@@ -12,8 +12,10 @@
 		"metric":{
 			"milliliter": 1000,
 			"liter": 1
+		},
+		"unofficial":{
+			"pinch": 1
 		}
-
 	},
 	"weight":{
 		"imperial":{

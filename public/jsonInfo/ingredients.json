@@ -620,5 +620,43 @@
 			"Fun fact: not actually a berry"
 		],
 		"needsMoreInfo": true
+	},
+	"oats": {
+		"displayName": "Oats",
+		"cost": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "grain",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"None"
+		],
+		"notes": [
+			"None"
+		],
+		"needsMoreInfo": true
+	},
+	"pecans": {
+		"displayName": "Pecans",
+		"cost": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Nut",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"None"
+		],
+		"notes": [
+			"None"
+		],
+		"needsMoreInfo": true
 	}
 }
