@@ -43,7 +43,6 @@ async function httpGetAsync(theUrl, callback) {
 	jsonFile[IDName]["displayName"] = displayName;
 	jsonFile[IDName]["totalTime"] = totalTime;
 	jsonFile[IDName]["effortTime"] = effortTime;
-	jsonFile[IDName]["ingredients"] = {"crust":{"salt":{"amount": 20,"unit": "gram"}},"salt":{"amount": 20,"unit": "gram"}};
 	jsonFile[IDName]["type"] = type;
 	jsonFile[IDName]["parent"] = "recipes";
 	jsonFile[IDName]["ethnicity"] = ethnicity;
@@ -52,6 +51,14 @@ async function httpGetAsync(theUrl, callback) {
 	jsonFile[IDName]["directions"] = directionsList;
 	jsonFile[IDName]["cookersNotes"] = notesList;
 	jsonFile[IDName]["needsMoreInfo"] = needsMoreInfo;
+
+	jsonFile[IDName]["ingredients"] = {};
+	for(var ingredient of ingredientContainer.children){
+		var ingredientSubList = {};
+		ingredientSubList["unit"] = ingredient.querySelector("[unit-input]").value.toLowerCase().replaceAll(" ", "")
+		ingredientSubList["amount"] = ingredient.querySelector("[amount-input]").value.toLowerCase().replaceAll(" ", "")
+		jsonFile[IDName]["ingredients"][ingredient.querySelector("[ingredient-input]").value.toLowerCase().replaceAll(" ", "")] = ingredientSubList;
+	}
 
 	//send the json file
     xmlHttp.open("POST", theUrl, true); // true for asynchronous
