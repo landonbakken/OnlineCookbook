@@ -56,6 +56,7 @@ async function httpGetAsync(theUrl, callback) {
 	jsonFile[IDName]["ingredients"] = {};
 	for(var ingredient of ingredientContainer.children){
 		if(ingredient.classList.contains("sub-ingredient-container")){
+			var ingredientSubList = {};
 			ingredientSubList[ingredient.children[0].value] = {};
 			jsonFile[IDName]["ingredients"][ingredient.children[0].value] = {};
 			console.log(ingredient.children[1]);
@@ -154,7 +155,7 @@ function setValues(data){
 			//add sublist ingredients
 			for(var subIngredient = 0; subIngredient < Object.keys(ingredientInfo).length; subIngredient++){
 				addSubIngredient();
-				console.log(ingredientInfo[Object.keys(ingredientInfo)[subIngredient]]);
+				//console.log(ingredientInfo[Object.keys(ingredientInfo)[subIngredient]]);
 				
 				const container = card.children[card.children.length -1];
 				container.querySelector("[ingredient-input]").value = ingredients[Object.keys(ingredientInfo)[subIngredient]]["displayName"];
@@ -180,11 +181,19 @@ function addIngredient(){
 }
 function removeIngredient(){
 	if(ingredientContainer.children.length > 0){
-		if(ingredientContainer.children[ingredientContainer.children.length - 1].classList.contains('sub-ingredient-container') && ingredientContainer.children[ingredientContainer.children.length - 1].children.length > 0){
-			ingredientContainer.children[ingredientContainer.children.length - 1].children[ingredientContainer.children[ingredientContainer.children.length - 1].children.length - 1].remove();
+		const lastItem = ingredientContainer.children[ingredientContainer.children.length - 1];
+		console.log(ingredientContainer.children.length);
+		if(lastItem.classList.contains('sub-ingredient-container')){
+			if(lastItem.children.length == 1){
+				lastItem.remove();
+			}
+			else{
+				//console.log(lastItem.children[lastItem.children.length - 1]);
+				lastItem.children[lastItem.children.length - 1].remove();
+			}
 		}
 		else{
-			ingredientContainer.children[ingredientContainer.children.length - 1].remove();
+			lastItem.remove();
 		}
 	}
 }

@@ -582,5 +582,43 @@
 		"specialized": -1,
 		"restrictions": [],
 		"notes": []
+	},
+	"rhubarb": {
+		"displayName": "Rhubarb",
+		"cost": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "plant",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"None"
+		],
+		"notes": [
+			"The leaves are toxic."
+		],
+		"needsMoreInfo": true
+	},
+	"strawberries": {
+		"displayName": "Strawberries",
+		"cost": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Fruit",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"None"
+		],
+		"notes": [
+			"Fun fact: not actually a berry"
+		],
+		"needsMoreInfo": true
 	}
 }

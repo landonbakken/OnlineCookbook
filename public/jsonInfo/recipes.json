@@ -166,32 +166,11 @@
 		],
 		"needsMoreInfo": true,
 		"ingredients": {
-			"salt": {
-				"unit": "gram",
-				"amount": "20",
-				"test": {}
-			},
 			"test": {
-				"bayleaves": {
-					"unit": "liter",
-					"amount": "2"
-				},
 				"sugar": {
-					"unit": "tablespoon",
-					"amount": "5"
-				},
-				"basil": {
-					"unit": "milliliter",
-					"amount": "7"
-				},
-				"cinnamon": {
-					"unit": "cup",
-					"amount": "21"
+					"unit": "teaspoon",
+					"amount": "1"
 				}
-			},
-			"chicken": {
-				"unit": "cup",
-				"amount": "5"
 			}
 		}
 	}
