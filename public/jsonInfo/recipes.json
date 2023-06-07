@@ -150,18 +150,6 @@
 		"displayName": "Chicken Tikka Masala",
 		"totalTime": "1",
 		"effortTime": "2",
-		"ingredients": {
-			"crust": {
-				"salt": {
-					"amount": 20,
-					"unit": "gram"
-				}
-			},
-			"salt": {
-				"amount": 20,
-				"unit": "gram"
-			}
-		},
 		"type": "Main Course",
 		"parent": "recipes",
 		"ethnicity": "Indian",
@@ -176,6 +164,35 @@
 			"Very Tasty and not too hard to make",
 			"Served with rice and a vegetables"
 		],
-		"needsMoreInfo": true
+		"needsMoreInfo": true,
+		"ingredients": {
+			"salt": {
+				"unit": "gram",
+				"amount": "20",
+				"test": {}
+			},
+			"test": {
+				"bayleaves": {
+					"unit": "liter",
+					"amount": "2"
+				},
+				"sugar": {
+					"unit": "tablespoon",
+					"amount": "5"
+				},
+				"basil": {
+					"unit": "milliliter",
+					"amount": "7"
+				},
+				"cinnamon": {
+					"unit": "cup",
+					"amount": "21"
+				}
+			},
+			"chicken": {
+				"unit": "cup",
+				"amount": "5"
+			}
+		}
 	}
 }

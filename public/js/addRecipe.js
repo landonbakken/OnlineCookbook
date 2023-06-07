@@ -6,6 +6,7 @@ var unitList; //const, but it has to be set with json file later
 const ingredientTemplate = document.getElementById("ingredient-template");
 const ingredientContainer = document.getElementById("ingredient-container");
 const ingredientDataList = document.getElementById("ingredient-datalist");
+const ingredientParentTemplate = document.getElementById("ingredient-sub-template")
 loadLists();
 
 
@@ -54,10 +55,25 @@ async function httpGetAsync(theUrl, callback) {
 
 	jsonFile[IDName]["ingredients"] = {};
 	for(var ingredient of ingredientContainer.children){
-		var ingredientSubList = {};
-		ingredientSubList["unit"] = ingredient.querySelector("[unit-input]").value.toLowerCase().replaceAll(" ", "")
-		ingredientSubList["amount"] = ingredient.querySelector("[amount-input]").value.toLowerCase().replaceAll(" ", "")
-		jsonFile[IDName]["ingredients"][ingredient.querySelector("[ingredient-input]").value.toLowerCase().replaceAll(" ", "")] = ingredientSubList;
+		if(ingredient.classList.contains("sub-ingredient-container")){
+			ingredientSubList[ingredient.children[0].value] = {};
+			jsonFile[IDName]["ingredients"][ingredient.children[0].value] = {};
+			console.log(ingredient.children[1]);
+			for(var subIngredient of ingredient.children){
+				if(subIngredient.classList.contains("sub-ingredient")){
+					var subIngredientSubList = {};
+					subIngredientSubList["unit"] = subIngredient.querySelector("[unit-input]").value.toLowerCase().replaceAll(" ", "")
+					subIngredientSubList["amount"] = subIngredient.querySelector("[amount-input]").value.toLowerCase().replaceAll(" ", "")
+					jsonFile[IDName]["ingredients"][ingredient.children[0].value][subIngredient.querySelector("[ingredient-input]").value.toLowerCase().replaceAll(" ", "")] = subIngredientSubList;
+				}
+			}
+		}
+		else{
+			var ingredientSubList = {};
+			ingredientSubList["unit"] = ingredient.querySelector("[unit-input]").value.toLowerCase().replaceAll(" ", "")
+			ingredientSubList["amount"] = ingredient.querySelector("[amount-input]").value.toLowerCase().replaceAll(" ", "")
+			jsonFile[IDName]["ingredients"][ingredient.querySelector("[ingredient-input]").value.toLowerCase().replaceAll(" ", "")] = ingredientSubList;
+		}
 	}
 
 	//send the json file
@@ -81,7 +97,7 @@ function submitInfo(){
 			// Log the received response
 			console.log("Received: ", response);
 		});
-		window.location.href = "/";
+		//window.location.href = "/";
 	}
 }
 
@@ -122,12 +138,30 @@ function setValues(data){
 	document.getElementById("needs-more-info-input").checked = data["needsMoreInfo"];
 
 	for(var ingredient = 0; ingredient < Object.keys(data["ingredients"]).length; ingredient++){
-		addIngredient();
 		const ingredientInfo = data["ingredients"][Object.keys(data["ingredients"])[ingredient]];
-		const container = ingredientContainer.children[ingredientContainer.children.length -1];
-		container.querySelector("[ingredient-input]").value = ingredients[Object.keys(data["ingredients"])[ingredient]]["displayName"];
-		container.querySelector("[amount-input]").value = ingredientInfo["amount"];
-		container.querySelector("[unit-input]").value = ingredientInfo["unit"];
+		if(ingredientInfo["unit"] != null && ingredientInfo["amount"] != null){
+			addIngredient();
+			const container = ingredientContainer.children[ingredientContainer.children.length -1];
+			container.querySelector("[ingredient-input]").value = ingredients[Object.keys(data["ingredients"])[ingredient]]["displayName"];
+			container.querySelector("[amount-input]").value = ingredientInfo["amount"];
+			container.querySelector("[unit-input]").value = ingredientInfo["unit"];
+		}
+		else{
+			//add sublist
+			const card = ingredientParentTemplate.content.cloneNode(true).children[0];
+			ingredientContainer.append(card);
+			card.children[0].value = Object.keys(data["ingredients"])[ingredient]
+			//add sublist ingredients
+			for(var subIngredient = 0; subIngredient < Object.keys(ingredientInfo).length; subIngredient++){
+				addSubIngredient();
+				console.log(ingredientInfo[Object.keys(ingredientInfo)[subIngredient]]);
+				
+				const container = card.children[card.children.length -1];
+				container.querySelector("[ingredient-input]").value = ingredients[Object.keys(ingredientInfo)[subIngredient]]["displayName"];
+				container.querySelector("[amount-input]").value = ingredientInfo[Object.keys(ingredientInfo)[subIngredient]]["amount"];
+				container.querySelector("[unit-input]").value = ingredientInfo[Object.keys(ingredientInfo)[subIngredient]]["unit"];
+			}
+		}
 	}
 }
 
@@ -146,6 +180,25 @@ function addIngredient(){
 }
 function removeIngredient(){
 	if(ingredientContainer.children.length > 0){
-		ingredientContainer.children[ingredientContainer.children.length - 1].remove();
+		if(ingredientContainer.children[ingredientContainer.children.length - 1].classList.contains('sub-ingredient-container') && ingredientContainer.children[ingredientContainer.children.length - 1].children.length > 0){
+			ingredientContainer.children[ingredientContainer.children.length - 1].children[ingredientContainer.children[ingredientContainer.children.length - 1].children.length - 1].remove();
+		}
+		else{
+			ingredientContainer.children[ingredientContainer.children.length - 1].remove();
+		}
 	}
+}
+function addSubIngredient(){
+	if(!ingredientContainer.children[ingredientContainer.children.length - 1].classList.contains('sub-ingredient-container')){
+		const card = ingredientParentTemplate.content.cloneNode(true).children[0];
+		ingredientContainer.append(card);
+	}
+	const card = ingredientTemplate.content.cloneNode(true).children[0];
+	card.classList.add('sub-ingredient');
+	ingredientContainer.children[ingredientContainer.children.length - 1].append(card);
+}
+function addSublist(){
+    const card = ingredientParentTemplate.content.cloneNode(true).children[0];
+    ingredientContainer.append(card);
+	addSubIngredient();
 }

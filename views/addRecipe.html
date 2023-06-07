@@ -54,7 +54,9 @@
 				<ul id="ingredient-container">
 				</ul>
 				<button onclick="addIngredient()">Add ingredient</button>
-				<button onclick="removeIngredient()">Remove ingredient</button>
+				<button onclick="addSubIngredient()">Add sub ingredient</button>
+				<button onclick="addSublist()">Add sublist</button>
+				<button onclick="removeIngredient()">Remove bottom</button>
 			</li>
 			<li id="directions-set">
 				<label for="directions-input">Directions (mix dry ingredients, let it sit for an hour...):</label>
@@ -77,9 +79,14 @@
 	</div>
 	<template id="ingredient-template">
 		<li>
-			<input type="text" list="ingredient-datalist" ingredient-input>
-			<input type="text" amount-input>
-			<input type="text" list="unit-list" unit-input>
+			<input type="text" placeholder="ingrdient" list="ingredient-datalist" ingredient-input>
+			<input type="text" placeholder="amount" amount-input>
+			<input type="text" list="unit-list" placeholder="unit" unit-input>
+		</li>
+    </template>
+	<template id="ingredient-sub-template">
+		<li class="sub-ingredient-container">
+			<input type="text" placeholder="sub-list title" sub-title-input>
 		</li>
     </template>
 	<datalist id="ingredient-datalist">
