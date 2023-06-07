@@ -78,6 +78,9 @@ app.get("/jsonInfo/ingredients", (req, res) => {
 app.get("/jsonInfo/recipes", (req, res) => {
 	res.sendFile(__dirname + "/public/jsonInfo/recipes.json");
 });
+app.get("/jsonInfo/units", (req, res) => {
+	res.sendFile(__dirname + "/public/jsonInfo/units.json");
+});
 
 
 //start

@@ -49,13 +49,15 @@
 				<br>
 				<input type="text" id="servings-input">
 			</li>
-			<!--<li id="ingredients-set">
-				<label for="effort-time-input">Effort time (prep time):</label>
-				<br>
-				<input type="text" id="effort-time-input">
-			</li>-->
+			<li id="ingredients-set">
+				<label for="ingredient-container">Ingredient, Amount, Unit</label>
+				<ul id="ingredient-container">
+				</ul>
+				<button onclick="addIngredient()">Add ingredient</button>
+				<button onclick="removeIngredient()">Remove ingredient</button>
+			</li>
 			<li id="directions-set">
-				<label for="directions-input">Directions (mix dries, let it sit for an hour...):</label>
+				<label for="directions-input">Directions (mix dry ingredients, let it sit for an hour...):</label>
 				<br>
 				<textarea rows="6" cols="50" id="directions-input"></textarea>
 			</li>
@@ -73,6 +75,29 @@
 		<br>
 		<input type="button" value="Submit" onclick="submitInfo()">
 	</div>
-
+	<template id="ingredient-template">
+		<li>
+			<input type="text" list="ingredient-datalist" ingredient-input>
+			<input type="text" amount-input>
+			<input type="text" list="unit-list" unit-input>
+		</li>
+    </template>
+	<datalist id="ingredient-datalist">
+	</datalist>
+	<datalist id="unit-list">
+		<option value="Teaspoon"></option>
+		<option value="Tablespoon"></option>
+		<option value="Ounce"></option>
+		<option value="Cup"></option>
+		<option value="Pint"></option>
+		<option value="Quart"></option>
+		<option value="Gallon"></option>
+		<option value="Milliliter"></option>
+		<option value="Liter"></option>
+		<option value="Ounce"></option>
+		<option value="Pound"></option>
+		<option value="Gram"></option>
+		<option value="Kilogram"></option>
+	</datalist>
 </body>
 </html>

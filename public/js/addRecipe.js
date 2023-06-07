@@ -1,10 +1,20 @@
 console.log("js be working");
 var splitURL = window.location.href.split("/");
 const urlToSendTo = "http://" + splitURL[2] + "/recieve";
+var ingredients; //const, but it has to be set with json file later
+var unitList; //const, but it has to be set with json file later
+const ingredientTemplate = document.getElementById("ingredient-template");
+const ingredientContainer = document.getElementById("ingredient-container");
+const ingredientDataList = document.getElementById("ingredient-datalist");
+loadLists();
+
 
 //if specific recipe in the url set those values
 if(document.URL.split("/")[document.URL.split("/").length - 1] != "recipe"){
 	editRecipe(document.URL.split("/")[document.URL.split("/").length - 1]);
+}
+else{
+	addIngredient();
 }
 
 // Define a function to send an HTTP request asynchronously
@@ -74,6 +84,18 @@ function editRecipe(recipeID){
 	});
 }
 
+async function loadLists(){
+	//set ingredient list
+	let file = await fetch("/jsonInfo/ingredients.json")
+	ingredients = await file.json()
+
+	for(var ingredient of Object.keys(ingredients)){
+		var option = document.createElement('option');
+		option.value = ingredients[ingredient]["displayName"];
+		ingredientDataList.appendChild(option);
+	}
+}
+
 async function getJsonData(id, callback) {
 	let file = await fetch("/jsonInfo/recipes.json")
 	let recipes = await file.json()
@@ -91,6 +113,15 @@ function setValues(data){
 	fillTextboxWithList(data["directions"], "directions-input");
 	fillTextboxWithList(data["cookersNotes"], "notes-input");
 	document.getElementById("needs-more-info-input").checked = data["needsMoreInfo"];
+
+	for(var ingredient = 0; ingredient < Object.keys(data["ingredients"]).length; ingredient++){
+		addIngredient();
+		const ingredientInfo = data["ingredients"][Object.keys(data["ingredients"])[ingredient]];
+		const container = ingredientContainer.children[ingredientContainer.children.length -1];
+		container.querySelector("[ingredient-input]").value = ingredients[Object.keys(data["ingredients"])[ingredient]]["displayName"];
+		container.querySelector("[amount-input]").value = ingredientInfo["amount"];
+		container.querySelector("[unit-input]").value = ingredientInfo["unit"];
+	}
 }
 
 function fillTextboxWithList(objectList, elementID){
@@ -99,5 +130,15 @@ function fillTextboxWithList(objectList, elementID){
 		if(objectID != objectList.length - 1){
 			document.getElementById(elementID).value += "\n"
 		}
+	}
+}
+
+function addIngredient(){
+    const card = ingredientTemplate.content.cloneNode(true).children[0];
+    ingredientContainer.append(card);
+}
+function removeIngredient(){
+	if(ingredientContainer.children.length > 0){
+		ingredientContainer.children[ingredientContainer.children.length - 1].remove();
 	}
 }
