@@ -658,5 +658,24 @@
 			"None"
 		],
 		"needsMoreInfo": true
+	},
+	"honey": {
+		"displayName": "Honey",
+		"cost": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Sweetener ",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"Local honey is known to help with allergies.  It is antibacterial and never spoils."
+		],
+		"needsMoreInfo": true
 	}
 }
