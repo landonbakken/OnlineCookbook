@@ -5,6 +5,7 @@ const nums = "1234567890"
 
 let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
+let ingredientAmounts = {}
 let ingredients = ""
 let servings = ""
 let units = ""
@@ -22,7 +23,7 @@ async function getJsonData() {
 	file = await fetch("/jsonInfo/units.json")
 	units = await file.json()
 	data = data[id]
-	console.log(data)
+	//console.log(data)
 }
 
 function bestUnit(amount, currentUnit){
@@ -60,10 +61,8 @@ servingsInput.addEventListener("input", e => {
 		servingsInput.value = servings.substring(0, servings.length - 1)
 	}
 	servings = servingsInput.value
-	console.log(measurementList)
 	for(let measurement of measurementList){
-		console.log(data.ingredients);
-		measurement.textContent = bestUnit(data.ingredients[measurement.id].amount * servings / data.defaultServings, data.ingredients[measurement.id].unit)
+		measurement.textContent = bestUnit(ingredientAmounts[measurement.id].amount * servings / data.defaultServings, ingredientAmounts[measurement.id].unit)
 	}
 	setNotes()
 })
@@ -90,6 +89,7 @@ getJsonData().then(() => {
 			
 			let subIngredientList = data.ingredients[ingredientID];
 			for(let subIngredientID in subIngredientList){
+				ingredientAmounts[subIngredientID] = subIngredientList[subIngredientID]
 				let info = ingredients[subIngredientID];
 				const card = ingredientTemplate.content.cloneNode(true).children[0]
 				const header = card.querySelector("[ingredient-link]")
@@ -110,6 +110,7 @@ getJsonData().then(() => {
 			subListHeader.id = subListHeader.innerHTML;
 		}
 		else{
+			ingredientAmounts[ingredientID] = ingredients[ingredientID]
 			let info = ingredients[ingredientID]
 			const card = ingredientTemplate.content.cloneNode(true).children[0]
 			const header = card.querySelector("[ingredient-link]")
