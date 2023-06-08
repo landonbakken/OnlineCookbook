@@ -22,7 +22,7 @@ async function getJsonData() {
 	file = await fetch("/jsonInfo/units.json")
 	units = await file.json()
 	data = data[id]
-	//console.log(data)
+	console.log(data)
 }
 
 function bestUnit(amount, currentUnit){
@@ -61,12 +61,9 @@ servingsInput.addEventListener("input", e => {
 	}
 	servings = servingsInput.value
 	console.log(measurementList)
-	for(let measurementID in measurementList){
-		let measurement = measurementList[measurementID]
-		console.log(measurement.id)
-		if(data.ingredients[measurement.id] != null){
-			measurement.textContent = bestUnit(data.ingredients[measurement.id].amount * servings / data.defaultServings, data.ingredients[measurement.id].unit)
-		}
+	for(let measurement of measurementList){
+		console.log(data.ingredients);
+		measurement.textContent = bestUnit(data.ingredients[measurement.id].amount * servings / data.defaultServings, data.ingredients[measurement.id].unit)
 	}
 	setNotes()
 })
@@ -90,7 +87,6 @@ getJsonData().then(() => {
 			//console.log(subListHeader);
 			subListHeader.textContent = ingredientID + ":"
 			ingredientList.append(subListHeader)
-			measurementList.push(subListHeader)
 			
 			let subIngredientList = data.ingredients[ingredientID];
 			for(let subIngredientID in subIngredientList){
@@ -108,8 +104,10 @@ getJsonData().then(() => {
 				card.classList.add('sub-list-piece')
 				card.classList.remove('list-piece')
 				ingredientList.append(card)
-				//measurementList.push(body)
+				measurementList.push(body);
 			}
+			//measurementList.push(subListHeader.innerHTML)
+			subListHeader.id = subListHeader.innerHTML;
 		}
 		else{
 			let info = ingredients[ingredientID]

@@ -166,15 +166,15 @@
 		],
 		"needsMoreInfo": true,
 		"ingredients": {
-			"test": {
-				"sugar": {
-					"unit": "teaspoon",
-					"amount": "1"
-				}
-			},
 			"sugar": {
 				"unit": "teaspoon",
-				"amount": "6"
+				"amount": "1"
+			},
+			"test": {
+				"salt": {
+					"unit": "milliliter",
+					"amount": "2"
+				}
 			}
 		}
 	},
