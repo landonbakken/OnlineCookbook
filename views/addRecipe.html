@@ -11,8 +11,12 @@
 </head>
 <body>
 	<div id="info">
-		<input type="button" value="Back" onclick="history.back()">
-		<br>
+		</div id="top-menu">
+			<input type="button" value="Back" onclick="history.back()">
+			<input type="button" value="Home" onclick="goToHome()">
+			<input type="button" value="Save" onclick="submitInfo(false)">
+			<input type="button" value="Submit" onclick="submitInfo()">
+		</div>
 		<div id="info-set">
 			<li id="name-set">
 				<label for="name-input">Recipe Name:</label>
@@ -75,8 +79,6 @@
 			</li>
 		</div>
 		<br>
-		<input type="button" value="Submit" onclick="submitInfo()">
-		<input type="button" value="Save" onclick="submitInfo(false)">
 	</div>
 	<template id="ingredient-template">
 		<li>

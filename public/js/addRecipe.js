@@ -104,6 +104,10 @@ function submitInfo(goToHome = true){
 	}
 }
 
+function goToHome(){
+	window.location.href = "/";
+}
+
 function editRecipe(recipeID){
 	getJsonData(recipeID, function(data){
 		setValues(data);

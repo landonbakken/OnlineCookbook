@@ -17,6 +17,7 @@ async function httpGetAsync(theUrl, callback) {
 	var IDName = document.getElementById("name-input").value.toLowerCase().replaceAll(" ", "");
 	var displayName = document.getElementById("name-input").value;
 	var cost = document.getElementById("cost-input").value;
+	var tableToGram = document.getElementById("weight-ratio-input").value;
 	var type = document.getElementById("type-input").value;
 	var specialized = document.getElementById("specialized-input").checked;
 	var needsMoreInfo = document.getElementById("needs-more-info-input").checked;
@@ -29,6 +30,7 @@ async function httpGetAsync(theUrl, callback) {
 	jsonFile[IDName] = JSON.parse("{}");
 	jsonFile[IDName]["displayName"] = displayName;
 	jsonFile[IDName]["cost"] = cost;
+	jsonFile[IDName]["tableToGram"] = tableToGram;
 	jsonFile[IDName]["health"] = {"saturated fats": -1, "calories": -1 };
 	jsonFile[IDName]["type"] = type;
 	jsonFile[IDName]["parent"] = "ingredients";
@@ -65,6 +67,10 @@ function submitInfo(goToHome = true){
 	}
 }
 
+function goToHome(){
+	window.location.href = "/";
+}
+
 function editIngredient(ingredientID){
 	//console.log("Editing ingredient with ID " + ingredientID);
 	getJsonData(ingredientID, function(data){
@@ -81,9 +87,10 @@ async function getJsonData(id, callback) {
 function setValues(data){
 	document.getElementById("name-input").value = data["displayName"];
 	document.getElementById("cost-input").value = data["cost"];
+	document.getElementById("weight-ratio-input").value = data["tableToGram"];
 	document.getElementById("type-input").value = data["type"];
 	document.getElementById("specialized-input").checked = data["specialized"];
-	document.getElementById("specialized-input").checked = data["needsMoreInfo"];
+	document.getElementById("needs-more-info-input").checked = data["needsMoreInfo"];
 	
 	fillTextboxWithList(data["restrictions"], "restrictions-input");
 	fillTextboxWithList(data["notes"], "notes-input");

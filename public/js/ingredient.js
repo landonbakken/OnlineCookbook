@@ -18,10 +18,18 @@ async function getJsonData() {
 	data = ingredients[id]
 }
 
+function goToHome(){
+	window.location.href = "/";
+}
+
 getJsonData().then(() => {
 	document.getElementById("name").textContent = data.displayName + ":"
 	document.getElementById("type").textContent = data.type
 	document.getElementById("cost").textContent = "$" + data.cost + " per gram"
+	if(data.tableToGram == null){
+		data.tableToGram = "-1";
+	}
+	document.getElementById("tablespoon-to-gram").textContent = "One tablespoon is " + data.tableToGram + " grams";
 	//document.getElementById("specialized").textContent = "How specialized: " + data.specialized
 	
 	/*let healthList = document.getElementById("health");

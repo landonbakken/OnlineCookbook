@@ -26,6 +26,10 @@ async function getJsonData() {
 	//console.log(data)
 }
 
+function goToHome(){
+	window.location.href = "/";
+}
+
 function bestUnit(amount, currentUnit){
 	if(amount != 1){
 		return amount + " " + currentUnit + "s" //placeholder that does nothing currently

@@ -11,7 +11,13 @@
 </head>
 <body>
 	<div id="info">
-		<input type="button" value="Back" onclick="history.back()">
+		</div id="top-menu">
+			<input type="button" value="Back" onclick="history.back()">
+			<input type="button" value="Home" onclick="goToHome()">
+			<input type="button" value="Save" onclick="submitInfo(false)">
+			<input type="button" value="Submit" onclick="submitInfo()">
+		</div>
+
 		<br>
 		<div id="info-set">
 			<li id="name-set">
@@ -23,6 +29,11 @@
 				<label for="cost-input">Cost per gram (usd):</label>
 				<br>
 				<input type="text" id="cost-input">
+			</li>
+			<li id="weight-ratio-set">
+				<label for="weight-ratio-input">How many grams is a tablespoon:</label>
+				<br>
+				<input type="text" id="weight-ratio-input">
 			</li>
 			<!--<li id="health-set">
 				<div>Health:</div>
@@ -70,8 +81,6 @@
 			</li>
 		</div>
 		<br>
-		<input type="button" value="Submit" onclick="submitInfo()">
-		<input type="button" value="Save" onclick="submitInfo(false)">
 	</div>
 
 </body>
