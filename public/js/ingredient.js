@@ -1,6 +1,6 @@
 const substituteTemplate = document.querySelector("[substitute-template]")
 const healthTemplate = document.querySelector("[health-template]")
-const emptyJson = JSON.parse("{}")
+const emptyJson = {}
 
 let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""

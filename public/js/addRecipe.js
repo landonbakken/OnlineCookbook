@@ -39,8 +39,8 @@ async function httpGetAsync(theUrl, callback) {
 	
 
 	//add to json file
-	var jsonFile = JSON.parse("{}");
-	jsonFile[IDName] = JSON.parse("{}");
+	var jsonFile = {};
+	jsonFile[IDName] = {};
 	jsonFile[IDName]["displayName"] = displayName;
 	jsonFile[IDName]["totalTime"] = totalTime;
 	jsonFile[IDName]["effortTime"] = effortTime;

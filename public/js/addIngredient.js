@@ -26,8 +26,8 @@ async function httpGetAsync(theUrl, callback) {
 	var notesList = document.getElementById("notes-input").value.replace(/(\r\n|\n|\r)/gm, "~").split("~")
 
 	//add to json file
-	var jsonFile = JSON.parse("{}");
-	jsonFile[IDName] = JSON.parse("{}");
+	var jsonFile = {};
+	jsonFile[IDName] = {};
 	jsonFile[IDName]["displayName"] = displayName;
 	jsonFile[IDName]["cost"] = cost;
 	jsonFile[IDName]["tableToGram"] = tableToGram;
