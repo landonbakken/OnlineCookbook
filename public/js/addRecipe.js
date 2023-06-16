@@ -93,14 +93,16 @@ async function httpGetAsync(theUrl, callback) {
 }
 
 function submitInfo(goToHome = true){
+	document.getElementById("loading-container").style.display = "inline-block";
 	if(document.getElementById("name-input").value != ""){
 		httpGetAsync(urlToSendTo, function(response) {
 			// Log the received response
 			console.log("Received: ", response);
+			if(goToHome){
+				window.location.href = "/recipe/" + document.getElementById("name-input").value.toLowerCase().replaceAll(" ", "");
+			}
+			setTimeout(() => {document.getElementById("loading-container").style.display = "none";}, 400);
 		});
-		if(goToHome){
-			window.location.href = "/";
-		}
 	}
 }
 

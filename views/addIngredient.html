@@ -14,8 +14,6 @@
 		</div id="top-menu">
 			<input type="button" value="Back" onclick="history.back()">
 			<input type="button" value="Home" onclick="goToHome()">
-			<input type="button" value="Save" onclick="submitInfo(false)">
-			<input type="button" value="Submit" onclick="submitInfo()">
 		</div>
 
 		<br>
@@ -81,7 +79,11 @@
 			</li>
 		</div>
 		<br>
+		<input type="button" value="Save" onclick="submitInfo(false)">
+		<input type="button" value="Submit" onclick="submitInfo()">
+		<div id="loading-container">
+			<div id="loading"></div>
+		</div>
 	</div>
-
 </body>
 </html>
