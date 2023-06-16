@@ -10,14 +10,14 @@
 		"type": "carbohydrate",
 		"parent": "ingredients",
 		"substitutes": {},
-		"specialized": true,
+		"specialized": false,
 		"restrictions": [
 			"None"
 		],
 		"notes": [
 			"Can be substituted with honey, powdered sugar, and a lot more."
 		],
-		"needsMoreInfo": true
+		"needsMoreInfo": false
 	},
 	"milk": {
 		"displayName": "Milk",
@@ -676,6 +676,210 @@
 		],
 		"notes": [
 			"Local honey is known to help with allergies.  It is antibacterial and never spoils."
+		],
+		"needsMoreInfo": true
+	},
+	"italianseasoning": {
+		"displayName": "Italian Seasoning ",
+		"cost": "0.19",
+		"tableToGram": "5.5",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Seasoning ",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"1/4 cup Basil",
+			"1/4 cup Oregano ",
+			"2T Rosemary ",
+			"1T Marjoram ",
+			"1T Thyme"
+		],
+		"needsMoreInfo": true
+	},
+	"bakingpowder": {
+		"displayName": "Baking Powder",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"None"
+		],
+		"notes": [
+			"None"
+		],
+		"needsMoreInfo": true
+	},
+	"parsley": {
+		"displayName": "Parsley ",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"dill": {
+		"displayName": "Dill",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"yeast": {
+		"displayName": "Yeast",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"yogurt": {
+		"displayName": "Yogurt ",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Dairy",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"garlic": {
+		"displayName": "Garlic",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"cornstarch": {
+		"displayName": "Cornstarch",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"None"
+		],
+		"notes": [
+			"As a substitute, double the amount in all-purpose-flower and slowly mix in water until there are no more chunks."
+		],
+		"needsMoreInfo": true
+	},
+	"iodine": {
+		"displayName": "Iodine",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"None"
+		],
+		"notes": [
+			"Not really an ingredient, but is a supplement."
+		],
+		"needsMoreInfo": true
+	},
+	"vinegar": {
+		"displayName": "Vinegar",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"None"
+		],
+		"notes": [
+			"None"
 		],
 		"needsMoreInfo": true
 	}
