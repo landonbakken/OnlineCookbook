@@ -321,18 +321,23 @@
 	},
 	"tumeric": {
 		"displayName": "Tumeric",
-		"cost": -1,
+		"cost": "-1",
+		"tableToGram": "undefined",
 		"health": {
-			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "spice",
 		"parent": "ingredients",
 		"substitutes": {},
-		"specialized": -1,
-		"restrictions": [],
-		"notes": []
+		"specialized": true,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"NOT THE RIGHT ONE, THIS IS SPELLED WRONG "
+		],
+		"needsMoreInfo": false
 	},
 	"currypowder": {
 		"displayName": "Currry Powder",
@@ -885,6 +890,686 @@
 		],
 		"notes": [
 			"None"
+		],
+		"needsMoreInfo": true
+	},
+	"garammasala": {
+		"displayName": "Garam Masala",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"kashmirichili": {
+		"displayName": "Kashmiri Chili",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"vegetableoil": {
+		"displayName": "Vegetable Oil",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"Can often be substituted with canola oil"
+		],
+		"needsMoreInfo": true
+	},
+	"canolaoil": {
+		"displayName": "Canola Oil",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"onion": {
+		"displayName": "Onion",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Plant",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"Lots of different types (make sure you have the right one)"
+		],
+		"needsMoreInfo": true
+	},
+	"cardimum": {
+		"displayName": "Cardimum",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"tomatopuree": {
+		"displayName": "Tomato Puree",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Sauce",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"Basically just tomato sauce but fancy words"
+		],
+		"needsMoreInfo": true
+	},
+	"redchilipowder": {
+		"displayName": "Red Chili Powder",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"heavycream": {
+		"displayName": "Heavy Cream",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Dairy",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"Lactose intolerant people can't have"
+		],
+		"notes": [
+			"Thick milk"
+		],
+		"needsMoreInfo": true
+	},
+	"halfandhalf": {
+		"displayName": "Half and Half",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Dairy",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"Lactose intolerant people can't have"
+		],
+		"notes": [
+			"Thick milk"
+		],
+		"needsMoreInfo": true
+	},
+	"sweetredpepper": {
+		"displayName": "Sweet Red Pepper",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Plant",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"turmeric": {
+		"displayName": "Turmeric",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"salmon": {
+		"displayName": "Salmon",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Meat",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"soysauce": {
+		"displayName": "Soy Sauce",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Sauce",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"gingersyrup": {
+		"displayName": "Ginger Syrup",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"chiligarlicsauce": {
+		"displayName": "Chili Garlic Sauce",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Sauce",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"limejuice": {
+		"displayName": "Lime Juice",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Juice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"slicedalmonds": {
+		"displayName": "Sliced Almonds",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Nut",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"sesameseeds": {
+		"displayName": "Sesame Seeds",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Seed",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"avocadooil": {
+		"displayName": "Avocado Oil",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Oil",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"groundbeef": {
+		"displayName": "Ground Beef",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Meat",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"celery": {
+		"displayName": "Celery",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Plant",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"carrot": {
+		"displayName": "Carrot",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Plant",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"applecidervinegar": {
+		"displayName": "Apple Cider Vinegar",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"Not very tasty but very very healthy"
+		],
+		"needsMoreInfo": true
+	},
+	"tabascosauce": {
+		"displayName": "Tabasco Sauce",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"ketchup": {
+		"displayName": "Ketchup",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Condiment",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"lard": {
+		"displayName": "Lard",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Oil",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"softwheatflour": {
+		"displayName": "Soft Wheat Flour",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Flour",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"rutabaga": {
+		"displayName": "Rutabaga",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Plant",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"marjoram": {
+		"displayName": "Marjoram",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Misc",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"unclemike'sspices": {
+		"displayName": "Uncle Mike's Spices",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice Mix",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": true,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"This isn't a brand, it is literally Uncle Mike's spices and I don't know what is in it."
+		],
+		"needsMoreInfo": true
+	},
+	"potato": {
+		"displayName": "Potato",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Root",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"groundpork": {
+		"displayName": "Ground Pork",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Meat",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"groundvenison": {
+		"displayName": "Ground Venison",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Meat",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
 		],
 		"needsMoreInfo": true
 	}

@@ -61,7 +61,9 @@
 		"directions": [
 			"Get food",
 			"Make food",
-			"Eat food"
+			"Eat food",
+			"",
+			"DELETE"
 		],
 		"cookersNotes": [
 			"Very Tasty and not too hard to make",
@@ -81,98 +83,221 @@
 	},
 	"chocolatechipcookies": {
 		"displayName": "Chocolate Chip Cookies",
-		"totalTime": 30,
-		"ingredients": {
-			"butter": {
-				"amount": 1,
-				"unit": "cup"
-			},
-			"sugar": {
-				"amount": 1,
-				"unit": "cup"
-			},
-			"brownsugar": {
-				"amount": 1,
-				"unit": "cup"
-			},
-			"eggs": {
-				"amount": 2,
-				"unit": "egg"
-			},
-			"vanillaextract": {
-				"amount": 2,
-				"unit": "teaspoon"
-			},
-			"bakingsoda": {
-				"amount": 1,
-				"unit": "teaspoon"
-			},
-			"water": {
-				"amount": 2,
-				"unit": "teaspoon"
-			},
-			"salt": {
-				"amount": 0.5,
-				"unit": "teaspoon"
-			},
-			"allpurposeflour": {
-				"amount": 3,
-				"unit": "cup"
-			},
-			"chocolatechips": {
-				"amount": 2,
-				"unit": "cup"
-			},
-			"choppedwalnuts": {
-				"amount": 1,
-				"unit": "cup"
-			}
-		},
+		"totalTime": "30",
+		"effortTime": "15",
 		"type": "Desert",
 		"parent": "recipes",
-		"eatTime": "any time",
 		"ethnicity": "None",
-		"difficulty": 1,
-		"effortTime": 15,
-		"defaultServings": 48,
-		"cookersNotes": [
-			"The water added must be hot"
-		],
+		"difficulty": "2",
+		"defaultServings": "48",
 		"directions": [
 			"Preheat the oven to 350 degrees farenheight (175 degrees celcius)",
 			"Beat butter, white sugar, and brown sugar with an electric mixer in a large bowl until smooth. Beat in eggs, one at a time, then stir in vanilla. Dissolve baking soda in hot water. Add to batter along with salt. Stir in flour, chocolate chips, and walnuts.",
 			"Drop spoonfuls of dough 2 inches apart onto ungreased baking sheets.",
 			"Bake in the preheated oven until edges are nicely browned, about 10 minutes. Cool on the baking sheets briefly before removing to a wire rack to cool completely."
-		]
+		],
+		"cookersNotes": [
+			"The water added must be hot"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"butter": {
+				"unit": "cup",
+				"amount": "1"
+			},
+			"sugar": {
+				"unit": "cup",
+				"amount": "1"
+			},
+			"brownsugar": {
+				"unit": "cup",
+				"amount": "1"
+			},
+			"eggs": {
+				"unit": "egg",
+				"amount": "2"
+			},
+			"vanillaextract": {
+				"unit": "teaspoon",
+				"amount": "2"
+			},
+			"bakingsoda": {
+				"unit": "teaspoon",
+				"amount": "1"
+			},
+			"water": {
+				"unit": "teaspoon",
+				"amount": "2"
+			},
+			"salt": {
+				"unit": "teaspoon",
+				"amount": "0.5"
+			},
+			"allpurposeflour": {
+				"unit": "cup",
+				"amount": "3"
+			},
+			"chocolatechips": {
+				"unit": "cup",
+				"amount": "2"
+			},
+			"choppedwalnuts": {
+				"unit": "cup",
+				"amount": "1"
+			}
+		}
 	},
 	"chickentikkamasala": {
 		"displayName": "Chicken Tikka Masala",
-		"totalTime": "1",
-		"effortTime": "2",
-		"type": "Main Course",
+		"totalTime": "45",
+		"effortTime": "15",
+		"type": "Dinner",
 		"parent": "recipes",
 		"ethnicity": "Indian",
 		"difficulty": "6",
 		"defaultServings": "5",
 		"directions": [
-			"Get food",
-			"Make food",
-			"Eat food"
+			"In a bowl, combine chicken with all of the ingredients for the chicken marinade; let marinate for 10 minutes to an hour (or overnight if time allows).",
+			"",
+			"Heat oil in a large skillet or pot over medium-high heat. When sizzling, add chicken pieces in batches of two or three, making sure not to crowd the pan. Fry until browned for only 3 minutes on each side. Set aside and keep warm. (You will finish cooking the chicken in the sauce.)",
+			"",
+			"Melt the butter in the same pan. Fry the onions until soft (about 3 minutes) while scraping up any browned bits stuck on the bottom of the pan. ",
+			"",
+			"Add garlic and ginger and sauté for 1 minute until fragrant, then add garam masala, cumin, turmeric and coriander. Fry for about 20 seconds until fragrant, while stirring occasionally.",
+			"",
+			"Pour in the tomato puree, chili powders and salt. Let simmer for about 10-15 minutes, stirring occasionally until sauce thickens and becomes a deep brown red colour.",
+			"",
+			"Stir the cream and sugar through the sauce. Add the chicken and its juices back into the pan and cook for an additional 8-10 minutes until chicken is cooked through and the sauce is thick and bubbling. ",
+			"",
+			"Pour in the water to thin out the sauce, if needed."
 		],
 		"cookersNotes": [
-			"Very Tasty and not too hard to make",
-			"Served with rice and a vegetables"
+			"Garnish with cilantro or coriander and serve with hot garlic butter rice and fresh homemade Naan bread or sticky rice."
 		],
-		"needsMoreInfo": true,
+		"needsMoreInfo": false,
 		"ingredients": {
-			"sugar": {
-				"unit": "teaspoon",
-				"amount": "1"
-			},
-			"test": {
-				"salt": {
-					"unit": "milliliter",
+			"Chicken Marinade": {
+				"chicken": {
+					"unit": "gram",
+					"amount": "800"
+				},
+				"yogurt": {
+					"unit": "cup",
+					"amount": "1"
+				},
+				"garlic": {
+					"unit": "tablespoon",
+					"amount": "1.5"
+				},
+				"gingerpowder": {
+					"unit": "tablespoon",
+					"amount": "1"
+				},
+				"garammasala": {
+					"unit": "teaspoon",
 					"amount": "2"
+				},
+				"turmeric": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"groundcumin": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"kashmirichili": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"salt": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"corianderpowder": {
+					"unit": "teaspoon",
+					"amount": ".5"
+				},
+				"cardamonpowder": {
+					"unit": "teaspoon",
+					"amount": ".5"
+				}
+			},
+			"Sauce": {
+				"vegetableoil": {
+					"unit": "tablespoon",
+					"amount": "2"
+				},
+				"butter": {
+					"unit": "tablespoon",
+					"amount": "2"
+				},
+				"onion": {
+					"unit": "gram",
+					"amount": "250"
+				},
+				"garlic": {
+					"unit": "tablespoon",
+					"amount": "1.5"
+				},
+				"gingerpowder": {
+					"unit": "tablespoon",
+					"amount": "1"
+				},
+				"garammasala": {
+					"unit": "teaspoon",
+					"amount": "1.5"
+				},
+				"groundcumin": {
+					"unit": "teaspoon",
+					"amount": "1.5"
+				},
+				"turmeric": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"corianderpowder": {
+					"unit": "teaspoon",
+					"amount": "1.5"
+				},
+				"tomatopuree": {
+					"unit": "gram",
+					"amount": "400"
+				},
+				"kashmirichili": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"redchilipowder": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"salt": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"heavycream": {
+					"unit": "cup",
+					"amount": "1"
+				},
+				"halfandhalf": {
+					"unit": "cup",
+					"amount": ".5"
+				},
+				"sweetredpepper": {
+					"unit": "gram",
+					"amount": "150"
+				},
+				"cardamonpowder": {
+					"unit": "teaspoon",
+					"amount": ".5"
+				},
+				"brownsugar": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"water": {
+					"unit": "cup",
+					"amount": ".25"
 				}
 			}
 		}
@@ -386,6 +511,274 @@
 			"salt": {
 				"unit": "pinch",
 				"amount": "4"
+			}
+		}
+	},
+	"pansearedsalmon": {
+		"displayName": "Pan Seared Salmon",
+		"totalTime": "30",
+		"effortTime": "20",
+		"type": "Dinner",
+		"parent": "recipes",
+		"ethnicity": "None",
+		"difficulty": "7",
+		"defaultServings": "4",
+		"directions": [
+			"Mix the sauce in a bowl.",
+			"",
+			"Melt butter or oil in a pan on medium-high heat.",
+			"Put in almonds and sesame seeds until the sesame seeds start popping. Take them out and put them in a bowl.",
+			"",
+			"Place the salmon in the pan skin-down for 2 minutes",
+			"Flip and let it sear for another 2 minutes",
+			"Pour the sauce on the salmon and wait for 1 minute",
+			"Flip and wait for 1 minute",
+			"Take the salmon off and tent it with tin-foil",
+			"",
+			"Reduce the sauce left in the pan until caramelized",
+			"Put the sautéed almond slices and sesame seeds in the sauce then pour 3/4 of it on the salmon",
+			"",
+			"Serve with some cilantro and avocado garnish along with limes and the left over sauce to put on individually."
+		],
+		"cookersNotes": [
+			"Really good the next day, make more of the almonds and sauce if you like it."
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"": {
+				"unit": "",
+				"amount": ""
+			}
+		}
+	},
+	"sloppyjoe's": {
+		"displayName": "Sloppy Joe's",
+		"totalTime": "90",
+		"effortTime": "15",
+		"type": "Dinner",
+		"parent": "recipes",
+		"ethnicity": "None",
+		"difficulty": "4",
+		"defaultServings": "8",
+		"directions": [
+			"Brown the meat in high heat",
+			"Clarify veggies in butter on low heat",
+			"Start adding everything while stirring frequently.",
+			"Boil for 45 minutes while taste testing to adjust seasoning",
+			"Serve on hamburger buns and chips"
+		],
+		"cookersNotes": [
+			"The ground beef should be lean",
+			"Adding carrot is optional",
+			"",
+			"You can also eat with cheese and pickles. ",
+			"",
+			"Very sloppy (:",
+			""
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"groundbeef": {
+				"unit": "pound",
+				"amount": "2"
+			},
+			"celery": {
+				"unit": "cup",
+				"amount": "2"
+			},
+			"onion": {
+				"unit": "cup",
+				"amount": "1"
+			},
+			"carrot": {
+				"unit": "cup",
+				"amount": ".5"
+			},
+			"sweetredpepper": {
+				"unit": "cup",
+				"amount": ".5"
+			},
+			"salt": {
+				"unit": "teaspoon",
+				"amount": "2"
+			},
+			"blackpepper": {
+				"unit": "teaspoon",
+				"amount": ".5"
+			},
+			"italianseasoning": {
+				"unit": "teaspoon",
+				"amount": ".5"
+			},
+			"redpepperflakes": {
+				"unit": "teaspoon",
+				"amount": ".25"
+			},
+			"groundcumin": {
+				"unit": "teaspoon",
+				"amount": ".25"
+			},
+			"chilipowder": {
+				"unit": "teaspoon",
+				"amount": ".5"
+			},
+			"corianderpowder": {
+				"unit": "teaspoon",
+				"amount": ".25"
+			},
+			"parsley": {
+				"unit": "teaspoon",
+				"amount": "1"
+			},
+			"brownsugar": {
+				"unit": "tablespoon",
+				"amount": "2"
+			},
+			"applecidervinegar": {
+				"unit": "tablespoon",
+				"amount": "2.5"
+			},
+			"tabascosauce": {
+				"unit": "tablespoon",
+				"amount": "2"
+			},
+			"yellowmustard": {
+				"unit": "cup",
+				"amount": ".3"
+			},
+			"ketchup": {
+				"unit": "cup",
+				"amount": "1.25"
+			},
+			"water": {
+				"unit": "cup",
+				"amount": "1.5"
+			}
+		}
+	},
+	"pastiepies": {
+		"displayName": "Pastie Pies",
+		"totalTime": "90",
+		"effortTime": "30",
+		"type": "Dinner",
+		"parent": "recipes",
+		"ethnicity": "None",
+		"difficulty": "5",
+		"defaultServings": "20",
+		"directions": [
+			"Crust:",
+			"Cut lard and butter into the flour along with salt",
+			"Beat eggs, vinegar and water and then drizzle into flour mixture",
+			"Make 20 balls of dough at around 110 grams each",
+			"Let cool while making filling",
+			"",
+			"Filing:",
+			"Chop everything besides Uncle Mike's spices, the meat, and potatoes and clarify with a dollop of butter.",
+			"Chop potatoes into small chunks and add into the clarified mix along with the meat and spices",
+			"",
+			"Combining:",
+			"Roll out dough into circles while doing this",
+			"Add about 170 grams of the filling and wrap the dough circle around it into a sort of bulging half circle.",
+			"Cut slits in the top",
+			"Put on a pan with the rest and bake for 1 hour at 350F",
+			""
+		],
+		"cookersNotes": [
+			"If you want them to look pretty, do an egg or cream wash on the pastie before cooking."
+		],
+		"needsMoreInfo": true,
+		"ingredients": {
+			"Crust": {
+				"lard": {
+					"unit": "gram",
+					"amount": "205"
+				},
+				"butter": {
+					"unit": "gram",
+					"amount": "227"
+				},
+				"softwheatflour": {
+					"unit": "gram",
+					"amount": "350"
+				},
+				"allpurposeflour": {
+					"unit": "gram",
+					"amount": "1100"
+				},
+				"salt": {
+					"unit": "gram",
+					"amount": "15"
+				},
+				"eggs": {
+					"unit": "pinch",
+					"amount": "4"
+				},
+				"vinegar": {
+					"unit": "tablespoon",
+					"amount": "3"
+				},
+				"water": {
+					"unit": "cup",
+					"amount": "1.25"
+				}
+			},
+			"Filling": {
+				"onion": {
+					"unit": "pound",
+					"amount": "1"
+				},
+				"rutabaga": {
+					"unit": "pound",
+					"amount": "1.5"
+				},
+				"celery": {
+					"unit": "gram",
+					"amount": "150"
+				},
+				"carrot": {
+					"unit": "gram",
+					"amount": "250"
+				},
+				"garlic": {
+					"unit": "gram",
+					"amount": "12"
+				},
+				"salt": {
+					"unit": "teaspoon",
+					"amount": "3"
+				},
+				"blackpepper": {
+					"unit": "teaspoon",
+					"amount": "2"
+				},
+				"thyme": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"marjoram": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"parsley": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"unclemike'sspices": {
+					"unit": "teaspoon",
+					"amount": "1"
+				},
+				"potato": {
+					"unit": "pound",
+					"amount": "3"
+				},
+				"groundpork": {
+					"unit": "pound",
+					"amount": "1"
+				},
+				"groundvenison": {
+					"unit": "pound",
+					"amount": "1"
+				}
 			}
 		}
 	}
