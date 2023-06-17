@@ -49,38 +49,6 @@
 			}
 		}
 	},
-	"salmon": {
-		"displayName": "Salmon",
-		"totalTime": "43",
-		"effortTime": "15",
-		"type": "Main Course",
-		"parent": "recipes",
-		"ethnicity": "None",
-		"difficulty": "5",
-		"defaultServings": "5",
-		"directions": [
-			"Get food",
-			"Make food",
-			"Eat food",
-			"",
-			"DELETE"
-		],
-		"cookersNotes": [
-			"Very Tasty and not too hard to make",
-			"Served with rice and a vegetable"
-		],
-		"needsMoreInfo": true,
-		"ingredients": {
-			"salt": {
-				"unit": "gram",
-				"amount": "20"
-			},
-			"sugar": {
-				"unit": "cup",
-				"amount": "13"
-			}
-		}
-	},
 	"chocolatechipcookies": {
 		"displayName": "Chocolate Chip Cookies",
 		"totalTime": "30",
