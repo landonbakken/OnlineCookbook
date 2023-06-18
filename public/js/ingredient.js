@@ -9,6 +9,9 @@ let ingredients = ""
 function editIngredient(){
 	window.location.href = "/add/ingredient/" + id;
 }
+function deleteIngredient(){
+	window.location.href = "/remove/ingredient/" + id;
+}
 
 async function getJsonData() {
 	let file = await fetch("/jsonInfo/recipes.json")

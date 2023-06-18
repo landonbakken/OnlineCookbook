@@ -651,7 +651,7 @@
 		"needsMoreInfo": false,
 		"ingredients": {
 			"eggyolk": {
-				"unit": "pinch",
+				"unit": "item",
 				"amount": "3"
 			},
 			"keylimejuice": {
@@ -777,7 +777,7 @@
 					"amount": "15"
 				},
 				"eggs": {
-					"unit": "pinch",
+					"unit": "item",
 					"amount": "4"
 				},
 				"vinegar": {

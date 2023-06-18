@@ -42,9 +42,26 @@ app.get("/add/recipe", (req, res) => {
 app.get("/add/recipe/:recipe", (req, res) => {
 	res.sendFile(__dirname + "/views/addRecipe.html")
 });
-/*app.get("/add/recipe", (req, res) => {
-	res.sendFile(__dirname + "/views/addRecipe.html")
-});*/
+
+//delete items
+app.get("/remove/recipe/:recipe", (req, res) => {
+	console.log("remove " + req.params.recipe + " from recipes");
+	if(removeFromJsonFile(req.params.recipe, __dirname + "/public/jsonInfo/recipes.json")){
+		res.send("Succesfully removed " + req.params.recipe + " from recipes");
+	}
+	else{
+		res.send("Could not remove " + req.params.recipe + " from recipes");
+	}
+});
+app.get("/remove/ingredient/:ingredient", (req, res) => {
+	console.log("remove " + req.params.ingredient + " from ingredients");
+	if(removeFromJsonFile(req.params.ingredient, __dirname + "/public/jsonInfo/ingredients.json")){
+		res.send("Succesfully removed " + req.params.ingredient + " from ingredients");
+	}
+	else{
+		res.send("Could not remove " + req.params.recipe + " from ingredients");
+	}
+});
 
 //recieve info
 app.post("/recieve", (req, res) => {
@@ -68,7 +85,21 @@ function addToJsonFile(addition, filename){
 	//console.log(info);
 	info[Object.keys(addition)[0]] = addition[Object.keys(addition)[0]];
 	jsonFile = JSON.stringify(info, null, "\t");
-	fs.writeFileSync(filename,jsonFile);
+	fs.writeFileSync(filename, jsonFile);
+}
+
+function removeFromJsonFile(propertyToRemove, filename){
+	let jsonFile = fs.readFileSync(filename);
+	let info = JSON.parse(jsonFile);
+	//console.log(info);
+	var existed = false;
+	if(info[propertyToRemove] != null){
+		existed = true;
+		delete info[propertyToRemove];
+	}
+	jsonFile = JSON.stringify(info, null, "\t");
+	fs.writeFileSync(filename, jsonFile);
+	return existed;
 }
 
 //jsonInfo

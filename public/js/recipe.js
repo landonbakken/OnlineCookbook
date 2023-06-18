@@ -14,6 +14,9 @@ let measurementList = []
 function editRecipe(){
 	window.location.href = "/add/recipe/" + id;
 }
+function deleteRecipe(){
+	window.location.href = "/remove/recipe/" + id;
+}
 
 async function getJsonData() {
 	let file = await fetch("/jsonInfo/ingredients")
