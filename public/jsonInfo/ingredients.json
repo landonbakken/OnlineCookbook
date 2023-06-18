@@ -1572,5 +1572,85 @@
 			""
 		],
 		"needsMoreInfo": true
+	},
+	"eggyolk": {
+		"displayName": "Egg Yolk",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Dairy",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"Strain away whites with fingers"
+		],
+		"needsMoreInfo": true
+	},
+	"keylimejuice": {
+		"displayName": "Key Lime Juice",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Juice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"This is not regular lime juice - it comes from key limes (mini limes)"
+		],
+		"needsMoreInfo": true
+	},
+	"creamcheese": {
+		"displayName": "Cream Cheese",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Dairy",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"sweetenedcondensedmilk": {
+		"displayName": "Sweetened Condensed Milk",
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Dairy",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
 	}
 }
