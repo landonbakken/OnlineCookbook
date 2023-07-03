@@ -848,5 +848,168 @@
 				}
 			}
 		}
+	},
+	"frosting": {
+		"displayName": "Frosting",
+		"totalTime": "50",
+		"effortTime": "20",
+		"type": "Dessert",
+		"parent": "recipes",
+		"ethnicity": "None",
+		"difficulty": "8",
+		"defaultServings": "12",
+		"directions": [
+			"Mix milk and flour and keep stirring on low-heat until thickened (make a roux)",
+			"put in fridge until fully cooled",
+			"",
+			"Add everything else and beat it in a mixer until you can't feel the sugar crunches (don't over-mix)"
+		],
+		"cookersNotes": [
+			"Very hard to make - it fails very easily:",
+			"- can't be too warm when beating",
+			"- needs to mixed enough",
+			"- can't over-mix"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"sugar": {
+				"unit": "cup",
+				"amount": "1"
+			},
+			"butter": {
+				"unit": "cup",
+				"amount": "1"
+			},
+			"vanillaextract": {
+				"unit": "teaspoon",
+				"amount": "1"
+			},
+			"allpurposeflour": {
+				"unit": "tablespoon",
+				"amount": "3"
+			},
+			"milk": {
+				"unit": "cup",
+				"amount": "1"
+			}
+		}
+	},
+	"biscotti": {
+		"displayName": "Biscotti",
+		"totalTime": "45",
+		"effortTime": "15",
+		"type": "Dessert",
+		"parent": "recipes",
+		"ethnicity": "None",
+		"difficulty": "5",
+		"defaultServings": "40",
+		"directions": [
+			"Mix all ingredients without heating it up too much. Use fingertips to crumble butter into other ingredients.",
+			"",
+			"Shape into 8 to 10 loafs and convection bake for 30 minutes at 325F ",
+			"",
+			"Cut each loaf into 4-5 pieces and bake for around 6-7 minutes",
+			"",
+			"Lemon glaze: (optional)",
+			"Zest and juice as many lemons as you want and put into mason jar",
+			"Add powdered sugar until it is thickened to what you want"
+		],
+		"cookersNotes": [
+			"Make sure butter is cold",
+			"Try not to heat it up while mixing - use fingertips ",
+			"",
+			"You can add flavoring into the biscotti such as lemon zest"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"butter": {
+				"unit": "cup",
+				"amount": "1"
+			},
+			"sugar": {
+				"unit": "gram",
+				"amount": "150"
+			},
+			"eggs": {
+				"unit": "item",
+				"amount": "2"
+			},
+			"allpurposeflour": {
+				"unit": "gram",
+				"amount": "575"
+			},
+			"bakingsoda": {
+				"unit": "teaspoon",
+				"amount": "1"
+			},
+			"honey": {
+				"unit": "gram",
+				"amount": "100"
+			},
+			"Lemon Glaze": {
+				"lemonzest": {
+					"unit": "item",
+					"amount": "1"
+				},
+				"lemonjuice": {
+					"unit": "item",
+					"amount": "1"
+				},
+				"powderedsugar": {
+					"unit": "tablespoon",
+					"amount": "2"
+				}
+			}
+		}
+	},
+	"guacamole": {
+		"displayName": "Guacamole",
+		"totalTime": "15",
+		"effortTime": "15",
+		"type": "Condiment",
+		"parent": "recipes",
+		"ethnicity": "Mexican",
+		"difficulty": "2",
+		"defaultServings": "5",
+		"directions": [
+			"Mix everything in large bowl",
+			"Taste test to perfection "
+		],
+		"cookersNotes": [
+			"You can always add more, but it is very hard to take things out",
+			"The lime should be small-ish",
+			"Olive oil can be a substitute for the Avocado oil"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"avocado": {
+				"unit": "gram",
+				"amount": "1000"
+			},
+			"avocadooil": {
+				"unit": "gram",
+				"amount": "17"
+			},
+			"blackpepper": {
+				"unit": "gram",
+				"amount": "2"
+			},
+			"onion": {
+				"unit": "gram",
+				"amount": "75"
+			},
+			"limejuice": {
+				"unit": "item",
+				"amount": "1"
+			},
+			"salt": {
+				"unit": "gram",
+				"amount": "5"
+			},
+			"cilantro": {
+				"unit": "gram",
+				"amount": "11"
+			}
+		}
 	}
 }
