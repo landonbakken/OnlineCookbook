@@ -27,14 +27,18 @@ li {
   min-height: 10px;
 }
 
+div {
+  margin-left: 15px;
+}
+
 .sub-list-piece {
-  width: 100%;
+  width: auto;
   height: 100%;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .list-piece {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -78,10 +82,12 @@ li {
   margin-top: 5px;
   font-size: 20px;
   color: black;
+  margin-left: 15px;
 }
 
 li {
   list-style-type: none;
+  margin-left: 15px;
 }
 
 body {

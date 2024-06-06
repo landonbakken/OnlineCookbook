@@ -28,13 +28,17 @@ li{
 	min-height: 10px;
 }
 
+div{
+	margin-left: 15px;
+}
+
 .sub-list-piece{
-	width: 100%;
+	width: auto;
 	height: 100%;
-	margin-left: 20px;
+	margin-left: 15px;
 }
 .list-piece{
-	width: 100%;
+	width: auto;
 	height: 100%;
 }
 
@@ -58,18 +62,21 @@ li{
 .title{
 	font-size: 40px;
 	margin: 0px;
+	//margin-left: 15px;
 }
 
 .small-title{
 	color: rgb(93, 93, 93);
 	font-size: 24px;
 	margin: 0px;
+	//margin-left: 15px;
 }
 
 .small{
 	color: rgb(93, 93, 93);
 	font-size: 20px;
 	margin: 0px;
+	//margin-left: 15px;
 }
 
 .info{
@@ -77,10 +84,12 @@ li{
 	margin-top: 5px;
 	font-size: 20px;
 	color: black;
+	margin-left: 15px;
 }
 
 li{
-	list-style-type: none;	
+	list-style-type: none;
+	margin-left: 15px;
 }
 
 body{
