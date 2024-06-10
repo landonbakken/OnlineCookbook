@@ -11,6 +11,19 @@ let servings = ""
 let units = ""
 let measurementList = []
 
+function refreshNumbers(){
+	servings = servingsInput.value
+	if(!nums.includes(servings[servings.length - 1])){
+		servingsInput.value = servings.substring(0, servings.length - 1)
+	}
+	console.log(ingredientAmounts);
+	for(let measurement of measurementList){
+		console.log(ingredientAmounts[measurement.id]);
+		measurement.textContent = bestUnit(ingredientAmounts[measurement.id].amount * servings / data.defaultServings, ingredientAmounts[measurement.id].unit)
+	}
+	setNotes()
+}
+
 function editRecipe(){
 	window.location.href = "/add/recipe/" + id;
 }
@@ -22,11 +35,10 @@ async function getJsonData() {
 	let file = await fetch("/jsonInfo/ingredients")
 	ingredients = await file.json()
 	file = await fetch("/jsonInfo/recipes.json")
-	data = await file.json()
+	recipes = await file.json()
 	file = await fetch("/jsonInfo/units.json")
 	units = await file.json()
-	data = data[id]
-	//console.log(data)
+	data = recipes[id]
 }
 
 function goToHome(){
@@ -63,20 +75,15 @@ function correctServings(sentence){
 }
 
 servingsInput.addEventListener("input", e => {
-	servings = e.target.value
-	if(!nums.includes(servings[servings.length - 1])){
-		servingsInput.value = servings.substring(0, servings.length - 1)
-	}
-	servings = servingsInput.value
-	for(let measurement of measurementList){
-		measurement.textContent = bestUnit(ingredientAmounts[measurement.id].amount * servings / data.defaultServings, ingredientAmounts[measurement.id].unit)
-	}
-	setNotes()
+	refreshNumbers();
 })
 
 getJsonData().then(() => {
+	//set servings to default value for recipe
 	servingsInput.value = data.defaultServings
 	servings = data.defaultServings
+
+	//enter static info
 	document.getElementById("name").textContent = data.displayName + ":"
 	document.getElementById("type").textContent = data.type
 	document.getElementById("eatTime").textContent = data.eatTime
@@ -86,25 +93,32 @@ getJsonData().then(() => {
 	document.getElementById("ethnicity").textContent = "Ethnicity: " + data.ethnicity
 	document.getElementById("difficulty").textContent = "Difficulty: " + data.difficulty + "/10"
 	
+	//get references to dynamic info (things that chagne with servings)
+	//get all ingredients or sub-ingredient lists and cycle through
 	let ingredientList = document.getElementById("ingredients");
 	for(let ingredientID in data.ingredients){
-		if(data.ingredients[ingredientID].amount == undefined){ //sub list
+		//for sub list stuff
+		if(data.ingredients[ingredientID].amount == undefined){
+			//create sub list  header
 			const subListHeader = subListHeaderTemplate.content.cloneNode(true).children[0]
-			//console.log(subListHeader);
+			//set sub list header text
 			subListHeader.textContent = ingredientID + ":"
+
+			//idk
 			ingredientList.append(subListHeader)
 			
-			let subIngredientList = data.ingredients[ingredientID];
-			for(let subIngredientID in subIngredientList){
-				ingredientAmounts[subIngredientID] = subIngredientList[subIngredientID]
+			//get sub ingredients and loop through
+			let subIngredients = data.ingredients[ingredientID];
+			for(let subIngredientID in subIngredients){
+				ingredientAmounts[subIngredientID] = subIngredients[subIngredientID]
 				let info = ingredients[subIngredientID];
 				const card = ingredientTemplate.content.cloneNode(true).children[0]
 				const header = card.querySelector("[ingredient-link]")
 				const body = card.querySelector("[ingredient-measurement]")
 				header.textContent = info.displayName
 				header.href = "/ingredient/" + subIngredientID
-				body.textContent = subIngredientList[subIngredientID].amount * servings / data.defaultServings + " " + subIngredientList[subIngredientID].unit
-				if(subIngredientList[subIngredientID].amount * servings / data.defaultServings != 1){
+				body.textContent = subIngredients[subIngredientID].amount * servings / data.defaultServings + " " + subIngredients[subIngredientID].unit
+				if(subIngredients[subIngredientID].amount * servings / data.defaultServings != 1){
 					body.textContent += "s"
 				}
 				body.id = subIngredientID
@@ -113,11 +127,10 @@ getJsonData().then(() => {
 				ingredientList.append(card)
 				measurementList.push(body);
 			}
-			//measurementList.push(subListHeader.innerHTML)
 			subListHeader.id = subListHeader.innerHTML;
 		}
 		else{
-			ingredientAmounts[ingredientID] = ingredients[ingredientID]
+			ingredientAmounts[ingredientID] = data.ingredients[ingredientID]
 			let info = ingredients[ingredientID]
 			const card = ingredientTemplate.content.cloneNode(true).children[0]
 			const header = card.querySelector("[ingredient-link]")
@@ -133,8 +146,9 @@ getJsonData().then(() => {
 			measurementList.push(body)
 		}
 	}
-	setNotes()
+	refreshNumbers()
 })
+
 
 function setNotes(){
 	let cookersNotesList = document.getElementById("cookersNotes")
