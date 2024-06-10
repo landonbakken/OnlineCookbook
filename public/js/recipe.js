@@ -5,21 +5,19 @@ const nums = "1234567890"
 
 let id = document.URL.split("/")[document.URL.split("/").length - 1]
 let data = ""
-let ingredientAmounts = {}
+let dynamicIngredients = []
 let ingredients = ""
 let servings = ""
 let units = ""
-let measurementList = []
 
 function refreshNumbers(){
 	servings = servingsInput.value
 	if(!nums.includes(servings[servings.length - 1])){
 		servingsInput.value = servings.substring(0, servings.length - 1)
 	}
-	console.log(ingredientAmounts);
-	for(let measurement of measurementList){
-		console.log(ingredientAmounts[measurement.id]);
-		measurement.textContent = bestUnit(ingredientAmounts[measurement.id].amount * servings / data.defaultServings, ingredientAmounts[measurement.id].unit)
+
+	for(let ingredient of dynamicIngredients){
+		ingredient.body.textContent = bestUnit(ingredient.amount * servings / data.defaultServings, ingredient.unit)
 	}
 	setNotes()
 }
@@ -78,6 +76,35 @@ servingsInput.addEventListener("input", e => {
 	refreshNumbers();
 })
 
+function newDynamicIngredient(ingredient, ingredientID, parent){
+	//create ingredient card
+	card = ingredientTemplate.content.cloneNode(true).children[0]
+	header = card.querySelector("[ingredient-link]")
+	body = card.querySelector("[ingredient-measurement]")
+
+	//set static info
+	header.textContent = ingredients[ingredientID].displayName
+	header.href = "/ingredient/" + ingredientID
+
+	//set measurements
+	body.textContent = ingredient.amount + " " + ingredient.unit
+	if(ingredient.amount != 1){
+		body.textContent += "s"
+	}
+
+	//put in HTML
+	parent.append(card);
+
+	//put in list for future changes to servings
+	//let ingredientInfo = data.ingredients[ingredientID];
+	ingredient["body"] = body;
+	//console.log(ingredient);
+	dynamicIngredients.push(ingredient);
+
+	return card
+}
+
+
 getJsonData().then(() => {
 	//set servings to default value for recipe
 	servingsInput.value = data.defaultServings
@@ -100,50 +127,24 @@ getJsonData().then(() => {
 		//for sub list stuff
 		if(data.ingredients[ingredientID].amount == undefined){
 			//create sub list  header
-			const subListHeader = subListHeaderTemplate.content.cloneNode(true).children[0]
+			subListHeader = subListHeaderTemplate.content.cloneNode(true).children[0]
 			//set sub list header text
 			subListHeader.textContent = ingredientID + ":"
 
-			//idk
+			//put sublist header into HTML
 			ingredientList.append(subListHeader)
 			
 			//get sub ingredients and loop through
 			let subIngredients = data.ingredients[ingredientID];
 			for(let subIngredientID in subIngredients){
-				ingredientAmounts[subIngredientID] = subIngredients[subIngredientID]
-				let info = ingredients[subIngredientID];
-				const card = ingredientTemplate.content.cloneNode(true).children[0]
-				const header = card.querySelector("[ingredient-link]")
-				const body = card.querySelector("[ingredient-measurement]")
-				header.textContent = info.displayName
-				header.href = "/ingredient/" + subIngredientID
-				body.textContent = subIngredients[subIngredientID].amount * servings / data.defaultServings + " " + subIngredients[subIngredientID].unit
-				if(subIngredients[subIngredientID].amount * servings / data.defaultServings != 1){
-					body.textContent += "s"
-				}
-				body.id = subIngredientID
+				card = newDynamicIngredient(subIngredients[subIngredientID], subIngredientID, ingredientList)
 				card.classList.add('sub-list-piece')
 				card.classList.remove('list-piece')
-				ingredientList.append(card)
-				measurementList.push(body);
 			}
-			subListHeader.id = subListHeader.innerHTML;
+			subListHeader.id = subListHeader.innerHTML; //make the sublist id the title of the sublist
 		}
 		else{
-			ingredientAmounts[ingredientID] = data.ingredients[ingredientID]
-			let info = ingredients[ingredientID]
-			const card = ingredientTemplate.content.cloneNode(true).children[0]
-			const header = card.querySelector("[ingredient-link]")
-			const body = card.querySelector("[ingredient-measurement]")
-			header.textContent = info.displayName
-			header.href = "/ingredient/" + ingredientID
-			body.textContent = data.ingredients[ingredientID].amount * servings / data.defaultServings + " " + data.ingredients[ingredientID].unit
-			if(data.ingredients[ingredientID].amount * servings / data.defaultServings != 1){
-				body.textContent += "s"
-			}
-			body.id = ingredientID
-			ingredientList.append(card)
-			measurementList.push(body)
+			newDynamicIngredient(data.ingredients[ingredientID], ingredientID, ingredientList)
 		}
 	}
 	refreshNumbers()

@@ -512,12 +512,7 @@
 			"Really good the next day, make more of the almonds and sauce if you like it."
 		],
 		"needsMoreInfo": false,
-		"ingredients": {
-			"": {
-				"unit": "",
-				"amount": ""
-			}
-		}
+		"ingredients": {}
 	},
 	"sloppyjoe's": {
 		"displayName": "Sloppy Joe's",

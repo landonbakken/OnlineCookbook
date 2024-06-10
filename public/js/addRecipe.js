@@ -1,4 +1,3 @@
-console.log("js be working");
 var splitURL = window.location.href.split("/");
 const urlToSendTo = "http://" + splitURL[2] + "/recieve";
 var ingredients; //const, but it has to be set with json file later
@@ -59,7 +58,7 @@ async function httpGetAsync(theUrl, callback) {
 			var ingredientSubList = {};
 			ingredientSubList[ingredient.children[0].value] = {};
 			jsonFile[IDName]["ingredients"][ingredient.children[0].value] = {};
-			console.log(ingredient.children[1]);
+			//console.log(ingredient.children[1]);
 			for(var subIngredient of ingredient.children){
 				if(subIngredient.classList.contains("sub-ingredient")){
 					var subIngredientSubList = {};

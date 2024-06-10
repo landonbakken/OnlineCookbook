@@ -29,13 +29,14 @@ li{
 }
 
 div{
-	margin-left: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .sub-list-piece{
 	width: auto;
 	height: 100%;
-	margin-left: 15px;
+	margin-left: 10px;
 }
 .list-piece{
 	width: auto;
@@ -76,9 +77,13 @@ div{
 
 .info{
 	margin: 0px;
-	margin-top: 5px;
+	margin-top: 500px;
 	font-size: 20px;
 	color: black;
+}
+
+#info{
+	margin-top: 10px;
 }
 
 li{
