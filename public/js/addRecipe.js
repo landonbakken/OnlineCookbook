@@ -17,11 +17,45 @@ else{
 	addIngredient();
 }
 
+async function httpNewIngredient(displayName, url, callback){
+	var xmlHttp = new XMLHttpRequest();
+
+	var IDName = displayName.toLowerCase().replaceAll(" ", "");
+
+	var jsonFile = {};
+	//jsonFile[IDName] = {};
+	jsonFile[IDName]["displayName"] = displayName;
+	jsonFile[IDName]["cost"] = -1;
+	jsonFile[IDName]["tableToGram"] = -1;
+	jsonFile[IDName]["health"] = {"saturated fats": -1, "calories": -1 };
+	jsonFile[IDName]["type"] = "";
+	jsonFile[IDName]["parent"] = "ingredients";
+	jsonFile[IDName]["substitutes"] = {};
+	jsonFile[IDName]["specialized"] = false;
+	jsonFile[IDName]["restrictions"] = [""];
+	jsonFile[IDName]["notes"] = [""];
+	jsonFile[IDName]["needsMoreInfo"] = true;
+
+	//send the json file
+    xmlHttp.open("POST", url, true); // true for asynchronous
+	xmlHttp.setRequestHeader("Content-Type", "application/json");
+    xmlHttp.send(JSON.stringify(jsonFile));
+
+	// Set an event listener for when the request state changes
+    xmlHttp.onreadystatechange = function() {
+        // Check if the request is complete and successful
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+            // Call the callback function with the response text
+            callback(xmlHttp.responseText);
+		}
+    }
+}
+
 // Define a function to send an HTTP request asynchronously
 async function httpGetAsync(theUrl, callback) {
     // Create a new XMLHttpRequest object
     var xmlHttp = new XMLHttpRequest();
-    
+
 	//get all data from page
 	var IDName = document.getElementById("name-input").value.toLowerCase().replaceAll(" ", "");
 	var displayName = document.getElementById("name-input").value;
@@ -35,8 +69,7 @@ async function httpGetAsync(theUrl, callback) {
 	var notesList = document.getElementById("notes-input").value.replace(/(\r\n|\n|\r)/gm, "~").split("~")
 	var needsMoreInfo = document.getElementById("needs-more-info-input").checked
 	
-
-	//add to json file
+	//add recipe to json file
 	var jsonFile = {};
 	jsonFile[IDName] = {};
 	jsonFile[IDName]["displayName"] = displayName;
@@ -53,25 +86,49 @@ async function httpGetAsync(theUrl, callback) {
 
 	jsonFile[IDName]["ingredients"] = {};
 	for(var ingredient of ingredientContainer.children){
+		//if there is a sub list of ingredients
 		if(ingredient.classList.contains("sub-ingredient-container")){
 			var ingredientSubList = {};
 			ingredientSubList[ingredient.children[0].value] = {};
 			jsonFile[IDName]["ingredients"][ingredient.children[0].value] = {};
-			//console.log(ingredient.children[1]);
+			//loop through sub ingredients
 			for(var subIngredient of ingredient.children){
 				if(subIngredient.classList.contains("sub-ingredient")){
-					var subIngredientSubList = {};
-					subIngredientSubList["unit"] = subIngredient.querySelector("[unit-input]").value.toLowerCase().replaceAll(" ", "")
-					subIngredientSubList["amount"] = subIngredient.querySelector("[amount-input]").value.toLowerCase().replaceAll(" ", "")
-					jsonFile[IDName]["ingredients"][ingredient.children[0].value][subIngredient.querySelector("[ingredient-input]").value.toLowerCase().replaceAll(" ", "")] = subIngredientSubList;
+					//get ingredient name
+					var ingredientName = subIngredient.querySelector("[ingredient-input]").value;
+					var ingredientID = ingredientName.toLowerCase().replaceAll(" ", "");
+					
+					//if it doesnt exist, make it
+					if(!(ingredientID in ingredients)){
+						httpNewIngredient(ingredientName, theUrl, function(response){
+							console.log("Received: ", response);
+						});
+					}
+
+					//add to recipe json
+					var ingredientInfo = {};
+					ingredientInfo["unit"] = subIngredient.querySelector("[unit-input]").value.toLowerCase().replaceAll(" ", "")
+					ingredientInfo["amount"] = subIngredient.querySelector("[amount-input]").value.toLowerCase().replaceAll(" ", "")
+					jsonFile[IDName]["ingredients"][ingredient.children[0].value][ingredientID] = ingredientInfo;
 				}
 			}
 		}
 		else{
-			var ingredientSubList = {};
-			ingredientSubList["unit"] = ingredient.querySelector("[unit-input]").value.toLowerCase().replaceAll(" ", "")
-			ingredientSubList["amount"] = ingredient.querySelector("[amount-input]").value.toLowerCase().replaceAll(" ", "")
-			jsonFile[IDName]["ingredients"][ingredient.querySelector("[ingredient-input]").value.toLowerCase().replaceAll(" ", "")] = ingredientSubList;
+			var ingredientName = ingredient.querySelector("[ingredient-input]").value;
+			var ingredientID = ingredientName.toLowerCase().replaceAll(" ", "");
+
+			//if it doesnt exist, make it
+			if(!(ingredientID in ingredients)){
+				httpNewIngredient(ingredientName, theUrl, function(response){
+					console.log("Received: ", response);
+				});
+			}
+
+			//add to recipe json
+			var ingredientInfo = {};
+			ingredientInfo["unit"] = ingredient.querySelector("[unit-input]").value.toLowerCase().replaceAll(" ", "")
+			ingredientInfo["amount"] = ingredient.querySelector("[amount-input]").value.toLowerCase().replaceAll(" ", "")
+			jsonFile[IDName]["ingredients"][ingredientID] = ingredientInfo;
 		}
 	}
 

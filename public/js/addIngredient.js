@@ -11,7 +11,6 @@ if(document.URL.split("/")[document.URL.split("/").length - 1] != "ingredient"){
 async function httpGetAsync(theUrl, callback) {
     // Create a new XMLHttpRequest object
     var xmlHttp = new XMLHttpRequest();
-    
 
 	//get all data from page
 	var IDName = document.getElementById("name-input").value.toLowerCase().replaceAll(" ", "");

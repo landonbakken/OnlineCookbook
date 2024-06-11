@@ -116,5 +116,8 @@ getJsonData().then(() => {
     card.href = "/ingredient/" + ingredient
     body.textContent = data["type"]
     recipeCardContainer.append(card)
+
   }
+  updateSettings("ingredients");
+  updateSettings("recipes");
 });
