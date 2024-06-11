@@ -83,8 +83,13 @@ function newDynamicIngredient(ingredient, ingredientID, parent){
 	body = card.querySelector("[ingredient-measurement]")
 
 	//set static info
-	header.textContent = ingredients[ingredientID].displayName
-	header.href = "/ingredient/" + ingredientID
+	try{
+		header.textContent = ingredients[ingredientID].displayName
+		header.href = "/ingredient/" + ingredientID
+	}
+	catch{
+		console.error("couldnt find info for ingredient with ID " + ingredientID);
+	}
 
 	//set measurements
 	body.textContent = ingredient.amount + " " + ingredient.unit
