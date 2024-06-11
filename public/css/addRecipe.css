@@ -26,6 +26,16 @@ body {
   left: 6px;
 }
 
+.new-ingredient-indicator-hidden {
+  display: none;
+}
+
+.new-ingredient-indicator {
+  color: red;
+  font-size: small;
+  display: inline;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);

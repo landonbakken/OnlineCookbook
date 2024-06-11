@@ -26,16 +26,26 @@ body{
 	left: 6px;
 }
 
+.new-ingredient-indicator-hidden{
+	display: none;
+}
+
+.new-ingredient-indicator{
+	color: red;
+	font-size: small;
+	display: inline;
+}
+
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
 
 li{
 	list-style-type: none;
 	margin-bottom: 10px;
 }
- 
+
 .class, #substitutes, #health, #restrictions, #notes{
 	margin-top: 15px;
 	font-size: 18px;

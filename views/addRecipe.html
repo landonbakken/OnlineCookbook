@@ -85,9 +85,10 @@
 	</div>
 	<template id="ingredient-template">
 		<li>
-			<input type="text" placeholder="ingrdient" list="ingredient-datalist" ingredient-input>
+			<input type="text" placeholder="ingrdient" list="ingredient-datalist" oninput="checkIngredient(this)" ingredient-input>
 			<input type="text" placeholder="amount" amount-input>
 			<input type="text" list="unit-list" placeholder="unit" unit-input>
+			<p class="new-ingredient-indicator">new</p>
 		</li>
     </template>
 	<template id="ingredient-sub-template">

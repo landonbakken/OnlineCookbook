@@ -11,7 +11,7 @@ loadLists();
 
 //if specific recipe in the url set those values
 if(document.URL.split("/")[document.URL.split("/").length - 1] != "recipe"){
-	editRecipe(document.URL.split("/")[document.URL.split("/").length - 1]);
+	editRecipe(document.URL.split("/")[document.URL.split("/").length - 1]);	
 }
 else{
 	addIngredient();
@@ -22,7 +22,6 @@ async function httpGetAsync(theUrl, callback) {
     // Create a new XMLHttpRequest object
     var xmlHttp = new XMLHttpRequest();
     
-
 	//get all data from page
 	var IDName = document.getElementById("name-input").value.toLowerCase().replaceAll(" ", "");
 	var displayName = document.getElementById("name-input").value;
@@ -105,6 +104,18 @@ function submitInfo(goToHome = true){
 	}
 }
 
+function checkIngredient(inputField){
+	const newIngredientIndicator = inputField.parentElement.querySelector('p');
+
+        // Find the paragraph within the same <li> (assuming there's only one paragraph)
+	if(inputField.value.toLowerCase().replaceAll(" ", "") in ingredients){
+		newIngredientIndicator.className = "new-ingredient-indicator-hidden"
+	}
+	else{
+		newIngredientIndicator.className = "new-ingredient-indicator"
+	}
+}
+
 function goToHome(){
 	window.location.href = "/";
 }
@@ -148,11 +159,11 @@ function setValues(data){
 	for(var ingredient = 0; ingredient < Object.keys(data["ingredients"]).length; ingredient++){
 		const ingredientInfo = data["ingredients"][Object.keys(data["ingredients"])[ingredient]];
 		if(ingredientInfo["unit"] != null && ingredientInfo["amount"] != null){
-			addIngredient();
-			const container = ingredientContainer.children[ingredientContainer.children.length -1];
+			const container = addIngredient();
 			container.querySelector("[ingredient-input]").value = ingredients[Object.keys(data["ingredients"])[ingredient]]["displayName"];
 			container.querySelector("[amount-input]").value = ingredientInfo["amount"];
 			container.querySelector("[unit-input]").value = ingredientInfo["unit"];
+			checkIngredient(container.querySelector("[ingredient-input]"));
 		}
 		else{
 			//add sublist
@@ -161,13 +172,11 @@ function setValues(data){
 			card.children[0].value = Object.keys(data["ingredients"])[ingredient]
 			//add sublist ingredients
 			for(var subIngredient = 0; subIngredient < Object.keys(ingredientInfo).length; subIngredient++){
-				addSubIngredient();
-				//console.log(ingredientInfo[Object.keys(ingredientInfo)[subIngredient]]);
-				
-				const container = card.children[card.children.length -1];
+				const container = addSubIngredient();
 				container.querySelector("[ingredient-input]").value = ingredients[Object.keys(ingredientInfo)[subIngredient]]["displayName"];
 				container.querySelector("[amount-input]").value = ingredientInfo[Object.keys(ingredientInfo)[subIngredient]]["amount"];
 				container.querySelector("[unit-input]").value = ingredientInfo[Object.keys(ingredientInfo)[subIngredient]]["unit"];
+				checkIngredient(container.querySelector("[ingredient-input]"));
 			}
 		}
 	}
@@ -185,7 +194,9 @@ function fillTextboxWithList(objectList, elementID){
 function addIngredient(){
     const card = ingredientTemplate.content.cloneNode(true).children[0];
     ingredientContainer.append(card);
+	return card;
 }
+
 function removeIngredient(){
 	if(ingredientContainer.children.length > 0){
 		const lastItem = ingredientContainer.children[ingredientContainer.children.length - 1];
@@ -204,6 +215,7 @@ function removeIngredient(){
 		}
 	}
 }
+
 function addSubIngredient(){
 	if(!ingredientContainer.children[ingredientContainer.children.length - 1].classList.contains('sub-ingredient-container')){
 		const card = ingredientParentTemplate.content.cloneNode(true).children[0];
@@ -212,7 +224,9 @@ function addSubIngredient(){
 	const card = ingredientTemplate.content.cloneNode(true).children[0];
 	card.classList.add('sub-ingredient');
 	ingredientContainer.children[ingredientContainer.children.length - 1].append(card);
+	return card;
 }
+
 function addSublist(){
     const card = ingredientParentTemplate.content.cloneNode(true).children[0];
     ingredientContainer.append(card);

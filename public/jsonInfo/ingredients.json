@@ -461,18 +461,23 @@
 	},
 	"butter": {
 		"displayName": "Butter",
-		"cost": -1,
+		"cost": "-1",
+		"tableToGram": "undefined",
 		"health": {
-			"sugars": -1,
 			"saturated fats": -1,
 			"calories": -1
 		},
 		"type": "diary",
 		"parent": "ingredients",
 		"substitutes": {},
-		"specialized": -1,
-		"restrictions": [],
-		"notes": []
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": false
 	},
 	"bakingsoda": {
 		"displayName": "Baking Soda",
