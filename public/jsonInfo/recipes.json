@@ -1007,8 +1007,128 @@
 			}
 		}
 	},
-	"tofudumpings": {
-		"displayName": "Tofu Dumpings",
+	"dumplingsauce": {
+		"displayName": "Dumpling Sauce",
+		"totalTime": "-1",
+		"effortTime": "-1",
+		"type": "Condiment ",
+		"parent": "recipes",
+		"ethnicity": "None",
+		"difficulty": "1",
+		"defaultServings": "1",
+		"directions": [
+			"This is all just mixed together"
+		],
+		"cookersNotes": [
+			"The only thing you should follow is that the amount of soy sauce should match how much rice vinegar, everything else is pretty much up to you",
+			"",
+			"5 servings is roughly 1/3 pint, but it heavily depends on how much people use",
+			"",
+			"make sure ginger is fresh"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"soysauce": {
+				"unit": "part",
+				"amount": "1"
+			},
+			"ricevinegar": {
+				"unit": "part",
+				"amount": "1"
+			},
+			"hoisinsauce": {
+				"unit": "drizzle",
+				"amount": "1"
+			},
+			"greenonion": {
+				"unit": "peice",
+				"amount": "1"
+			},
+			"ginger": {
+				"unit": "peice",
+				"amount": "1"
+			},
+			"garlic": {
+				"unit": "peice",
+				"amount": "1"
+			}
+		}
+	},
+	"chilligarlicsauce": {
+		"displayName": "Chilli Garlic Sauce",
+		"totalTime": "-1",
+		"effortTime": "-1",
+		"type": "Sauce",
+		"parent": "recipes",
+		"ethnicity": "Vietnamese",
+		"difficulty": "-1",
+		"defaultServings": "100",
+		"directions": [
+			"Food process everything (cut up really small)",
+			"Cook on medium in frying pan and reduce it until most of the liquid is gone",
+			"Refrigerate"
+		],
+		"cookersNotes": [
+			"Used in pad thai, seseme chicken, stir fry, and a lot more",
+			"",
+			"you can use it instead of tabasco sauce (tastes better too)",
+			"",
+			"Default servings fits perfectly into a pint jar",
+			"",
+			"Lasts about {2} months",
+			"",
+			"All of the fresh pepper measurement are based on full pepper measurements (did grams for flavor consistancy):",
+			"{5} Jalapenos",
+			"{1} Anaheims",
+			"{1} Serranoes",
+			"{1} Poblanos"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"jalapeno": {
+				"unit": "gram",
+				"amount": "290"
+			},
+			"anaheim": {
+				"unit": "gram",
+				"amount": "110"
+			},
+			"serrano": {
+				"unit": "gram",
+				"amount": "21"
+			},
+			"poblano": {
+				"unit": "gram",
+				"amount": "160"
+			},
+			"garlic": {
+				"unit": "cloves",
+				"amount": "8"
+			},
+			"ricevinegar": {
+				"unit": "cup",
+				"amount": ".5"
+			},
+			"honey": {
+				"unit": "teaspoon",
+				"amount": "1"
+			},
+			"salt": {
+				"unit": "pinch",
+				"amount": "3"
+			},
+			"blackpepper": {
+				"unit": "pinch",
+				"amount": "3"
+			},
+			"fishsauce": {
+				"unit": "splash",
+				"amount": "1"
+			}
+		}
+	},
+	"tofudumplings": {
+		"displayName": "Tofu Dumplings",
 		"totalTime": "-1",
 		"effortTime": "-1",
 		"type": "Dinner",
@@ -1130,126 +1250,6 @@
 					"unit": "teaspoon",
 					"amount": ".125"
 				}
-			}
-		}
-	},
-	"dumplingsauce": {
-		"displayName": "Dumpling Sauce",
-		"totalTime": "-1",
-		"effortTime": "-1",
-		"type": "Condiment ",
-		"parent": "recipes",
-		"ethnicity": "None",
-		"difficulty": "1",
-		"defaultServings": "1",
-		"directions": [
-			"This is all just mixed together"
-		],
-		"cookersNotes": [
-			"The only thing you should follow is that the amount of soy sauce should match how much rice vinegar, everything else is pretty much up to you",
-			"",
-			"5 servings is roughly 1/3 pint, but it heavily depends on how much people use",
-			"",
-			"make sure ginger is fresh"
-		],
-		"needsMoreInfo": false,
-		"ingredients": {
-			"soysauce": {
-				"unit": "part",
-				"amount": "1"
-			},
-			"ricevinegar": {
-				"unit": "part",
-				"amount": "1"
-			},
-			"hoisinsauce": {
-				"unit": "drizzle",
-				"amount": "1"
-			},
-			"greenonion": {
-				"unit": "peice",
-				"amount": "1"
-			},
-			"ginger": {
-				"unit": "peice",
-				"amount": "1"
-			},
-			"garlic": {
-				"unit": "peice",
-				"amount": "1"
-			}
-		}
-	},
-	"chilligarlicsauce": {
-		"displayName": "Chilli Garlic Sauce",
-		"totalTime": "-1",
-		"effortTime": "-1",
-		"type": "Sauce",
-		"parent": "recipes",
-		"ethnicity": "Vietnamese",
-		"difficulty": "-1",
-		"defaultServings": "100",
-		"directions": [
-			"Food process everything (cut up really small)",
-			"Cook on medium in frying pan and reduce it until most of the liquid is gone",
-			"Refrigerate"
-		],
-		"cookersNotes": [
-			"Used in pad thai, seseme chicken, stir fry, and a lot more",
-			"",
-			"you can use it instead of tabasco sauce (tastes better too)",
-			"",
-			"Default servings fits perfectly into a pint jar",
-			"",
-			"Lasts about {2} months",
-			"",
-			"All of the fresh pepper measurement are based on full pepper measurements (did grams for flavor consistancy):",
-			"{5} Jalapenos",
-			"{1} Anaheims",
-			"{1} Serranoes",
-			"{1} Poblanos"
-		],
-		"needsMoreInfo": false,
-		"ingredients": {
-			"jalapeno": {
-				"unit": "gram",
-				"amount": "290"
-			},
-			"anaheim": {
-				"unit": "gram",
-				"amount": "110"
-			},
-			"serrano": {
-				"unit": "gram",
-				"amount": "21"
-			},
-			"poblano": {
-				"unit": "gram",
-				"amount": "160"
-			},
-			"garlic": {
-				"unit": "cloves",
-				"amount": "8"
-			},
-			"ricevinegar": {
-				"unit": "cup",
-				"amount": ".5"
-			},
-			"honey": {
-				"unit": "teaspoon",
-				"amount": "1"
-			},
-			"salt": {
-				"unit": "pinch",
-				"amount": "3"
-			},
-			"blackpepper": {
-				"unit": "pinch",
-				"amount": "3"
-			},
-			"fishsauce": {
-				"unit": "splash",
-				"amount": "1"
 			}
 		}
 	}

@@ -4,19 +4,24 @@
 		"cost": ".00297",
 		"tableToGram": "12",
 		"health": {
+			"sugars": 1,
 			"saturated fats": 0,
 			"calories": 4
 		},
 		"type": "carbohydrate",
 		"parent": "ingredients",
+		"substitutes": {
+			"honey": ".75",
+			"powdered sugar": "1"
+		},
 		"specialized": false,
 		"restrictions": [
-			"None"
 		],
 		"notes": [
 			"Can be substituted with honey, powdered sugar, and a lot more."
 		],
-		"needsMoreInfo": false
+		"needsMoreInfo": false,
+		"usedGPT": true
 	},
 	"milk": {
 		"displayName": "Milk",
