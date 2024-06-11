@@ -17,7 +17,7 @@
 		"notes": [
 			"Can be substituted with honey, powdered sugar, and a lot more."
 		],
-		"needsMoreInfo": false
+		"needsMoreInfo": true
 	},
 	"milk": {
 		"displayName": "Milk",
@@ -122,7 +122,7 @@
 		"notes": [
 			""
 		],
-		"needsMoreInfo": false
+		"needsMoreInfo": true
 	},
 	"cinnamon": {
 		"displayName": "Cinnamon",
@@ -318,26 +318,6 @@
 		"specialized": -1,
 		"restrictions": [],
 		"notes": []
-	},
-	"tumeric": {
-		"displayName": "Tumeric",
-		"cost": "-1",
-		"tableToGram": "undefined",
-		"health": {
-			"saturated fats": -1,
-			"calories": -1
-		},
-		"type": "spice",
-		"parent": "ingredients",
-		"substitutes": {},
-		"specialized": true,
-		"restrictions": [
-			""
-		],
-		"notes": [
-			"NOT THE RIGHT ONE, THIS IS SPELLED WRONG "
-		],
-		"needsMoreInfo": false
 	},
 	"currypowder": {
 		"displayName": "Currry Powder",
