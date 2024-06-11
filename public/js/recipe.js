@@ -44,6 +44,11 @@ function goToHome(){
 }
 
 function bestUnit(amount, currentUnit){
+	//round to the thousanths
+	if (!Number.isInteger(amount)) {
+		amount = amount.toFixed(3);	
+	}
+
 	if(amount != 1){
 		return amount + " " + currentUnit + "s" //placeholder that does nothing currently
 	}
