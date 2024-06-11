@@ -1486,7 +1486,7 @@
 			"saturated fats": -1,
 			"calories": -1
 		},
-		"type": "Misc",
+		"type": "Spice",
 		"parent": "ingredients",
 		"substitutes": {},
 		"specialized": false,
@@ -1494,7 +1494,11 @@
 			""
 		],
 		"notes": [
-			""
+			"A herb spice, used mostly in mediterranean food.",
+			"",
+			"Has a similar taste to oregano, but less extreme",
+			"",
+			"Often confused with Margarine (a fat)"
 		],
 		"needsMoreInfo": true
 	},
@@ -1727,6 +1731,346 @@
 			"calories": -1
 		},
 		"type": "Plant",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"powderedsugar": {
+		"displayName": "Powdered Sugar",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"shreddedcarrots": {
+		"displayName": "Shredded Carrots",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"dumplingwrapper": {
+		"displayName": "Dumpling Wrapper",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"paprikapowder": {
+		"displayName": "Paprika Powder",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"whitepepper": {
+		"displayName": "White Pepper",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"shreddednapacabbage": {
+		"displayName": "Shredded Napa Cabbage",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"tofu": {
+		"displayName": "Tofu",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"scallion": {
+		"displayName": "Scallion",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"ginger": {
+		"displayName": "Ginger",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"hoisinsauce": {
+		"displayName": "Hoisin Sauce",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"greenonion": {
+		"displayName": "Green Onion",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"ricevinegar": {
+		"displayName": "Rice Vinegar",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"jalapeno": {
+		"displayName": "Jalapeno",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"anaheim": {
+		"displayName": "Anaheim",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"serrano": {
+		"displayName": "Serrano",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"poblano": {
+		"displayName": "Poblano ",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	},
+	"fishsauce": {
+		"displayName": "Fish Sauce",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
 		"parent": "ingredients",
 		"substitutes": {},
 		"specialized": false,

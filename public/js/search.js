@@ -9,7 +9,7 @@ let allInfo = []
 let cards = []
 let value = ""
 
-let showIngredients = true
+let showIngredients = false
 document.getElementById("ingredients").checked = showIngredients
 //let showMeals = true
 //document.getElementById("meals").checked = showMeals

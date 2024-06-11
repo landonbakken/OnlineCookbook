@@ -17,7 +17,9 @@
 			"pinch": 1,
 			"item": 1,
 			"stalk": 1,
-			"piece": 1
+			"piece": 1,
+			"part": 1,
+			"drizzle": 1
 		}
 	},
 	"weight":{

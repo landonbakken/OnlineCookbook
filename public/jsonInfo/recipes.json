@@ -626,7 +626,7 @@
 		"type": "Dessert",
 		"parent": "recipes",
 		"ethnicity": "None",
-		"difficulty": "2",
+		"difficulty": "5",
 		"defaultServings": "8",
 		"directions": [
 			"Make a pie crust (go to independent recipe)",
@@ -684,7 +684,7 @@
 		"cookersNotes": [
 			"Make sure butter, lard, and water are all cold when used",
 			"Don't over-mix",
-			"Do more than one and store in a freezer"
+			"I would recommend doing more than one and store in a freezer "
 		],
 		"needsMoreInfo": false,
 		"ingredients": {
@@ -941,7 +941,7 @@
 				"unit": "gram",
 				"amount": "100"
 			},
-			"Lemon Glaze": {
+			"Lemon Glaze (Optional)": {
 				"lemonzest": {
 					"unit": "item",
 					"amount": "1"
@@ -1004,6 +1004,252 @@
 			"cilantro": {
 				"unit": "gram",
 				"amount": "11"
+			}
+		}
+	},
+	"tofudumpings": {
+		"displayName": "Tofu Dumpings",
+		"totalTime": "-1",
+		"effortTime": "-1",
+		"type": "Dinner",
+		"parent": "recipes",
+		"ethnicity": "Chinese",
+		"difficulty": "2",
+		"defaultServings": "7",
+		"directions": [
+			"Mix all filling ingredients in a large bowl",
+			"",
+			"Dip the edges of the dumpling wrapper into water so it sticks together",
+			"",
+			"Put roughly a semi-heaping teaspoon of filling into one wrapper",
+			"",
+			"Look up a video on how to wrap a dumpling",
+			"",
+			"Steam the dumplings for 10 minutes",
+			"",
+			"Go to dumpling sauce for a really good sauce for these",
+			""
+		],
+		"cookersNotes": [
+			"Add or remove garlic and red pepper to your own liking",
+			"",
+			"Ginger should be fresh",
+			"",
+			"Vegetable oil can be substituted with any other (not flavored like peanut) oil",
+			"",
+			"Any shaped dumpling wrappers work",
+			"",
+			"You could probably get away with not doing all of the spices for the filling listed after dumpling wrappers",
+			"",
+			"Wrapping all of them by yourself takes forever, make it a social event"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"Filling": {
+				"shreddedcarrots": {
+					"unit": "cup",
+					"amount": "1"
+				},
+				"shreddednapacabbage": {
+					"unit": "gram",
+					"amount": "150"
+				},
+				"tofu": {
+					"unit": "pound",
+					"amount": "1"
+				},
+				"redpepperflakes": {
+					"unit": "tablespoon",
+					"amount": "1"
+				},
+				"scallion": {
+					"unit": "cup",
+					"amount": ".25"
+				},
+				"ginger": {
+					"unit": "cup",
+					"amount": ".25"
+				},
+				"cilantro": {
+					"unit": "item",
+					"amount": "2"
+				},
+				"soysauce": {
+					"unit": "tablespoon",
+					"amount": "2"
+				},
+				"hoisinsauce": {
+					"unit": "tablespoon",
+					"amount": "2"
+				},
+				"vegetableoil": {
+					"unit": "teaspoon",
+					"amount": "4"
+				},
+				"salt": {
+					"unit": "teaspoon",
+					"amount": "2"
+				},
+				"blackpepper": {
+					"unit": "teaspoon",
+					"amount": ".5"
+				},
+				"dumplingwrapper": {
+					"unit": "item",
+					"amount": "40"
+				},
+				"eggs": {
+					"unit": "item",
+					"amount": "2"
+				},
+				"thyme": {
+					"unit": "pinch",
+					"amount": "1"
+				},
+				"marjoram": {
+					"unit": "teaspoon",
+					"amount": ".25"
+				},
+				"corianderpowder": {
+					"unit": "teaspoon",
+					"amount": ".125"
+				},
+				"paprikapowder": {
+					"unit": "teaspoon",
+					"amount": ".25"
+				},
+				"parsley": {
+					"unit": "teaspoon",
+					"amount": ".25"
+				},
+				"garlic": {
+					"unit": "piece",
+					"amount": "1"
+				},
+				"whitepepper": {
+					"unit": "teaspoon",
+					"amount": ".125"
+				}
+			}
+		}
+	},
+	"dumplingsauce": {
+		"displayName": "Dumpling Sauce",
+		"totalTime": "-1",
+		"effortTime": "-1",
+		"type": "Condiment ",
+		"parent": "recipes",
+		"ethnicity": "None",
+		"difficulty": "1",
+		"defaultServings": "1",
+		"directions": [
+			"This is all just mixed together"
+		],
+		"cookersNotes": [
+			"The only thing you should follow is that the amount of soy sauce should match how much rice vinegar, everything else is pretty much up to you",
+			"",
+			"5 servings is roughly 1/3 pint, but it heavily depends on how much people use",
+			"",
+			"make sure ginger is fresh"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"soysauce": {
+				"unit": "part",
+				"amount": "1"
+			},
+			"ricevinegar": {
+				"unit": "part",
+				"amount": "1"
+			},
+			"hoisinsauce": {
+				"unit": "drizzle",
+				"amount": "1"
+			},
+			"greenonion": {
+				"unit": "peice",
+				"amount": "1"
+			},
+			"ginger": {
+				"unit": "peice",
+				"amount": "1"
+			},
+			"garlic": {
+				"unit": "peice",
+				"amount": "1"
+			}
+		}
+	},
+	"chilligarlicsauce": {
+		"displayName": "Chilli Garlic Sauce",
+		"totalTime": "-1",
+		"effortTime": "-1",
+		"type": "Sauce",
+		"parent": "recipes",
+		"ethnicity": "Vietnamese",
+		"difficulty": "-1",
+		"defaultServings": "100",
+		"directions": [
+			"Food process everything (cut up really small)",
+			"Cook on medium in frying pan and reduce it until most of the liquid is gone",
+			"Refrigerate"
+		],
+		"cookersNotes": [
+			"Used in pad thai, seseme chicken, stir fry, and a lot more",
+			"",
+			"you can use it instead of tabasco sauce (tastes better too)",
+			"",
+			"Default servings fits perfectly into a pint jar",
+			"",
+			"Lasts about {2} months",
+			"",
+			"All of the fresh pepper measurement are based on full pepper measurements (did grams for flavor consistancy):",
+			"{5} Jalapenos",
+			"{1} Anaheims",
+			"{1} Serranoes",
+			"{1} Poblanos"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"jalapeno": {
+				"unit": "gram",
+				"amount": "290"
+			},
+			"anaheim": {
+				"unit": "gram",
+				"amount": "110"
+			},
+			"serrano": {
+				"unit": "gram",
+				"amount": "21"
+			},
+			"poblano": {
+				"unit": "gram",
+				"amount": "160"
+			},
+			"garlic": {
+				"unit": "cloves",
+				"amount": "8"
+			},
+			"ricevinegar": {
+				"unit": "cup",
+				"amount": ".5"
+			},
+			"honey": {
+				"unit": "teaspoon",
+				"amount": "1"
+			},
+			"salt": {
+				"unit": "pinch",
+				"amount": "3"
+			},
+			"blackpepper": {
+				"unit": "pinch",
+				"amount": "3"
+			},
+			"fishsauce": {
+				"unit": "splash",
+				"amount": "1"
 			}
 		}
 	}

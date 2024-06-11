@@ -23,7 +23,7 @@ async function httpNewIngredient(displayName, url, callback){
 	var IDName = displayName.toLowerCase().replaceAll(" ", "");
 
 	var jsonFile = {};
-	//jsonFile[IDName] = {};
+	jsonFile[IDName] = {};
 	jsonFile[IDName]["displayName"] = displayName;
 	jsonFile[IDName]["cost"] = -1;
 	jsonFile[IDName]["tableToGram"] = -1;
