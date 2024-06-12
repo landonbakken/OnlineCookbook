@@ -759,13 +759,9 @@
 					"unit": "gram",
 					"amount": "227"
 				},
-				"softwheatflour": {
-					"unit": "gram",
-					"amount": "350"
-				},
 				"allpurposeflour": {
 					"unit": "gram",
-					"amount": "1100"
+					"amount": "1450"
 				},
 				"salt": {
 					"unit": "gram",

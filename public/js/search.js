@@ -95,7 +95,6 @@ function getIngredientGrams(ingredient, ingredientID){
     return ingredient["amount"];
   }
   else if(initialUnit in units["volume"]["imperial"] && ingredients[ingredientID]["tableToGram"] != "-1"){
-    console.log("Imperial Volume")
     //convert to tablespoons
     tablespoons = ingredient["amount"] * units["volume"]["imperial"]["tablespoon"] / units["volume"]["imperial"][initialUnit]
     //convert and return as grams

@@ -1,18 +1,16 @@
 {
 	"sugar": {
 		"displayName": "Sugar",
-		"cost": ".00297",
-		"tableToGram": "12",
+		"cost": 0.0015,
+		"tableToGram": 12.5,
 		"health": {
-			"sugars": 1,
-			"saturated fats": 0,
 			"calories": 4
 		},
 		"type": "carbohydrate",
 		"parent": "ingredients",
 		"substitutes": {
-			"honey": ".75",
-			"powdered sugar": "1"
+			"honey": 0.75,
+			"powdered sugar": 1
 		},
 		"specialized": false,
 		"restrictions": [
@@ -21,22 +19,20 @@
 			"Can be substituted with honey, powdered sugar, and a lot more."
 		],
 		"needsMoreInfo": false,
-		"usedGPT": true
+		"usedGPT": false
 	},
 	"milk": {
 		"displayName": "Milk",
-		"cost": ".001",
-		"tableToGram": "15",
+		"cost": 0.001,
+		"tableToGram": 15,
 		"health": {
-			"sugars": 5,
-			"saturated fats": 1.5,
-			"calories": 42
+			"calories": 0.64
 		},
 		"type": "dairy",
 		"parent": "ingredients",
 		"substitutes": {
-			"almond milk": ".9",
-			"soy milk": "1"
+			"almond milk": 1,
+			"soy milk": 1
 		},
 		"specialized": false,
 		"restrictions": [
@@ -44,24 +40,22 @@
 			"Dairy-free diet"
 		],
 		"notes": [
-			"Commonly used in cooking and baking. Available in various fat percentages (whole, skim, etc.)."
+			"Commonly used in cooking and baking. Available in various fat percentages (whole, skim, etc.)",
+            "alternative taste different, but can be healthier"
 		],
 		"needsMoreInfo": false,
-		"usedGPT": true
+		"usedGPT": false
 	},
 	"cocoapowder": {
 		"displayName": "Cocoa Powder",
-		"cost": ".02",
-		"tableToGram": "6",
+		"cost": 0.03,
+		"tableToGram": 5,
 		"health": {
-			"sugars": 0,
-			"saturated fats": 0.6,
-			"calories": 12
+			"calories": 4
 		},
 		"type": "carbohydrate",
 		"parent": "ingredients",
 		"substitutes": {
-			"carob powder": "1"
 		},
 		"specialized": false,
 		"restrictions": [
@@ -71,21 +65,18 @@
 			"Used in baking and making chocolate-flavored foods."
 		],
 		"needsMoreInfo": false,
-		"usedGPT": true
+		"usedGPT": false
 	},
 	"salt": {
 		"displayName": "Salt",
-		"cost": ".0005",
-		"tableToGram": "18",
+		"cost": 0.0007,
+		"tableToGram": 18,
 		"health": {
-			"saturated fats": 0,
 			"calories": 0
 		},
 		"type": "seasoning",
 		"parent": "ingredients",
 		"substitutes": {
-			"sea salt": "1",
-			"kosher salt": "2"
 		},
 		"specialized": false,
 		"restrictions": [
@@ -95,22 +86,19 @@
 			"Essential for seasoning. Can be used in a variety of dishes."
 		],
 		"needsMoreInfo": false,
-		"usedGPT": true
+		"usedGPT": false
 	},
 	"chicken": {
 		"displayName": "Chicken",
-		"cost": ".01",
-		"tableToGram": "14",
+		"cost": 0.01,
+		"tableToGram": 15,
 		"health": {
-			"sugars": 0,
-			"saturated fats": 1,
-			"calories": 2
+			"calories": 1.5
 		},
 		"type": "meat",
 		"parent": "ingredients",
 		"substitutes": {
-			"tofu": "1.2",
-			"seitan": "1.1"
+			"tofu": 1.2
 		},
 		"specialized": false,
 		"restrictions": [
@@ -121,21 +109,18 @@
 			"Widely used in various cuisines. Can be cooked in many ways such as grilling, baking, and frying."
 		],
 		"needsMoreInfo": false,
-		"usedGPT": true
+		"usedGPT": false
 	},
     "groundcumin": {
         "displayName": "Ground Cumin",
-        "cost": ".005",
-        "tableToGram": "6",
+        "cost": 0.05,
+        "tableToGram": 12,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 22
+            "calories": 8
         },
         "type": "seasoning",
         "parent": "ingredients",
         "substitutes": {
-            "ground coriander": "1"
         },
         "specialized": false,
         "restrictions": [],
@@ -143,21 +128,18 @@
             "Commonly used in Middle Eastern, Indian, and Mexican cuisines."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "basil": {
         "displayName": "Basil",
-        "cost": ".004",
-        "tableToGram": "2.5",
+        "cost": 0.07,
+        "tableToGram": 0.7,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 5
+            "calories": 0.5
         },
         "type": "herb",
         "parent": "ingredients",
         "substitutes": {
-            "oregano": "1"
         },
         "specialized": false,
         "restrictions": [],
@@ -165,7 +147,7 @@
             "Often used in Italian and Mediterranean dishes."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "cinnamon": {
         "displayName": "Cinnamon",
@@ -631,17 +613,15 @@
     },
     "butter": {
         "displayName": "Butter",
-        "cost": ".01",
-        "tableToGram": "14",
+        "cost": 0.008,
+        "tableToGram": 14,
         "health": {
-            "sugars": 0,
-            "saturated fats": 7,
-            "calories": 102
+            "calories": 7
         },
         "type": "dairy",
         "parent": "ingredients",
         "substitutes": {
-            "margarine": "1"
+            "margarine": 1
         },
         "specialized": false,
         "restrictions": [
@@ -651,7 +631,7 @@
             "Commonly used in cooking and baking."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "bakingsoda": {
         "displayName": "Baking Soda",
@@ -724,17 +704,15 @@
     },
     "allpurposeflour": {
         "displayName": "All Purpose Flour",
-        "cost": ".002",
-        "tableToGram": "8",
+        "cost": 0.0018,
+        "tableToGram": 8,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 28
+            "calories": 4
         },
         "type": "grain",
         "parent": "ingredients",
         "substitutes": {
-            "whole wheat flour": "1"
+            "whole wheat flour": 1
         },
         "specialized": false,
         "restrictions": [
@@ -744,7 +722,7 @@
             "Used in a wide range of baking and cooking applications."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "chocolatechips": {
         "displayName": "Chocolate Chips",
@@ -816,11 +794,9 @@
     },
     "water": {
         "displayName": "Water",
-        "cost": ".0001",
-        "tableToGram": "15",
+        "cost": 0,
+        "tableToGram": 15,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
             "calories": 0
         },
         "type": "liquid",
@@ -832,7 +808,7 @@
             "Essential for cooking and baking."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "rhubarb": {
         "displayName": "Rhubarb",
@@ -926,17 +902,15 @@
     },
     "honey": {
         "displayName": "Honey",
-        "cost": ".01",
-        "tableToGram": "21",
+        "cost": 0.015,
+        "tableToGram": 21,
         "health": {
-            "sugars": 17.3,
-            "saturated fats": 0,
-            "calories": 64
+            "calories": 3.4
         },
         "type": "sweetener",
         "parent": "ingredients",
         "substitutes": {
-            "maple syrup": "1"
+            "maple syrup": 1
         },
         "specialized": false,
         "restrictions": [],
@@ -944,7 +918,7 @@
             "Natural sweetener often used in cooking and baking."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "italianseasoning": {
         "displayName": "Italian Seasoning",
@@ -1060,17 +1034,14 @@
     },
     "yogurt": {
         "displayName": "Yogurt",
-        "cost": ".04",
-        "tableToGram": "15",
+        "cost": 0.04,
+        "tableToGram": 15,
         "health": {
-            "sugars": 6,
-            "saturated fats": 3,
-            "calories": 59
+            "calories": 0.8
         },
         "type": "dairy",
         "parent": "ingredients",
         "substitutes": {
-            "buttermilk": "1"
         },
         "specialized": false,
         "restrictions": [],
@@ -1078,7 +1049,7 @@
             "Used in cooking and baking, as well as a breakfast food or snack."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "garlic": {
         "displayName": "Garlic",
@@ -1254,12 +1225,10 @@
     },
     "onion": {
         "displayName": "Onion",
-        "cost": ".002",
-        "tableToGram": "4",
+        "cost": 0.0015,
+        "tableToGram": 10,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 0.4
+            "calories": 0.45
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -1342,17 +1311,15 @@
     },
     "heavycream": {
         "displayName": "Heavy Cream",
-        "cost": ".03",
-        "tableToGram": "15",
+        "cost": 0.006,
+        "tableToGram": 15,
         "health": {
-            "sugars": 0,
-            "saturated fats": 11,
-            "calories": 103
+            "calories": 3.5
         },
         "type": "dairy",
         "parent": "ingredients",
         "substitutes": {
-            "half and half": "1"
+            "half and half": 1
         },
         "specialized": false,
         "restrictions": [],
@@ -1360,21 +1327,21 @@
             "Used in cooking and baking to add richness and creaminess."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "halfandhalf": {
         "displayName": "Half and Half",
-        "cost": ".02",
-        "tableToGram": "15",
+        "cost": 0.0045,
+        "tableToGram": 15,
         "health": {
             "sugars": 1,
             "saturated fats": 3,
-            "calories": 37
+            "calories": 1.6
         },
         "type": "dairy",
         "parent": "ingredients",
         "substitutes": {
-            "heavy cream": "1"
+            "heavy cream": 1
         },
         "specialized": false,
         "restrictions": [],
@@ -1382,7 +1349,7 @@
             "Mixture of milk and cream, used as a lighter alternative to cream."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "sweetredpepper": {
         "displayName": "Sweet Red Pepper",
@@ -1430,17 +1397,16 @@
     },
     "salmon": {
         "displayName": "Salmon",
-        "cost": ".05",
-        "tableToGram": "15",
+        "cost": 0.03,
+        "tableToGram": 15,
         "health": {
             "sugars": 0,
             "saturated fats": 0.8,
-            "calories": 40
+            "calories": 2
         },
         "type": "seafood",
         "parent": "ingredients",
         "substitutes": {
-            "trout": "1"
         },
         "specialized": false,
         "restrictions": [],
@@ -1448,21 +1414,20 @@
             "Popular fish used in cooking, rich in omega-3 fatty acids."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "soysauce": {
         "displayName": "Soy Sauce",
-        "cost": ".01",
-        "tableToGram": "15",
+        "cost": 0.005,
+        "tableToGram": 15,
         "health": {
             "sugars": 1,
             "saturated fats": 0,
-            "calories": 8
+            "calories": 0.6
         },
         "type": "condiment",
         "parent": "ingredients",
         "substitutes": {
-            "tamari": "1"
         },
         "specialized": false,
         "restrictions": [],
@@ -1470,7 +1435,7 @@
             "Commonly used in Asian cooking as a seasoning and flavor enhancer."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "gingersyrup": {
         "displayName": "Ginger Syrup",
@@ -1610,17 +1575,16 @@
     },
     "groundbeef": {
         "displayName": "Ground Beef",
-        "cost": ".06",
-        "tableToGram": "15",
+        "cost": 0.01,
+        "tableToGram": 15,
         "health": {
             "sugars": 0,
             "saturated fats": 4.5,
-            "calories": 150
+            "calories": 2.5
         },
         "type": "meat",
         "parent": "ingredients",
         "substitutes": {
-            "ground turkey": "1"
         },
         "specialized": false,
         "restrictions": [],
@@ -1628,7 +1592,7 @@
             "Commonly used in cooking for various meat dishes."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "celery": {
         "displayName": "Celery",
@@ -1654,17 +1618,17 @@
     },
     "carrot": {
         "displayName": "Carrot",
-        "cost": ".01",
-        "tableToGram": "4",
+        "cost": 0.0015,
+        "tableToGram": 10,
         "health": {
             "sugars": 2,
             "saturated fats": 0,
-            "calories": 12
+            "calories": 0.45
         },
         "type": "vegetable",
         "parent": "ingredients",
         "substitutes": {
-            "sweet potato": "1"
+            "sweet potato": 1
         },
         "specialized": false,
         "restrictions": [],
@@ -1672,7 +1636,7 @@
             "Commonly used in cooking and salads for flavor and color."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "applecidervinegar": {
         "displayName": "Apple Cider Vinegar",
@@ -1742,15 +1706,15 @@
     },
     "lard": {
         "displayName": "Lard",
-        "cost": ".04",
+        "cost": 0.0025,
+        "tableToGram": 13,
         "health": {
-            "saturated fats": 5,
-            "calories": 115
+            "calories": 9
         },
         "type": "fat",
         "parent": "ingredients",
         "substitutes": {
-            "butter": "1"
+            "butter": 1
         },
         "specialized": false,
         "restrictions": [
@@ -1760,29 +1724,7 @@
             "Rendered pork fat used in cooking and baking."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "softwheatflour": {
-        "displayName": "Soft Wheat Flour",
-        "cost": ".004",
-        "tableToGram": "16",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 100
-        },
-        "type": "flour",
-        "parent": "ingredients",
-        "substitutes": {
-            "all-purpose flour": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Flour made from soft wheat, suitable for pastries and cakes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "rutabaga": {
         "displayName": "Rutabaga",
@@ -2028,12 +1970,12 @@
     },
     "avocado": {
         "displayName": "Avocado",
-        "cost": ".05",
-        "tableToGram": "4",
+        "cost": 0.007,
+        "tableToGram": 20,
         "health": {
             "sugars": 0,
             "saturated fats": 1,
-            "calories": 50
+            "calories": 1.6
         },
         "type": "fruit",
         "parent": "ingredients",
