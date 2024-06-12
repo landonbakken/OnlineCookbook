@@ -44,6 +44,7 @@
         <input type="search" id="search" data-search>
       </div>
       <div class="small-info">* means item needs more info</div>
+      <div class="small-info">^ means info is from chatGPT, and hasn't been proofed</div>
       <div class="recipe-cards" data-recipe-cards-container>
       </div>
     </div>
@@ -51,7 +52,13 @@
   <template data-recipe-template>
     <a class="card" id="" href="">
       <p class="header" data-header></p>
-      <div class="body" data-body></div>
+      <p class="info-big" data-type>Dinner</p>
+      <li class="info-list">
+        <p class="info" data-calories>10000 Calories</p>
+        <p class="info" data-cost>$500 per serving</p>
+        <p class="info" data-total-time>10h total time</p>
+        <p class="info" data-default-servings>100 default servings</p>
+      </li>
     </a>
   </template>
 </body>

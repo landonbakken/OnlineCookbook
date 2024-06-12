@@ -13,10 +13,10 @@
 			"Pre-cut up the stick of butter",
 			"add and mix the dry ingredients",
 			"pour in the milk",
-			"turn on the heat to meadium",
-			"mix until there isnt any powder floating on top",
+			"turn on the heat to medium",
+			"mix until there isn't any powder floating on top",
 			"add the cut up butter",
-			"keep mixing until there isnt any butter chunks left",
+			"keep mixing until there isn't any butter chunks left",
 			"add vanilla extract",
 			"wait until sauce is cool then enjoy :D"
 		],
@@ -1026,7 +1026,7 @@
 			"",
 			"make sure ginger is fresh"
 		],
-		"needsMoreInfo": false,
+		"needsMoreInfo": true,
 		"ingredients": {
 			"soysauce": {
 				"unit": "part",
@@ -1083,7 +1083,7 @@
 			"{1} Serranoes",
 			"{1} Poblanos"
 		],
-		"needsMoreInfo": false,
+		"needsMoreInfo": true,
 		"ingredients": {
 			"jalapeno": {
 				"unit": "gram",
@@ -1163,7 +1163,7 @@
 			"",
 			"Wrapping all of them by yourself takes forever, make it a social event"
 		],
-		"needsMoreInfo": false,
+		"needsMoreInfo": true,
 		"ingredients": {
 			"Filling": {
 				"shreddedcarrots": {

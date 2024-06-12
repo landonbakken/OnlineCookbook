@@ -4,8 +4,7 @@ const searchInput = document.querySelector("[data-search]")
 
 let recipes = []
 let ingredients = []
-//let meals = []
-let allInfo = []
+let units = []
 let cards = []
 let value = ""
 
@@ -33,8 +32,12 @@ function updateSettings(setting){
 async function getJsonData() {
   let file = await fetch("/jsonInfo/ingredients.json")
 	ingredients = await file.json()
+
   file = await fetch("/jsonInfo/recipes.json")
   recipes = await file.json()
+
+  file = await fetch("/jsonInfo/units.json")
+  units = await file.json()
 }
 
 searchInput.addEventListener("input", e => {
@@ -86,35 +89,113 @@ function showOrHide(dataList, value){
   }
 }
 
-//fetch("https://jsonplaceholder.typicode.com/users")
+function getIngredientGrams(ingredient, ingredientID){
+  initialUnit = ingredient["unit"]
+  if(initialUnit == "gram"){
+    return ingredient["amount"];
+  }
+  else if(initialUnit in units["volume"]["imperial"] && ingredients[ingredientID]["tableToGram"] != "-1"){
+    console.log("Imperial Volume")
+    //convert to tablespoons
+    tablespoons = ingredient["amount"] * units["volume"]["imperial"]["tablespoon"] / units["volume"]["imperial"][initialUnit]
+    //convert and return as grams
+    return tablespoons * ingredients[ingredientID]["tableToGram"]
+  }
+  console.log("Couldnt figure out conversion from " + ingredient["unit"] + " to grams for " + ingredients[ingredientID].displayName);
+  return 0
+}
+
+function getIngredientCost(ingredient, ingredientID){
+  grams = getIngredientGrams(ingredient, ingredientID);
+  return grams * ingredients[ingredientID]["cost"]
+}
+function getIngredientCals(ingredient, ingredientID){
+  grams = getIngredientGrams(ingredient, ingredientID);
+  return grams * ingredients[ingredientID]["health"]["calories"]
+}
+
+
 getJsonData().then(() => {
+  //recipes
   for(let recipe in recipes){
     let data = recipes[recipe]
     const card = recipeCardTemplate.content.cloneNode(true).children[0]
     const header = card.querySelector("[data-header]")
-    const body = card.querySelector("[data-body]")
+    const type = card.querySelector("[data-type]")
+    const cardTotalTime = card.querySelector("[data-total-time]");
+    const cardCalories = card.querySelector("[data-calories]");
+    const cardCost = card.querySelector("[data-cost]");
+    const cardDefaultServings = card.querySelector("[data-default-servings]");
+
     card.id = recipe
     header.textContent = data["displayName"]
     if(data["needsMoreInfo"] != false){
       header.textContent += "*";
     }
-    card.href = "/recipe/" + recipe
-    body.textContent = data["type"]
+
+    //set info
+    card.href = "/recipe/" + recipe;
+    type.textContent = data["type"];
+    cardTotalTime.textContent = data["totalTime"] + " mins";
+    cardDefaultServings.textContent = data["defaultServings"] + " defualt servings";
+
+    //find cost and cals
+    cost = 0;
+    cals = 0;
+    for(var ingredientID in data["ingredients"]){
+      //sublist
+      ingredient = data["ingredients"][ingredientID]
+      if(ingredient.amount == undefined){
+        for(var subIngredientID in ingredient){
+          subIngredient = ingredient[subIngredientID]
+          cost += getIngredientCost(subIngredient, subIngredientID);
+          cals += getIngredientCals(subIngredient, subIngredientID);
+        }
+      }
+      else{
+        cost += getIngredientCost(ingredient, ingredientID);
+        cals += getIngredientCals(ingredient, ingredientID);
+      }
+    }
+    
+    cals /= data["defaultServings"]
+    cost /= data["defaultServings"]
+
+    cardCost.textContent = "$" + cost.toFixed(2) + " /serving"
+    cardCalories.textContent = cals.toFixed(0) + " cals/serving"
+
+    //add to html
     recipeCardContainer.append(card)
   }
+
+  //ingredients
   for(let ingredient in ingredients){
     //console.log(ingredient)
     let data = ingredients[ingredient]
     const card = recipeCardTemplate.content.cloneNode(true).children[0]
     const header = card.querySelector("[data-header]")
-    const body = card.querySelector("[data-body]")
+    const type = card.querySelector("[data-type]")
+    const cardCalories = card.querySelector("[data-calories]");
+    const cardCost = card.querySelector("[data-cost]");
+
+    //get rid of time infos because ingredients don't need time
+    card.querySelector("[data-total-time]").remove()
+    card.querySelector("[data-default-servings]").remove()
+
     card.id = ingredient
     header.textContent = data["displayName"]
-    if(data["needsMoreInfo"] != false){
+    if(data["needsMoreInfo"]){
       header.textContent += "*";
     }
+    if(data["usedGPT"]){
+      header.textContent += "^";
+    }
+
+    //add info and link
     card.href = "/ingredient/" + ingredient
-    body.textContent = data["type"]
+    type.textContent = data["type"]
+    cardCalories.textContent = data["health"]["calories"] + " cals/gram"
+    cardCost.textContent = "$" + data["cost"] + "/gram"
     recipeCardContainer.append(card)
 
   }

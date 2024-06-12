@@ -100,11 +100,11 @@
 	"chicken": {
 		"displayName": "Chicken",
 		"cost": ".01",
-		"tableToGram": "25",
+		"tableToGram": "14",
 		"health": {
 			"sugars": 0,
 			"saturated fats": 1,
-			"calories": 165
+			"calories": 2
 		},
 		"type": "meat",
 		"parent": "ingredients",
@@ -306,7 +306,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 0,
-            "calories": 8
+            "calories": 0.4
         },
         "type": "seasoning",
         "parent": "ingredients",
@@ -1259,7 +1259,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 0,
-            "calories": 17
+            "calories": 0.4
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -2296,7 +2296,7 @@
         "health": {
             "sugars": 2,
             "saturated fats": 0,
-            "calories": 15
+            "calories": 0.32
         },
         "type": "vegetable",
         "parent": "ingredients",
