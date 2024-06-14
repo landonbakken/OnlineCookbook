@@ -1,0 +1,374 @@
+{
+    "SRLegacyFoods": [
+        {
+            "foodClass": "FinalFood",
+            "description": "Milk, reduced fat, fluid, 2% milkfat, with added nonfat milk solids and vitamin A and vitamin D",
+            "foodNutrients": [
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561131,
+                    "nutrient": {
+                        "id": 1110,
+                        "number": "324",
+                        "name": "Vitamin D (D2 + D3), International Units",
+                        "rank": 8650,
+                        "unitName": "IU"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "code": "S",
+                        "description": "Product standard, such as enrichment level specified in CFR or AMS commodity standard",
+                        "foodNutrientSource": {
+                            "id": 2,
+                            "code": "4",
+                            "description": "Calculated or imputed"
+                        }
+                    },
+                    "amount": 40.0
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561133,
+                    "nutrient": {
+                        "id": 1114,
+                        "number": "328",
+                        "name": "Vitamin D (D2 + D3)",
+                        "rank": 8700,
+                        "unitName": "\u00c2\u00b5g"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "code": "NR",
+                        "description": "Nutrient that is based on other nutrient/s; value used directly, ex. Nut.#204 from Nut.#298",
+                        "foodNutrientSource": {
+                            "id": 2,
+                            "code": "4",
+                            "description": "Calculated or imputed"
+                        }
+                    },
+                    "amount": 1.0
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561134,
+                    "nutrient": {
+                        "id": 1062,
+                        "number": "268",
+                        "name": "Energy",
+                        "rank": 400,
+                        "unitName": "kJ"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 213
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561136,
+                    "nutrient": {
+                        "id": 1106,
+                        "number": "320",
+                        "name": "Vitamin A, RAE",
+                        "rank": 7420,
+                        "unitName": "\u00c2\u00b5g"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "code": "NC",
+                        "description": "Calculated",
+                        "foodNutrientSource": {
+                            "id": 2,
+                            "code": "4",
+                            "description": "Calculated or imputed"
+                        }
+                    },
+                    "amount": 56.0
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561137,
+                    "nutrient": {
+                        "id": 1162,
+                        "number": "401",
+                        "name": "Vitamin C, total ascorbic acid",
+                        "rank": 6300,
+                        "unitName": "mg"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 1.0
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561141,
+                    "nutrient": {
+                        "id": 1178,
+                        "number": "418",
+                        "name": "Vitamin B-12",
+                        "rank": 7300,
+                        "unitName": "\u00c2\u00b5g"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 0.38
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561152,
+                    "nutrient": {
+                        "id": 1253,
+                        "number": "601",
+                        "name": "Cholesterol",
+                        "rank": 15700,
+                        "unitName": "mg"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 8.0
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561153,
+                    "nutrient": {
+                        "id": 1258,
+                        "number": "606",
+                        "name": "Fatty acids, total saturated",
+                        "rank": 9700,
+                        "unitName": "g"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 1.2
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561158,
+                    "nutrient": {
+                        "id": 1003,
+                        "number": "203",
+                        "name": "Protein",
+                        "rank": 600,
+                        "unitName": "g"
+                    },
+                    "dataPoints": 59,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 3.48
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561160,
+                    "nutrient": {
+                        "id": 1079,
+                        "number": "291",
+                        "name": "Fiber, total dietary",
+                        "rank": 1200,
+                        "unitName": "g"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 0.0
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561161,
+                    "nutrient": {
+                        "id": 1089,
+                        "number": "303",
+                        "name": "Iron, Fe",
+                        "rank": 5400,
+                        "unitName": "mg"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 0.05
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561164,
+                    "nutrient": {
+                        "id": 1093,
+                        "number": "307",
+                        "name": "Sodium, Na",
+                        "rank": 5800,
+                        "unitName": "mg"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 52.0
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561167,
+                    "nutrient": {
+                        "id": 1104,
+                        "number": "318",
+                        "name": "Vitamin A, IU",
+                        "rank": 7500,
+                        "unitName": "IU"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 204
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561170,
+                    "nutrient": {
+                        "id": 1175,
+                        "number": "415",
+                        "name": "Vitamin B-6",
+                        "rank": 6800,
+                        "unitName": "mg"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 0.045
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561171,
+                    "nutrient": {
+                        "id": 1004,
+                        "number": "204",
+                        "name": "Total lipid (fat)",
+                        "rank": 800,
+                        "unitName": "g"
+                    },
+                    "dataPoints": 559,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 1.92
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561172,
+                    "nutrient": {
+                        "id": 1005,
+                        "number": "205",
+                        "name": "Carbohydrate, by difference",
+                        "rank": 1110,
+                        "unitName": "g"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "code": "NC",
+                        "description": "Calculated",
+                        "foodNutrientSource": {
+                            "id": 2,
+                            "code": "4",
+                            "description": "Calculated or imputed"
+                        }
+                    },
+                    "amount": 4.97
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561173,
+                    "nutrient": {
+                        "id": 1008,
+                        "number": "208",
+                        "name": "Energy",
+                        "rank": 300,
+                        "unitName": "kcal"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "code": "NC",
+                        "description": "Calculated",
+                        "foodNutrientSource": {
+                            "id": 2,
+                            "code": "4",
+                            "description": "Calculated or imputed"
+                        }
+                    },
+                    "amount": 51.0
+                },
+                {
+                    "type": "FoodNutrient",
+                    "id": 1561178,
+                    "nutrient": {
+                        "id": 1292,
+                        "number": "645",
+                        "name": "Fatty acids, total monounsaturated",
+                        "rank": 11400,
+                        "unitName": "g"
+                    },
+                    "dataPoints": 0,
+                    "foodNutrientDerivation": {
+                        "foodNutrientSource": {}
+                    },
+                    "amount": 0.555
+                }
+            ],
+            "foodAttributes": [],
+            "nutrientConversionFactors": [
+                {
+                    "type": ".CalorieConversionFactor",
+                    "proteinValue": 4.27,
+                    "fatValue": 8.79,
+                    "carbohydrateValue": 3.87
+                },
+                {
+                    "type": ".ProteinConversionFactor",
+                    "value": 6.38
+                }
+            ],
+            "isHistoricalReference": false,
+            "ndbNumber": 1080,
+            "foodCategory": {
+                "description": "Dairy and Egg Products"
+            },
+            "fdcId": 170870,
+            "dataType": "SR Legacy",
+            "inputFoods": [],
+            "publicationDate": "4/1/2019",
+            "foodPortions": [
+                {
+                    "id": 87455,
+                    "measureUnit": {
+                        "id": 9999,
+                        "name": "undetermined",
+                        "abbreviation": "undetermined"
+                    },
+                    "modifier": "cup",
+                    "gramWeight": 245.0,
+                    "sequenceNumber": 1
+                },
+                {
+                    "id": 87456,
+                    "measureUnit": {
+                        "id": 9999,
+                        "name": "undetermined",
+                        "abbreviation": "undetermined"
+                    },
+                    "modifier": "quart",
+                    "gramWeight": 980.0,
+                    "sequenceNumber": 2
+                }
+            ]
+        }
+    ]
+}

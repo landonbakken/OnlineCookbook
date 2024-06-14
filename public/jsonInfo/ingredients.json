@@ -2,7 +2,7 @@
 	"sugar": {
 		"displayName": "Sugar",
 		"cost": 0.0015,
-		"tableToGram": 12.5,
+		"tableToGram": 12.6,
 		"health": {
 			"calories": 4
 		},
@@ -18,15 +18,14 @@
 		"notes": [
 			"Can be substituted with honey, powdered sugar, and a lot more."
 		],
-		"needsMoreInfo": false,
-		"usedGPT": false
+		"needsMoreInfo": false
 	},
 	"milk": {
 		"displayName": "Milk",
 		"cost": 0.001,
-		"tableToGram": 15,
+		"tableToGram": 15.25,
 		"health": {
-			"calories": 0.64
+			"calories": 0.46
 		},
 		"type": "dairy",
 		"parent": "ingredients",
@@ -41,17 +40,16 @@
 		],
 		"notes": [
 			"Commonly used in cooking and baking. Available in various fat percentages (whole, skim, etc.)",
-            "alternative taste different, but can be healthier"
+            "Alternative taste different, but can be healthier"
 		],
-		"needsMoreInfo": false,
-		"usedGPT": false
+		"needsMoreInfo": false
 	},
 	"cocoapowder": {
 		"displayName": "Cocoa Powder",
 		"cost": 0.03,
-		"tableToGram": 5,
+		"tableToGram": 5.4,
 		"health": {
-			"calories": 4
+			"calories": 2.28
 		},
 		"type": "carbohydrate",
 		"parent": "ingredients",
@@ -64,8 +62,7 @@
 		"notes": [
 			"Used in baking and making chocolate-flavored foods."
 		],
-		"needsMoreInfo": false,
-		"usedGPT": false
+		"needsMoreInfo": false
 	},
 	"salt": {
 		"displayName": "Salt",
@@ -85,8 +82,7 @@
 		"notes": [
 			"Essential for seasoning. Can be used in a variety of dishes."
 		],
-		"needsMoreInfo": false,
-		"usedGPT": false
+		"needsMoreInfo": false
 	},
 	"chicken": {
 		"displayName": "Chicken",
@@ -108,8 +104,7 @@
 		"notes": [
 			"Widely used in various cuisines. Can be cooked in many ways such as grilling, baking, and frying."
 		],
-		"needsMoreInfo": false,
-		"usedGPT": false
+		"needsMoreInfo": false
 	},
     "groundcumin": {
         "displayName": "Ground Cumin",
@@ -127,8 +122,7 @@
         "notes": [
             "Commonly used in Middle Eastern, Indian, and Mexican cuisines."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": false
+        "needsMoreInfo": false
     },
     "basil": {
         "displayName": "Basil",
@@ -146,61 +140,50 @@
         "notes": [
             "Often used in Italian and Mediterranean dishes."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": false
+        "needsMoreInfo": false
     },
     "cinnamon": {
         "displayName": "Cinnamon",
-        "cost": ".003",
-        "tableToGram": "8",
+        "cost": 0.075,
+        "tableToGram": 8,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 6
+            "calories": 2.5
         },
         "type": "spice",
         "parent": "ingredients",
         "substitutes": {
-            "allspice": "1"
         },
         "specialized": false,
         "restrictions": [],
         "notes": [
             "Widely used in baking and desserts."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": true
+        "needsMoreInfo": false
     },
     "bayleaves": {
         "displayName": "Bay Leaves",
-        "cost": ".01",
-        "tableToGram": "1",
+        "cost": 0.35,
+        "tableToGram": 0.5,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 5
+            "calories": 3
         },
         "type": "herb",
         "parent": "ingredients",
         "substitutes": {
-            "thyme": "1"
         },
         "specialized": false,
         "restrictions": [],
         "notes": [
             "Used in soups, stews, and sauces for added flavor."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": true
+        "needsMoreInfo": false
     },
     "smokedpaprika": {
         "displayName": "Smoked Paprika",
-        "cost": ".005",
-        "tableToGram": "6",
+        "cost": 0.15,
+        "tableToGram": 7,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 20
+            "calories": 3.5
         },
         "type": "spice",
         "parent": "ingredients",
@@ -212,83 +195,79 @@
         "notes": [
             "Adds a smoky flavor to dishes."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": true
+        "needsMoreInfo": false
     },
     "thyme": {
         "displayName": "Thyme",
-        "cost": ".004",
-        "tableToGram": "2.5",
+        "cost": 0.07,
+        "tableToGram": 2.8,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 3
+            "calories": 2.6
         },
         "type": "herb",
         "parent": "ingredients",
         "substitutes": {
-            "oregano": "1"
         },
         "specialized": false,
         "restrictions": [],
         "notes": [
             "Common in Mediterranean and French cuisine."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": true
+        "needsMoreInfo": false
     },
     "garlicpowder": {
         "displayName": "Garlic Powder",
-        "cost": ".004",
-        "tableToGram": "3",
+        "cost": 0.02,
+        "tableToGram": 9.4,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 9
+            "calories": 3.3
         },
         "type": "seasoning",
         "parent": "ingredients",
         "substitutes": {
-            "fresh garlic": "3"
         },
         "specialized": false,
         "restrictions": [],
         "notes": [
             "Used for seasoning a variety of dishes."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": true
+        "needsMoreInfo": false
     },
+
+
+
+
+
+
+
+
+
     "oregano": {
         "displayName": "Oregano",
-        "cost": ".004",
-        "tableToGram": "1.5",
+        "cost": 0.07,
+        "tableToGram": 1.5,
         "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 4
+            "calories": 3.2
         },
         "type": "herb",
         "parent": "ingredients",
         "substitutes": {
-            "thyme": "1"
         },
         "specialized": false,
         "restrictions": [],
         "notes": [
             "Commonly used in Italian and Mediterranean dishes."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": true
+        "needsMoreInfo": false
     },
     "onionpowder": {
         "displayName": "Onion Powder",
-        "cost": ".004",
-        "tableToGram": "3.5",
+        "cost": 0.015,
+        "tableToGram": 7.5,
         "health": {
             "sugars": 0,
             "saturated fats": 0,
-            "calories": 0.4
+            "calories": 3.6
         },
         "type": "seasoning",
         "parent": "ingredients",
@@ -1965,30 +1944,25 @@
         "notes": [
             "Outer yellow part of lemon peel, used as a flavoring agent."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": true
+        "needsMoreInfo": true
     },
     "avocado": {
         "displayName": "Avocado",
         "cost": 0.007,
         "tableToGram": 20,
         "health": {
-            "sugars": 0,
-            "saturated fats": 1,
             "calories": 1.6
         },
         "type": "fruit",
         "parent": "ingredients",
         "substitutes": {
-            "guacamole": "1"
         },
         "specialized": false,
         "restrictions": [],
         "notes": [
             "Creamy fruit used in various dishes, particularly in salads, dips, and sandwiches."
         ],
-        "needsMoreInfo": false,
-        "usedGPT": true
+        "needsMoreInfo": false
     },
 	"cilantro": {
         "displayName": "Cilantro",

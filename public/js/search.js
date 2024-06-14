@@ -186,9 +186,9 @@ getJsonData().then(() => {
     if(data["needsMoreInfo"]){
       header.textContent += "*";
     }
-    if(data["usedGPT"]){
-      header.textContent += "^";
-    }
+    //if(data["usedGPT"]){
+    //  header.textContent += "^";
+    //}
 
     //add info and link
     card.href = "/ingredient/" + ingredient
