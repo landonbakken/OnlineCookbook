@@ -22,7 +22,6 @@ def loadFoodData():
     except json.JSONDecodeError:
         return "Error decoding JSON"
 
-
 def getFoodCalPerGram(foodIndex):
     # load data
     loadFoodData()
@@ -33,25 +32,14 @@ def getFoodCalPerGram(foodIndex):
     # find index of cals and get cals per serving
     kcals_per_serving = None
     for nutrient in foodData["foodNutrients"]:
+        #if it is the kcal info
         if (nutrient["nutrient"]["name"] == "Energy" and nutrient["nutrient"]["unitName"] == "kcal"):
-            # convert kcals to cals
-            kcals_per_serving = nutrient["amount"]
-            break
+            # get kcals and return kcals/gram (everything is based on 100 grams)
+            return round(nutrient["amount"] / 100, 2)
 
-    # get grams per portion
-    grams_per_serving = None
-    for portion in foodData["foodPortions"]:
-        grams_per_serving = portion["gramWeight"]
-        break
-
-    # Calculate calories per gram
-    if kcals_per_serving is not None and grams_per_serving is not None:
-        # Convert to cal/g
-        calories_per_g = kcals_per_serving / grams_per_serving
-        return calories_per_g
-    else:
-        print("Could not find cals/gram for food with index of", foodIndex)
-        return "N/A"
+    #couldnt find kcal info
+    print("Could not find cals/gram for food with index of", foodIndex)
+    return "N/A"
 
 def printDescriptionList():
     # load data
@@ -67,21 +55,21 @@ def printDescriptionList():
     except Exception as e:
         print(f"An error occurred: {e}")
 
-def foodIndexFromDescription(description):
+def foodIndexFromID(fdcId):
     # load data
     loadFoodData()
     foods = dataFile["SRLegacyFoods"]
     
     index = 0
     for food in foods:
-        if description == food["description"]:
+        if fdcId == food["fdcId"]:
             return index
         index += 1
 
+fdcId = 170673
+index = foodIndexFromID(fdcId)
 
-#foodIndex = 0
-#cals_per_gram = getFoodCalPerGram(foodIndex, input_file)
-#print("Food with index", foodIndex, "has calories per gram of", cals_per_gram)
-index = foodIndexFromDescription("Sweeteners, for baking, contains sugar and sucralose")
-print(index)
-print(getFoodCalPerGram(index))
+print("FDC-ID:", fdcId)
+print("Index", index)
+print("Description:", dataFile["SRLegacyFoods"][index]["description"])
+print("kcals/gram:", getFoodCalPerGram(index))

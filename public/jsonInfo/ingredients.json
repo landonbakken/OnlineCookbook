@@ -1,7 +1,7 @@
 {
 	"sugar": {
 		"displayName": "Sugar",
-        "FDCID": "Sweeteners, for baking, contains sugar and sucralose",
+        "fdcId": "170673",
 		"cost": 0.0015,
 		"tableToGram": 12.6,
 		"health": {
@@ -23,6 +23,7 @@
 	},
 	"milk": {
 		"displayName": "Milk",
+        "fdcId": "170870",
 		"cost": 0.001,
 		"tableToGram": 15.25,
 		"health": {
