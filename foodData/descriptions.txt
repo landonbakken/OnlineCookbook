@@ -1,0 +1,10 @@
+Sweeteners, tabletop, fructose, liquid
+Sweeteners, tabletop, saccharin (sodium saccharin)
+Sweeteners, tabletop, aspartame, EQUAL, packets
+Sweeteners, tabletop, fructose, dry, powder
+Sweeteners, tabletop, sucralose, SPLENDA packets
+Sweetener, syrup, agave
+Sweeteners, for baking, brown, contains sugar and sucralose
+Sweeteners, for baking, contains sugar and sucralose
+Sweeteners, sugar substitute, granulated, brown
+Sweetener, herbal extract powder from Stevia leaf

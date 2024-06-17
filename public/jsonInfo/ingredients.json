@@ -1,6 +1,7 @@
 {
 	"sugar": {
 		"displayName": "Sugar",
+        "FDCID": "Sweeteners, for baking, contains sugar and sucralose",
 		"cost": 0.0015,
 		"tableToGram": 12.6,
 		"health": {
