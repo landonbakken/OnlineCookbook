@@ -1,7 +1,7 @@
 import json
 
 # Example usage
-inputFile = "foodData\\FoodData_Central_sr_legacy_food_json_2021-10-28.json" #"foodData\\testFormatted.json"
+inputFile = "foodData\\foundationDownload.json" #"foodData\\FoodData_Central_sr_legacy_food_json_2021-10-28.json" #"foodData\\testFormatted.json"
 outputFile = "foodData\\descriptions.txt"
 dataFile = None
 
@@ -16,7 +16,7 @@ def loadFoodData():
     try:
         with open(inputFile, "r") as infile:
             # load data
-            dataFile = json.load(infile)
+            dataFile = json.load(infile)["FoundationFoods"]
     except FileNotFoundError:
         return "Data file not found"
     except json.JSONDecodeError:
@@ -27,7 +27,7 @@ def getFoodCalPerGram(foodIndex):
     loadFoodData()
 
     # get food data
-    foodData = dataFile["SRLegacyFoods"][foodIndex]
+    foodData = dataFile[foodIndex]
 
     # find index of cals and get cals per serving
     kcals_per_serving = None
@@ -41,35 +41,34 @@ def getFoodCalPerGram(foodIndex):
     print("Could not find cals/gram for food with index of", foodIndex)
     return "N/A"
 
-def printDescriptionList():
+def getDescriptionList():
     # load data
     loadFoodData()
-    foods = dataFile["SRLegacyFoods"]
     
     try:
         with open(outputFile, 'w') as outfile:
-            for food in foods:
+            for food in dataFile:
                 description = food["description"]
-                if"Sweetener" in description:
-                    outfile.write(description + '\n')
+                outfile.write(str(food["fdcId"]) + ": " + description + '\n')
     except Exception as e:
         print(f"An error occurred: {e}")
 
 def foodIndexFromID(fdcId):
     # load data
     loadFoodData()
-    foods = dataFile["SRLegacyFoods"]
     
     index = 0
-    for food in foods:
+    for food in dataFile:
         if fdcId == food["fdcId"]:
             return index
         index += 1
 
-fdcId = 170673
+#getDescriptionList()
+
+fdcId = 746784
 index = foodIndexFromID(fdcId)
 
 print("FDC-ID:", fdcId)
 print("Index", index)
-print("Description:", dataFile["SRLegacyFoods"][index]["description"])
+print("Description:", dataFile[index]["description"])
 print("kcals/gram:", getFoodCalPerGram(index))
