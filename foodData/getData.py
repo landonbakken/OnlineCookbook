@@ -3,6 +3,7 @@ import json
 # Example usage
 inputFile = "foodData\\foundationDownload.json" #"foodData\\FoodData_Central_sr_legacy_food_json_2021-10-28.json" #"foodData\\testFormatted.json"
 outputFile = "foodData\\descriptions.txt"
+ingredientFile = "public\\jsonInfo\\ingredients.json"
 dataFile = None
 
 def loadFoodData():
@@ -63,12 +64,39 @@ def foodIndexFromID(fdcId):
             return index
         index += 1
 
-getDescriptionList()
+def findFDCData():
+    #load ingredient data
+    with open(ingredientFile, "r") as file:
+        # load data
+        ingredientData = json.load(file)
+        
+    for ingredientID in ingredientData:
+        
+        #get the ID the fdc gave to the ingredient
+        fdcId = ingredientData[ingredientID]["fdcId"]
+        
+        #if the fdc ID has been assigned (ingredients with an ID of -1 aren't in the list or just havent been assigned)
+        if fdcId != "-1":
+            
+            #get the index of the food in the big fdc json file
+            fdcIndex = foodIndexFromID(fdcId)
+            
+            #assign the fdc calories per gram
+            ingredientData[ingredientID]["health"]["calories"] = getFoodCalPerGram(fdcIndex)
 
-fdcId = 746784
-index = foodIndexFromID(fdcId)
+    #save ingredient data
+    with open(ingredientFile, "w") as file:
+        # load data
+        json.dump(ingredientData, file, indent=4)
 
-print("FDC-ID:", fdcId)
-print("Index", index)
-print("Description:", dataFile[index]["description"])
-print("kcals/gram:", getFoodCalPerGram(index))
+findFDCData()
+
+#getDescriptionList()
+
+#fdcId = 746784
+#index = foodIndexFromID(fdcId)
+
+#print("FDC-ID:", fdcId)
+#print("Index", index)
+#print("Description:", dataFile[index]["description"])
+#print("kcals/gram:", getFoodCalPerGram(index))

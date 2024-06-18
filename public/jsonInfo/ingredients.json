@@ -1,119 +1,116 @@
 {
-	"sugar": {
-		"displayName": "Sugar",
-        "fdcId": "746784",
-		"cost": 0.0015,
-		"tableToGram": 12.6,
-		"health": {
-			"calories": 4
-		},
-		"type": "carbohydrate",
-		"parent": "ingredients",
-		"substitutes": {
-			"honey": 0.75,
-			"powdered sugar": 1
-		},
-		"specialized": false,
-		"restrictions": [
-		],
-		"notes": [
-			"Can be substituted with honey, powdered sugar, and a lot more."
-		],
-		"needsMoreInfo": false
-	},
-	"milk": {
-		"displayName": "Milk",
-        "fdcId": "746772",
-		"cost": 0.001,
-		"tableToGram": 15.25,
-		"health": {
-			"calories": 0.46
-		},
-		"type": "dairy",
-		"parent": "ingredients",
-		"substitutes": {
-			"almond milk": 1,
-			"soy milk": 1
-		},
-		"specialized": false,
-		"restrictions": [
-			"Lactose intolerance",
-			"Dairy-free diet"
-		],
-		"notes": [
-			"Commonly used in cooking and baking. Available in various fat percentages (whole, skim, etc.)",
+    "sugar": {
+        "displayName": "Sugar",
+        "fdcId": 746784,
+        "cost": 0.0015,
+        "tableToGram": 12.6,
+        "health": {
+            "calories": 4
+        },
+        "type": "carbohydrate",
+        "parent": "ingredients",
+        "substitutes": {
+            "honey": 0.75,
+            "powdered sugar": 1
+        },
+        "specialized": false,
+        "restrictions": [],
+        "notes": [
+            "Can be substituted with honey, powdered sugar, and a lot more."
+        ],
+        "needsMoreInfo": false
+    },
+    "milk": {
+        "displayName": "Milk",
+        "fdcId": 746772,
+        "cost": 0.001,
+        "tableToGram": 15.25,
+        "health": {
+            "calories": 0.46
+        },
+        "type": "dairy",
+        "parent": "ingredients",
+        "substitutes": {
+            "almond milk": 1,
+            "soy milk": 1
+        },
+        "specialized": false,
+        "restrictions": [
+            "Lactose intolerance",
+            "Dairy-free diet"
+        ],
+        "notes": [
+            "Commonly used in cooking and baking. Available in various fat percentages (whole, skim, etc.)",
             "Alternative taste different, but can be healthier"
-		],
-		"needsMoreInfo": false
-	},
-	"cocoapowder": {
-		"displayName": "Cocoa Powder",
-        "fdcId": "-1",
-		"cost": 0.03,
-		"tableToGram": 5.4,
-		"health": {
-			"calories": 2.28
-		},
-		"type": "carbohydrate",
-		"parent": "ingredients",
-		"substitutes": {
-		},
-		"specialized": false,
-		"restrictions": [
-			"None"
-		],
-		"notes": [
-			"Used in baking and making chocolate-flavored foods."
-		],
-		"needsMoreInfo": false
-	},
-	"salt": {
-		"displayName": "Salt",
-        "fdcId": "746775",
-		"cost": 0.0007,
-		"tableToGram": 18,
-		"health": {
-			"calories": 0
-		},
-		"type": "seasoning",
-		"parent": "ingredients",
-		"substitutes": {
-		},
-		"specialized": false,
-		"restrictions": [
-			"Low sodium diet"
-		],
-		"notes": [
-			"Essential for seasoning. Can be used in a variety of dishes."
-		],
-		"needsMoreInfo": false
-	},
-	"chicken": {
-		"displayName": "Chicken",
-        "fdcId": "2646170",
-		"cost": 0.01,
-		"tableToGram": 15,
-		"health": {
-			"calories": 1.5
-		},
-		"type": "meat",
-		"parent": "ingredients",
-		"substitutes": {
-			"tofu": 1.2
-		},
-		"specialized": false,
-		"restrictions": [
-			"Vegetarian",
-			"Vegan"
-		],
-		"notes": [
-			"Widely used in various cuisines. Can be cooked in many ways such as grilling, baking, and frying."
-		],
-		"needsMoreInfo": false
-	},
+        ],
+        "needsMoreInfo": false
+    },
+    "cocoapowder": {
+        "displayName": "Cocoa Powder",
+        "fdcId": -1,
+        "cost": 0.03,
+        "tableToGram": 5.4,
+        "health": {
+            "calories": 2.28
+        },
+        "type": "carbohydrate",
+        "parent": "ingredients",
+        "substitutes": {},
+        "specialized": false,
+        "restrictions": [
+            "None"
+        ],
+        "notes": [
+            "Used in baking and making chocolate-flavored foods."
+        ],
+        "needsMoreInfo": false
+    },
+    "salt": {
+        "displayName": "Salt",
+        "fdcId": 746775,
+        "cost": 0.0007,
+        "tableToGram": 18,
+        "health": {
+            "calories": 0
+        },
+        "type": "seasoning",
+        "parent": "ingredients",
+        "substitutes": {},
+        "specialized": false,
+        "restrictions": [
+            "Low sodium diet"
+        ],
+        "notes": [
+            "Essential for seasoning. Can be used in a variety of dishes."
+        ],
+        "needsMoreInfo": false
+    },
+    "chicken": {
+        "displayName": "Chicken",
+        "fdcId": 2646170,
+        "cost": 0.01,
+        "tableToGram": 15,
+        "health": {
+            "calories": 1.5
+        },
+        "type": "meat",
+        "parent": "ingredients",
+        "substitutes": {
+            "tofu": 1.2
+        },
+        "specialized": false,
+        "restrictions": [
+            "Vegetarian",
+            "Vegan"
+        ],
+        "notes": [
+            "Widely used in various cuisines. Can be cooked in many ways such as grilling, baking, and frying."
+        ],
+        "needsMoreInfo": false
+    },
     "groundcumin": {
         "displayName": "Ground Cumin",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.05,
         "tableToGram": 12,
         "health": {
@@ -121,8 +118,7 @@
         },
         "type": "seasoning",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -132,7 +128,7 @@
     },
     "basil": {
         "displayName": "Basil",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.07,
         "tableToGram": 0.7,
         "health": {
@@ -140,8 +136,7 @@
         },
         "type": "herb",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -151,7 +146,7 @@
     },
     "cinnamon": {
         "displayName": "Cinnamon",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.075,
         "tableToGram": 8,
         "health": {
@@ -159,8 +154,7 @@
         },
         "type": "spice",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -170,7 +164,7 @@
     },
     "bayleaves": {
         "displayName": "Bay Leaves",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.35,
         "tableToGram": 0.5,
         "health": {
@@ -178,8 +172,7 @@
         },
         "type": "herb",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -189,7 +182,7 @@
     },
     "smokedpaprika": {
         "displayName": "Smoked Paprika",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.15,
         "tableToGram": 7,
         "health": {
@@ -209,7 +202,7 @@
     },
     "thyme": {
         "displayName": "Thyme",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.07,
         "tableToGram": 2.8,
         "health": {
@@ -217,8 +210,7 @@
         },
         "type": "herb",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -228,7 +220,7 @@
     },
     "garlicpowder": {
         "displayName": "Garlic Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.02,
         "tableToGram": 9.4,
         "health": {
@@ -236,8 +228,7 @@
         },
         "type": "seasoning",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -247,7 +238,7 @@
     },
     "oregano": {
         "displayName": "Oregano",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.07,
         "tableToGram": 1.5,
         "health": {
@@ -255,8 +246,7 @@
         },
         "type": "herb",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -266,7 +256,7 @@
     },
     "onionpowder": {
         "displayName": "Onion Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.015,
         "tableToGram": 7.5,
         "health": {
@@ -289,7 +279,7 @@
     },
     "rosemary": {
         "displayName": "Rosemary",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".004",
         "tableToGram": "1",
         "health": {
@@ -312,7 +302,7 @@
     },
     "nutmegpowder": {
         "displayName": "Nutmeg Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".006",
         "tableToGram": "7",
         "health": {
@@ -335,7 +325,7 @@
     },
     "redpepperflakes": {
         "displayName": "Red Pepper Flakes",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".005",
         "tableToGram": "3",
         "health": {
@@ -358,7 +348,7 @@
     },
     "corianderpowder": {
         "displayName": "Coriander Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".005",
         "tableToGram": "5",
         "health": {
@@ -381,7 +371,7 @@
     },
     "cayennepepper": {
         "displayName": "Cayenne Pepper",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".005",
         "tableToGram": "6",
         "health": {
@@ -404,7 +394,7 @@
     },
     "groundcloves": {
         "displayName": "Ground Cloves",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".007",
         "tableToGram": "6",
         "health": {
@@ -427,7 +417,7 @@
     },
     "currrypowder": {
         "displayName": "Curry Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".005",
         "tableToGram": "7",
         "health": {
@@ -450,7 +440,7 @@
     },
     "yellowmustard": {
         "displayName": "Yellow Mustard",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".003",
         "tableToGram": "5",
         "health": {
@@ -473,7 +463,7 @@
     },
     "cardamompowder": {
         "displayName": "Cardamom Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "5",
         "health": {
@@ -496,7 +486,7 @@
     },
     "cajunseasoning": {
         "displayName": "Cajun Seasoning",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".006",
         "tableToGram": "6",
         "health": {
@@ -519,7 +509,7 @@
     },
     "allspicepowder": {
         "displayName": "Allspice Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".007",
         "tableToGram": "6",
         "health": {
@@ -542,7 +532,7 @@
     },
     "chilipowder": {
         "displayName": "Chili Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".005",
         "tableToGram": "6",
         "health": {
@@ -565,7 +555,7 @@
     },
     "gingerpowder": {
         "displayName": "Ginger Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".004",
         "tableToGram": "6",
         "health": {
@@ -588,7 +578,7 @@
     },
     "blackpepper": {
         "displayName": "Black Pepper",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".003",
         "tableToGram": "2.3",
         "health": {
@@ -611,7 +601,7 @@
     },
     "butter": {
         "displayName": "Butter",
-        "fdcId": "789828",
+        "fdcId": 789828,
         "cost": 0.008,
         "tableToGram": 14,
         "health": {
@@ -634,7 +624,7 @@
     },
     "bakingsoda": {
         "displayName": "Baking Soda",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".002",
         "tableToGram": "14",
         "health": {
@@ -657,7 +647,7 @@
     },
     "eggs": {
         "displayName": "Eggs",
-        "fdcId": "748967",
+        "fdcId": 748967,
         "cost": ".15",
         "tableToGram": "50",
         "health": {
@@ -683,7 +673,7 @@
     },
     "vanillaextract": {
         "displayName": "Vanilla Extract",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".05",
         "tableToGram": "5",
         "health": {
@@ -706,7 +696,7 @@
     },
     "allpurposeflour": {
         "displayName": "All Purpose Flour",
-        "fdcId": "790018",
+        "fdcId": 790018,
         "cost": 0.0018,
         "tableToGram": 8,
         "health": {
@@ -729,7 +719,7 @@
     },
     "chocolatechips": {
         "displayName": "Chocolate Chips",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "15",
         "health": {
@@ -752,7 +742,7 @@
     },
     "choppedwalnuts": {
         "displayName": "Chopped Walnuts",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "7",
         "health": {
@@ -777,7 +767,7 @@
     },
     "brownsugar": {
         "displayName": "Brown Sugar",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".003",
         "tableToGram": "12",
         "health": {
@@ -800,7 +790,7 @@
     },
     "water": {
         "displayName": "Water",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0,
         "tableToGram": 15,
         "health": {
@@ -819,7 +809,7 @@
     },
     "rhubarb": {
         "displayName": "Rhubarb",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "15",
         "health": {
@@ -842,7 +832,7 @@
     },
     "strawberries": {
         "displayName": "Strawberries",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "15",
         "health": {
@@ -865,7 +855,7 @@
     },
     "oats": {
         "displayName": "Oats",
-        "fdcId": "2346397",
+        "fdcId": 2346397,
         "cost": ".002",
         "tableToGram": "10",
         "health": {
@@ -886,9 +876,9 @@
         "needsMoreInfo": false,
         "usedGPT": true
     },
-	"pecans": {
+    "pecans": {
         "displayName": "Pecans",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "7",
         "health": {
@@ -913,7 +903,7 @@
     },
     "honey": {
         "displayName": "Honey",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.015,
         "tableToGram": 21,
         "health": {
@@ -934,7 +924,7 @@
     },
     "italianseasoning": {
         "displayName": "Italian Seasoning",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".006",
         "tableToGram": "3",
         "health": {
@@ -959,7 +949,7 @@
     },
     "bakingpowder": {
         "displayName": "Baking Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".002",
         "tableToGram": "14",
         "health": {
@@ -982,7 +972,7 @@
     },
     "parsley": {
         "displayName": "Parsley",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".003",
         "tableToGram": "3",
         "health": {
@@ -1005,7 +995,7 @@
     },
     "dill": {
         "displayName": "Dill",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".004",
         "tableToGram": "1",
         "health": {
@@ -1028,7 +1018,7 @@
     },
     "yeast": {
         "displayName": "Yeast",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".005",
         "tableToGram": "7",
         "health": {
@@ -1051,7 +1041,7 @@
     },
     "yogurt": {
         "displayName": "Yogurt",
-        "fdcId": "2259793",
+        "fdcId": 2259793,
         "cost": 0.04,
         "tableToGram": 15,
         "health": {
@@ -1059,8 +1049,7 @@
         },
         "type": "dairy",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -1071,7 +1060,7 @@
     },
     "garlic": {
         "displayName": "Garlic",
-        "fdcId": "1104647",
+        "fdcId": 1104647,
         "cost": ".003",
         "tableToGram": "3",
         "health": {
@@ -1094,7 +1083,7 @@
     },
     "cornstarch": {
         "displayName": "Cornstarch",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".002",
         "tableToGram": "7",
         "health": {
@@ -1117,7 +1106,7 @@
     },
     "iodine": {
         "displayName": "Iodine",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".003",
         "health": {
             "saturated fats": 0,
@@ -1136,7 +1125,7 @@
     },
     "vinegar": {
         "displayName": "Vinegar",
-        "fdcId": "1750347",
+        "fdcId": 1750347,
         "cost": ".001",
         "tableToGram": "15",
         "health": {
@@ -1159,7 +1148,7 @@
     },
     "garammasala": {
         "displayName": "Garam Masala",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".01",
         "tableToGram": "5",
         "health": {
@@ -1182,7 +1171,7 @@
     },
     "kashmirichili": {
         "displayName": "Kashmiri Chili",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".008",
         "tableToGram": "6",
         "health": {
@@ -1205,7 +1194,7 @@
     },
     "vegetableoil": {
         "displayName": "Vegetable Oil",
-        "fdcId": "748648",
+        "fdcId": 748648,
         "cost": ".003",
         "tableToGram": "14",
         "health": {
@@ -1228,7 +1217,7 @@
     },
     "canolaoil": {
         "displayName": "Canola Oil",
-        "fdcId": "748278",
+        "fdcId": 748278,
         "cost": ".004",
         "tableToGram": "14",
         "health": {
@@ -1251,7 +1240,7 @@
     },
     "onion": {
         "displayName": "Onion",
-        "fdcId": "1104962",
+        "fdcId": 1104962,
         "cost": 0.0015,
         "tableToGram": 10,
         "health": {
@@ -1272,7 +1261,7 @@
     },
     "cardamom": {
         "displayName": "Cardamom",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "5",
         "health": {
@@ -1295,7 +1284,7 @@
     },
     "tomatopuree": {
         "displayName": "Tomato Puree",
-        "fdcId": "2685582",
+        "fdcId": 2685582,
         "cost": ".003",
         "tableToGram": "15",
         "health": {
@@ -1318,7 +1307,7 @@
     },
     "redchilipowder": {
         "displayName": "Red Chili Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".005",
         "tableToGram": "6",
         "health": {
@@ -1341,7 +1330,7 @@
     },
     "heavycream": {
         "displayName": "Heavy Cream",
-        "fdcId": "746782",
+        "fdcId": 746782,
         "cost": 0.006,
         "tableToGram": 15,
         "health": {
@@ -1362,7 +1351,7 @@
     },
     "halfandhalf": {
         "displayName": "Half and Half",
-        "fdcId": "746782",
+        "fdcId": 746782,
         "cost": 0.0045,
         "tableToGram": 15,
         "health": {
@@ -1385,7 +1374,7 @@
     },
     "sweetredpepper": {
         "displayName": "Sweet Red Pepper",
-        "fdcId": "2258590",
+        "fdcId": 2258590,
         "cost": ".05",
         "tableToGram": "8",
         "health": {
@@ -1408,7 +1397,7 @@
     },
     "turmeric": {
         "displayName": "Turmeric",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".01",
         "tableToGram": "5",
         "health": {
@@ -1431,7 +1420,7 @@
     },
     "salmon": {
         "displayName": "Salmon",
-        "fdcId": "2684441",
+        "fdcId": 2684441,
         "cost": 0.03,
         "tableToGram": 15,
         "health": {
@@ -1441,8 +1430,7 @@
         },
         "type": "seafood",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -1453,7 +1441,7 @@
     },
     "soysauce": {
         "displayName": "Soy Sauce",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.005,
         "tableToGram": 15,
         "health": {
@@ -1463,8 +1451,7 @@
         },
         "type": "condiment",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -1475,7 +1462,7 @@
     },
     "gingersyrup": {
         "displayName": "Ginger Syrup",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "20",
         "health": {
@@ -1498,7 +1485,7 @@
     },
     "chiligarlicsauce": {
         "displayName": "Chili Garlic Sauce",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "15",
         "health": {
@@ -1521,7 +1508,7 @@
     },
     "limejuice": {
         "displayName": "Lime Juice",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "15",
         "health": {
@@ -1544,7 +1531,7 @@
     },
     "slicedalmonds": {
         "displayName": "Sliced Almonds",
-        "fdcId": "2346393",
+        "fdcId": 2346393,
         "cost": ".03",
         "tableToGram": "7",
         "health": {
@@ -1569,7 +1556,7 @@
     },
     "sesameseeds": {
         "displayName": "Sesame Seeds",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".01",
         "tableToGram": "9",
         "health": {
@@ -1594,7 +1581,7 @@
     },
     "avocadooil": {
         "displayName": "Avocado Oil",
-        "fdcId": "746608",
+        "fdcId": 746608,
         "cost": ".04",
         "tableToGram": "14",
         "health": {
@@ -1617,7 +1604,7 @@
     },
     "groundbeef": {
         "displayName": "Ground Beef",
-        "fdcId": "2514743",
+        "fdcId": 2514743,
         "cost": 0.01,
         "tableToGram": 15,
         "health": {
@@ -1627,8 +1614,7 @@
         },
         "type": "meat",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -1639,7 +1625,7 @@
     },
     "celery": {
         "displayName": "Celery",
-        "fdcId": "2346405",
+        "fdcId": 2346405,
         "cost": ".01",
         "tableToGram": "3",
         "health": {
@@ -1662,7 +1648,7 @@
     },
     "carrot": {
         "displayName": "Carrot",
-        "fdcId": "2258586",
+        "fdcId": 2258586,
         "cost": 0.0015,
         "tableToGram": 10,
         "health": {
@@ -1685,7 +1671,7 @@
     },
     "applecidervinegar": {
         "displayName": "Apple Cider Vinegar",
-        "fdcId": "1750347",
+        "fdcId": 1750347,
         "cost": ".02",
         "tableToGram": "15",
         "health": {
@@ -1708,7 +1694,7 @@
     },
     "tabascosauce": {
         "displayName": "Tabasco Sauce",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "15",
         "health": {
@@ -1731,7 +1717,7 @@
     },
     "ketchup": {
         "displayName": "Ketchup",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "15",
         "health": {
@@ -1754,7 +1740,7 @@
     },
     "lard": {
         "displayName": "Lard",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": 0.0025,
         "tableToGram": 13,
         "health": {
@@ -1777,7 +1763,7 @@
     },
     "rutabaga": {
         "displayName": "Rutabaga",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".04",
         "tableToGram": "15",
         "health": {
@@ -1800,7 +1786,7 @@
     },
     "marjoram": {
         "displayName": "Marjoram",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".005",
         "tableToGram": "1",
         "health": {
@@ -1824,7 +1810,7 @@
     },
     "potato": {
         "displayName": "Potato",
-        "fdcId": "2346401",
+        "fdcId": 2346401,
         "cost": ".005",
         "tableToGram": "7",
         "health": {
@@ -1847,7 +1833,7 @@
     },
     "groundpork": {
         "displayName": "Ground Pork",
-        "fdcId": "2514745",
+        "fdcId": 2514745,
         "cost": ".05",
         "tableToGram": "15",
         "health": {
@@ -1870,7 +1856,7 @@
     },
     "groundvenison": {
         "displayName": "Ground Venison",
-        "fdcId": "746758",
+        "fdcId": 746758,
         "cost": ".07",
         "tableToGram": "15",
         "health": {
@@ -1894,7 +1880,7 @@
     },
     "eggyolk": {
         "displayName": "Egg Yolk",
-        "fdcId": "748236",
+        "fdcId": 748236,
         "cost": ".01",
         "tableToGram": "18",
         "health": {
@@ -1917,7 +1903,7 @@
     },
     "keylimejuice": {
         "displayName": "Key Lime Juice",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".04",
         "tableToGram": "15",
         "health": {
@@ -1940,7 +1926,7 @@
     },
     "creamcheese": {
         "displayName": "Cream Cheese",
-        "fdcId": "328841",
+        "fdcId": 328841,
         "cost": ".05",
         "tableToGram": "15",
         "health": {
@@ -1964,7 +1950,7 @@
     },
     "sweetenedcondensedmilk": {
         "displayName": "Sweetened Condensed Milk",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".04",
         "tableToGram": "20",
         "health": {
@@ -1987,7 +1973,7 @@
     },
     "lemonjuice": {
         "displayName": "Lemon Juice",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "15",
         "health": {
@@ -2010,7 +1996,7 @@
     },
     "lemonzest": {
         "displayName": "Lemon Zest",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "5",
         "health": {
@@ -2032,7 +2018,7 @@
     },
     "avocado": {
         "displayName": "Avocado",
-        "fdcId": "2345411",
+        "fdcId": 2345411,
         "cost": 0.007,
         "tableToGram": 20,
         "health": {
@@ -2040,8 +2026,7 @@
         },
         "type": "fruit",
         "parent": "ingredients",
-        "substitutes": {
-        },
+        "substitutes": {},
         "specialized": false,
         "restrictions": [],
         "notes": [
@@ -2049,9 +2034,9 @@
         ],
         "needsMoreInfo": false
     },
-	"cilantro": {
+    "cilantro": {
         "displayName": "Cilantro",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "5",
         "health": {
@@ -2074,7 +2059,7 @@
     },
     "powderedsugar": {
         "displayName": "Powdered Sugar",
-        "fdcId": "746784",
+        "fdcId": 746784,
         "cost": ".01",
         "tableToGram": "8",
         "health": {
@@ -2098,7 +2083,7 @@
     },
     "shreddedcarrots": {
         "displayName": "Shredded Carrots",
-        "fdcId": "746764",
+        "fdcId": 746764,
         "cost": ".02",
         "tableToGram": "4",
         "health": {
@@ -2121,7 +2106,7 @@
     },
     "dumplingwrapper": {
         "displayName": "Dumpling Wrapper",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "15",
         "health": {
@@ -2144,7 +2129,7 @@
     },
     "paprikapowder": {
         "displayName": "Paprika Powder",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "10",
         "health": {
@@ -2167,7 +2152,7 @@
     },
     "whitepepper": {
         "displayName": "White Pepper",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".04",
         "tableToGram": "7",
         "health": {
@@ -2190,7 +2175,7 @@
     },
     "shreddednapacabbage": {
         "displayName": "Shredded Napa Cabbage",
-        "fdcId": "2686672",
+        "fdcId": 2686672,
         "cost": ".03",
         "tableToGram": "8",
         "health": {
@@ -2213,7 +2198,7 @@
     },
     "tofu": {
         "displayName": "Tofu",
-        "fdcId": "1999630",
+        "fdcId": 1999630,
         "cost": ".03",
         "health": {
             "sugars": 0,
@@ -2236,7 +2221,7 @@
     },
     "scallion": {
         "displayName": "Scallion",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "10",
         "health": {
@@ -2259,7 +2244,7 @@
     },
     "ginger": {
         "displayName": "Ginger",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".04",
         "tableToGram": "10",
         "health": {
@@ -2282,7 +2267,7 @@
     },
     "hoisinsauce": {
         "displayName": "Hoisin Sauce",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "15",
         "health": {
@@ -2305,7 +2290,7 @@
     },
     "greenonion": {
         "displayName": "Green Onion",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "10",
         "health": {
@@ -2328,7 +2313,7 @@
     },
     "ricevinegar": {
         "displayName": "Rice Vinegar",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "15",
         "health": {
@@ -2351,7 +2336,7 @@
     },
     "jalapeno": {
         "displayName": "Jalapeno",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "7",
         "health": {
@@ -2374,7 +2359,7 @@
     },
     "anaheim": {
         "displayName": "Anaheim",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "7",
         "health": {
@@ -2397,7 +2382,7 @@
     },
     "serrano": {
         "displayName": "Serrano",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".04",
         "tableToGram": "7",
         "health": {
@@ -2420,7 +2405,7 @@
     },
     "poblano": {
         "displayName": "Poblano",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".05",
         "tableToGram": "7",
         "health": {
@@ -2443,7 +2428,7 @@
     },
     "fishsauce": {
         "displayName": "Fish Sauce",
-        "fdcId": "-1",
+        "fdcId": -1,
         "cost": ".03",
         "tableToGram": "15",
         "health": {
@@ -2464,25 +2449,25 @@
         "needsMoreInfo": false,
         "usedGPT": true
     },
-	"unclemike'sspices": {
-		"displayName": "Uncle Mike's Spices",
-        "fdcId": "-1",
-		"cost": "-1",
-		"tableToGram": "-1",
-		"health": {
-			"saturated fats": -1,
-			"calories": -1
-		},
-		"type": "Spice Mix",
-		"parent": "ingredients",
-		"substitutes": {},
-		"specialized": true,
-		"restrictions": [
-			""
-		],
-		"notes": [
-			"This isn't a brand, it is literally Uncle Mike's spices and I don't know what is in it."
-		],
-		"needsMoreInfo": true
-	}
+    "unclemike'sspices": {
+        "displayName": "Uncle Mike's Spices",
+        "fdcId": -1,
+        "cost": "-1",
+        "tableToGram": "-1",
+        "health": {
+            "saturated fats": -1,
+            "calories": -1
+        },
+        "type": "Spice Mix",
+        "parent": "ingredients",
+        "substitutes": {},
+        "specialized": true,
+        "restrictions": [
+            ""
+        ],
+        "notes": [
+            "This isn't a brand, it is literally Uncle Mike's spices and I don't know what is in it."
+        ],
+        "needsMoreInfo": true
+    }
 }
