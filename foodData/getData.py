@@ -63,7 +63,7 @@ def foodIndexFromID(fdcId):
             return index
         index += 1
 
-#getDescriptionList()
+getDescriptionList()
 
 fdcId = 746784
 index = foodIndexFromID(fdcId)
