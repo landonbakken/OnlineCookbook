@@ -5,7 +5,7 @@
         "cost": 0.0015,
         "tableToGram": 12.6,
         "health": {
-            "calories": 4
+            "calories": 3.85
         },
         "type": "carbohydrate",
         "parent": "ingredients",
@@ -26,7 +26,7 @@
         "cost": 0.001,
         "tableToGram": 15.25,
         "health": {
-            "calories": 0.46
+            "calories": 0.43
         },
         "type": "dairy",
         "parent": "ingredients",
@@ -71,7 +71,7 @@
         "cost": 0.0007,
         "tableToGram": 18,
         "health": {
-            "calories": 0
+            "calories": "N/A"
         },
         "type": "seasoning",
         "parent": "ingredients",
@@ -91,7 +91,7 @@
         "cost": 0.01,
         "tableToGram": 15,
         "health": {
-            "calories": 1.5
+            "calories": 1.06
         },
         "type": "meat",
         "parent": "ingredients",
@@ -605,7 +605,7 @@
         "cost": 0.008,
         "tableToGram": 14,
         "health": {
-            "calories": 7
+            "calories": "N/A"
         },
         "type": "dairy",
         "parent": "ingredients",
@@ -653,7 +653,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 1.5,
-            "calories": 72
+            "calories": 1.48
         },
         "type": "protein",
         "parent": "ingredients",
@@ -700,7 +700,7 @@
         "cost": 0.0018,
         "tableToGram": 8,
         "health": {
-            "calories": 4
+            "calories": 3.62
         },
         "type": "grain",
         "parent": "ingredients",
@@ -861,7 +861,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 0,
-            "calories": 30
+            "calories": 3.81
         },
         "type": "grain",
         "parent": "ingredients",
@@ -1045,7 +1045,7 @@
         "cost": 0.04,
         "tableToGram": 15,
         "health": {
-            "calories": 0.8
+            "calories": 0.78
         },
         "type": "dairy",
         "parent": "ingredients",
@@ -1066,7 +1066,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 0,
-            "calories": 4
+            "calories": 1.43
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -1125,7 +1125,7 @@
     },
     "vinegar": {
         "displayName": "Vinegar",
-        "fdcId": 1750347,
+        "fdcId": -1,
         "cost": ".001",
         "tableToGram": "15",
         "health": {
@@ -1194,13 +1194,13 @@
     },
     "vegetableoil": {
         "displayName": "Vegetable Oil",
-        "fdcId": 748648,
+        "fdcId": 748608,
         "cost": ".003",
         "tableToGram": "14",
         "health": {
             "sugars": 0,
             "saturated fats": 1.9,
-            "calories": 124
+            "calories": "N/A"
         },
         "type": "oil",
         "parent": "ingredients",
@@ -1223,7 +1223,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 1,
-            "calories": 124
+            "calories": "N/A"
         },
         "type": "oil",
         "parent": "ingredients",
@@ -1244,7 +1244,7 @@
         "cost": 0.0015,
         "tableToGram": 10,
         "health": {
-            "calories": 0.45
+            "calories": 0.35
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -1290,7 +1290,7 @@
         "health": {
             "sugars": 2,
             "saturated fats": 0,
-            "calories": 15
+            "calories": 0.41
         },
         "type": "condiment",
         "parent": "ingredients",
@@ -1334,7 +1334,7 @@
         "cost": 0.006,
         "tableToGram": 15,
         "health": {
-            "calories": 3.5
+            "calories": 0.6
         },
         "type": "dairy",
         "parent": "ingredients",
@@ -1357,7 +1357,7 @@
         "health": {
             "sugars": 1,
             "saturated fats": 3,
-            "calories": 1.6
+            "calories": 0.6
         },
         "type": "dairy",
         "parent": "ingredients",
@@ -1380,7 +1380,7 @@
         "health": {
             "sugars": 4,
             "saturated fats": 0,
-            "calories": 30
+            "calories": 0.31
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -1426,7 +1426,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 0.8,
-            "calories": 2
+            "calories": 1.97
         },
         "type": "seafood",
         "parent": "ingredients",
@@ -1537,7 +1537,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 0.5,
-            "calories": 45
+            "calories": 6.26
         },
         "type": "nut",
         "parent": "ingredients",
@@ -1581,13 +1581,13 @@
     },
     "avocadooil": {
         "displayName": "Avocado Oil",
-        "fdcId": 746608,
+        "fdcId": 748608,
         "cost": ".04",
         "tableToGram": "14",
         "health": {
             "sugars": 0,
             "saturated fats": 1.6,
-            "calories": 124
+            "calories": "N/A"
         },
         "type": "oil",
         "parent": "ingredients",
@@ -1610,7 +1610,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 4.5,
-            "calories": 2.5
+            "calories": 1.85
         },
         "type": "meat",
         "parent": "ingredients",
@@ -1631,7 +1631,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 0,
-            "calories": 6
+            "calories": 0.17
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -1654,7 +1654,7 @@
         "health": {
             "sugars": 2,
             "saturated fats": 0,
-            "calories": 0.45
+            "calories": 0.48
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -1671,7 +1671,7 @@
     },
     "applecidervinegar": {
         "displayName": "Apple Cider Vinegar",
-        "fdcId": 1750347,
+        "fdcId": -1,
         "cost": ".02",
         "tableToGram": "15",
         "health": {
@@ -1816,7 +1816,7 @@
         "health": {
             "sugars": 1,
             "saturated fats": 0,
-            "calories": 30
+            "calories": 0.83
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -1839,7 +1839,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 8,
-            "calories": 250
+            "calories": 2.28
         },
         "type": "meat",
         "parent": "ingredients",
@@ -1862,7 +1862,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 6,
-            "calories": 250
+            "calories": 1.76
         },
         "type": "meat",
         "parent": "ingredients",
@@ -1886,7 +1886,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 1.6,
-            "calories": 55
+            "calories": 3.34
         },
         "type": "egg",
         "parent": "ingredients",
@@ -1907,9 +1907,7 @@
         "cost": ".04",
         "tableToGram": "15",
         "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 8
+            "calories": 0.25
         },
         "type": "fruit juice",
         "parent": "ingredients",
@@ -1932,7 +1930,7 @@
         "health": {
             "sugars": 1,
             "saturated fats": 6,
-            "calories": 50
+            "calories": 0.84
         },
         "type": "dairy",
         "parent": "ingredients",
@@ -1954,9 +1952,7 @@
         "cost": ".04",
         "tableToGram": "20",
         "health": {
-            "sugars": 21,
-            "saturated fats": 5,
-            "calories": 140
+            "calories": 3
         },
         "type": "dairy",
         "parent": "ingredients",
@@ -1969,7 +1965,7 @@
             "Condensed milk with added sugar, commonly used in desserts and baking."
         ],
         "needsMoreInfo": false,
-        "usedGPT": true
+        "usedGPT": false
     },
     "lemonjuice": {
         "displayName": "Lemon Juice",
@@ -2018,7 +2014,7 @@
     },
     "avocado": {
         "displayName": "Avocado",
-        "fdcId": 2345411,
+        "fdcId": -1,
         "cost": 0.007,
         "tableToGram": 20,
         "health": {
@@ -2065,7 +2061,7 @@
         "health": {
             "sugars": 4,
             "saturated fats": 0,
-            "calories": 30
+            "calories": 3.85
         },
         "type": "sweetener",
         "parent": "ingredients",
@@ -2089,7 +2085,7 @@
         "health": {
             "sugars": 3,
             "saturated fats": 0,
-            "calories": 30
+            "calories": 0.37
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -2175,13 +2171,13 @@
     },
     "shreddednapacabbage": {
         "displayName": "Shredded Napa Cabbage",
-        "fdcId": 2686672,
+        "fdcId": 2346407,
         "cost": ".03",
         "tableToGram": "8",
         "health": {
             "sugars": 2,
             "saturated fats": 0,
-            "calories": 20
+            "calories": 0.31
         },
         "type": "vegetable",
         "parent": "ingredients",
@@ -2203,7 +2199,7 @@
         "health": {
             "sugars": 0,
             "saturated fats": 0.5,
-            "calories": 36
+            "calories": 0.39
         },
         "type": "protein",
         "parent": "ingredients",

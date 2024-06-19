@@ -646,7 +646,7 @@
 		"needsMoreInfo": false,
 		"ingredients": {
 			"eggyolk": {
-				"unit": "item",
+				"unit": "egg",
 				"amount": "3"
 			},
 			"keylimejuice": {
@@ -671,7 +671,7 @@
 		"parent": "recipes",
 		"ethnicity": "None",
 		"difficulty": "3",
-		"defaultServings": "1",
+		"defaultServings": "8",
 		"directions": [
 			"Mix dry ingredients in a food processor (don't over-mix)",
 			"Add butter and lard to dry ingredients (don't over-mix)",
@@ -1037,15 +1037,15 @@
 				"amount": "1"
 			},
 			"greenonion": {
-				"unit": "peice",
+				"unit": "piece",
 				"amount": "1"
 			},
 			"ginger": {
-				"unit": "peice",
+				"unit": "piece",
 				"amount": "1"
 			},
 			"garlic": {
-				"unit": "peice",
+				"unit": "piece",
 				"amount": "1"
 			}
 		}
@@ -1098,7 +1098,7 @@
 				"amount": "160"
 			},
 			"garlic": {
-				"unit": "cloves",
+				"unit": "clove",
 				"amount": "8"
 			},
 			"ricevinegar": {
@@ -1239,7 +1239,7 @@
 					"amount": ".25"
 				},
 				"garlic": {
-					"unit": "piece",
+					"unit": "clove",
 					"amount": "1"
 				},
 				"whitepepper": {

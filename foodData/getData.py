@@ -34,7 +34,7 @@ def getFoodCalPerGram(foodIndex):
     kcals_per_serving = None
     for nutrient in foodData["foodNutrients"]:
         #if it is the kcal info
-        if (nutrient["nutrient"]["name"] == "Energy" and nutrient["nutrient"]["unitName"] == "kcal"):
+        if nutrient["nutrient"]["unitName"] == "kcal":
             # get kcals and return kcals/gram (everything is based on 100 grams)
             return round(nutrient["amount"] / 100, 2)
 
@@ -63,6 +63,8 @@ def foodIndexFromID(fdcId):
         if fdcId == food["fdcId"]:
             return index
         index += 1
+        
+    print("uh oh:", fdcId)
 
 def findFDCData():
     #load ingredient data
@@ -71,12 +73,12 @@ def findFDCData():
         ingredientData = json.load(file)
         
     for ingredientID in ingredientData:
-        
         #get the ID the fdc gave to the ingredient
         fdcId = ingredientData[ingredientID]["fdcId"]
         
         #if the fdc ID has been assigned (ingredients with an ID of -1 aren't in the list or just havent been assigned)
-        if fdcId != "-1":
+        if fdcId != -1:
+            print(fdcId, "-", ingredientData[ingredientID]["displayName"])
             
             #get the index of the food in the big fdc json file
             fdcIndex = foodIndexFromID(fdcId)
@@ -89,7 +91,20 @@ def findFDCData():
         # load data
         json.dump(ingredientData, file, indent=4)
 
+def reformatFile(input_file):
+    #load ingredient data
+    with open(input_file, "r") as file:
+        # load data
+        data = json.load(file)
+        
+    #save ingredient data formatted
+    with open(input_file, "w") as file:
+        # load data
+        json.dump(data, file, indent=4)
+
+
 findFDCData()
+#reformatFile("foodData\\test_2.json")
 
 #getDescriptionList()
 

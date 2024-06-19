@@ -91,15 +91,36 @@ function showOrHide(dataList, value){
 
 function getIngredientGrams(ingredient, ingredientID){
   initialUnit = ingredient["unit"]
-  if(initialUnit == "gram"){
-    return ingredient["amount"];
+  tbspToGram = parseFloat(ingredients[ingredientID]["tableToGram"])
+  multiplier = null //stays as null if cant be found
+
+  //metric weight (unit -> grams)
+  if(initialUnit in units["weight"]["metric"]){
+    multiplier = units["weight"]["metric"][initialUnit]
   }
-  else if(initialUnit in units["volume"]["imperial"] && ingredients[ingredientID]["tableToGram"] != "-1"){
-    //convert to tablespoons
-    tablespoons = ingredient["amount"] * units["volume"]["imperial"]["tablespoon"] / units["volume"]["imperial"][initialUnit]
-    //convert and return as grams
-    return tablespoons * ingredients[ingredientID]["tableToGram"]
+  //imperial weight (unit -> grams)
+  if(initialUnit in units["weight"]["imperial"]){
+    multiplier = units["weight"]["imperial"][initialUnit]
   }
+  //metric volume (unit -> tablespoons -> grams)
+  if(initialUnit in units["volume"]["metric"] && tbspToGram != "-1"){
+    multiplier = units["volume"]["metric"][initialUnit] * tbspToGram
+  }
+  //imperial volume (unit -> tablespoons -> grams)
+  if(initialUnit in units["volume"]["imperial"] && tbspToGram != "-1"){
+    multiplier = units["volume"]["imperial"][initialUnit] * tbspToGram
+  }
+  //unofficial (unit -> grams)
+  if(initialUnit in units["unofficial"]){
+    multiplier = units["unofficial"][initialUnit]
+  }
+
+  
+  if(multiplier != null){
+    return ingredient["amount"] * multiplier
+  }
+
+  //couldnt find it
   console.log("Couldnt figure out conversion from " + ingredient["unit"] + " to grams for " + ingredients[ingredientID].displayName);
   return 0
 }
@@ -110,7 +131,11 @@ function getIngredientCost(ingredient, ingredientID){
 }
 function getIngredientCals(ingredient, ingredientID){
   grams = getIngredientGrams(ingredient, ingredientID);
-  return grams * ingredients[ingredientID]["health"]["calories"]
+  cals = ingredients[ingredientID]["health"]["calories"]
+  if(cals != "N/A"){
+    return grams * cals
+  }
+  return 0
 }
 
 
