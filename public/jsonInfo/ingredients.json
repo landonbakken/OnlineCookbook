@@ -1,2469 +1,2489 @@
 {
-    "sugar": {
-        "displayName": "Sugar",
-        "fdcId": 746784,
-        "cost": 0.0015,
-        "tableToGram": 12.6,
-        "health": {
-            "calories": 3.85
-        },
-        "type": "carbohydrate",
-        "parent": "ingredients",
-        "substitutes": {
-            "honey": 0.75,
-            "powdered sugar": 1
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Can be substituted with honey, powdered sugar, and a lot more."
-        ],
-        "needsMoreInfo": false
-    },
-    "milk": {
-        "displayName": "Milk",
-        "fdcId": 746772,
-        "cost": 0.001,
-        "tableToGram": 15.25,
-        "health": {
-            "calories": 0.43
-        },
-        "type": "dairy",
-        "parent": "ingredients",
-        "substitutes": {
-            "almond milk": 1,
-            "soy milk": 1
-        },
-        "specialized": false,
-        "restrictions": [
-            "Lactose intolerance",
-            "Dairy-free diet"
-        ],
-        "notes": [
-            "Commonly used in cooking and baking. Available in various fat percentages (whole, skim, etc.)",
-            "Alternative taste different, but can be healthier"
-        ],
-        "needsMoreInfo": false
-    },
-    "cocoapowder": {
-        "displayName": "Cocoa Powder",
-        "fdcId": -1,
-        "cost": 0.03,
-        "tableToGram": 5.4,
-        "health": {
-            "calories": 2.28
-        },
-        "type": "carbohydrate",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [
-            "None"
-        ],
-        "notes": [
-            "Used in baking and making chocolate-flavored foods."
-        ],
-        "needsMoreInfo": false
-    },
-    "salt": {
-        "displayName": "Salt",
-        "fdcId": 746775,
-        "cost": 0.0007,
-        "tableToGram": 18,
-        "health": {
-            "calories": "N/A"
-        },
-        "type": "seasoning",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [
-            "Low sodium diet"
-        ],
-        "notes": [
-            "Essential for seasoning. Can be used in a variety of dishes."
-        ],
-        "needsMoreInfo": false
-    },
-    "chicken": {
-        "displayName": "Chicken",
-        "fdcId": 2646170,
-        "cost": 0.01,
-        "tableToGram": 15,
-        "health": {
-            "calories": 1.06
-        },
-        "type": "meat",
-        "parent": "ingredients",
-        "substitutes": {
-            "tofu": 1.2
-        },
-        "specialized": false,
-        "restrictions": [
-            "Vegetarian",
-            "Vegan"
-        ],
-        "notes": [
-            "Widely used in various cuisines. Can be cooked in many ways such as grilling, baking, and frying."
-        ],
-        "needsMoreInfo": false
-    },
-    "groundcumin": {
-        "displayName": "Ground Cumin",
-        "fdcId": -1,
-        "cost": 0.05,
-        "tableToGram": 12,
-        "health": {
-            "calories": 8
-        },
-        "type": "seasoning",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in Middle Eastern, Indian, and Mexican cuisines."
-        ],
-        "needsMoreInfo": false
-    },
-    "basil": {
-        "displayName": "Basil",
-        "fdcId": -1,
-        "cost": 0.07,
-        "tableToGram": 0.7,
-        "health": {
-            "calories": 0.5
-        },
-        "type": "herb",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Often used in Italian and Mediterranean dishes."
-        ],
-        "needsMoreInfo": false
-    },
-    "cinnamon": {
-        "displayName": "Cinnamon",
-        "fdcId": -1,
-        "cost": 0.075,
-        "tableToGram": 8,
-        "health": {
-            "calories": 2.5
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Widely used in baking and desserts."
-        ],
-        "needsMoreInfo": false
-    },
-    "bayleaves": {
-        "displayName": "Bay Leaves",
-        "fdcId": -1,
-        "cost": 0.35,
-        "tableToGram": 0.5,
-        "health": {
-            "calories": 3
-        },
-        "type": "herb",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in soups, stews, and sauces for added flavor."
-        ],
-        "needsMoreInfo": false
-    },
-    "smokedpaprika": {
-        "displayName": "Smoked Paprika",
-        "fdcId": -1,
-        "cost": 0.15,
-        "tableToGram": 7,
-        "health": {
-            "calories": 3.5
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "paprika": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Adds a smoky flavor to dishes."
-        ],
-        "needsMoreInfo": false
-    },
-    "thyme": {
-        "displayName": "Thyme",
-        "fdcId": -1,
-        "cost": 0.07,
-        "tableToGram": 2.8,
-        "health": {
-            "calories": 2.6
-        },
-        "type": "herb",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Common in Mediterranean and French cuisine."
-        ],
-        "needsMoreInfo": false
-    },
-    "garlicpowder": {
-        "displayName": "Garlic Powder",
-        "fdcId": -1,
-        "cost": 0.02,
-        "tableToGram": 9.4,
-        "health": {
-            "calories": 3.3
-        },
-        "type": "seasoning",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used for seasoning a variety of dishes."
-        ],
-        "needsMoreInfo": false
-    },
-    "oregano": {
-        "displayName": "Oregano",
-        "fdcId": -1,
-        "cost": 0.07,
-        "tableToGram": 1.5,
-        "health": {
-            "calories": 3.2
-        },
-        "type": "herb",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in Italian and Mediterranean dishes."
-        ],
-        "needsMoreInfo": false
-    },
-    "onionpowder": {
-        "displayName": "Onion Powder",
-        "fdcId": -1,
-        "cost": 0.015,
-        "tableToGram": 7.5,
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 3.6
-        },
-        "type": "seasoning",
-        "parent": "ingredients",
-        "substitutes": {
-            "fresh onion": "3"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used for seasoning a variety of dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "rosemary": {
-        "displayName": "Rosemary",
-        "fdcId": -1,
-        "cost": ".004",
-        "tableToGram": "1",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 3
-        },
-        "type": "herb",
-        "parent": "ingredients",
-        "substitutes": {
-            "thyme": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in Mediterranean cuisine."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "nutmegpowder": {
-        "displayName": "Nutmeg Powder",
-        "fdcId": -1,
-        "cost": ".006",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0.5,
-            "calories": 15
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "cinnamon": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking and desserts."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "redpepperflakes": {
-        "displayName": "Red Pepper Flakes",
-        "fdcId": -1,
-        "cost": ".005",
-        "tableToGram": "3",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 5
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "cayenne pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Adds heat to dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "corianderpowder": {
-        "displayName": "Coriander Powder",
-        "fdcId": -1,
-        "cost": ".005",
-        "tableToGram": "5",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 20
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "cumin": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in various cuisines around the world."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "cayennepepper": {
-        "displayName": "Cayenne Pepper",
-        "fdcId": -1,
-        "cost": ".005",
-        "tableToGram": "6",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 17
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "red pepper flakes": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Adds heat to dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "groundcloves": {
-        "displayName": "Ground Cloves",
-        "fdcId": -1,
-        "cost": ".007",
-        "tableToGram": "6",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 20
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "allspice": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking and savory dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "currrypowder": {
-        "displayName": "Curry Powder",
-        "fdcId": -1,
-        "cost": ".005",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 20
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "garam masala": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in Indian cuisine."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "yellowmustard": {
-        "displayName": "Yellow Mustard",
-        "fdcId": -1,
-        "cost": ".003",
-        "tableToGram": "5",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 5
-        },
-        "type": "condiment",
-        "parent": "ingredients",
-        "substitutes": {
-            "dijon mustard": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in various dishes and as a condiment."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "cardamompowder": {
-        "displayName": "Cardamom Powder",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "5",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 18
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "cinnamon": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking and Indian cuisine."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "cajunseasoning": {
-        "displayName": "Cajun Seasoning",
-        "fdcId": -1,
-        "cost": ".006",
-        "tableToGram": "6",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 20
-        },
-        "type": "spice blend",
-        "parent": "ingredients",
-        "substitutes": {
-            "creole seasoning": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in Cajun and Creole cuisines."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "allspicepowder": {
-        "displayName": "Allspice Powder",
-        "fdcId": -1,
-        "cost": ".007",
-        "tableToGram": "6",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 17
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "cloves": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking and savory dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "chilipowder": {
-        "displayName": "Chili Powder",
-        "fdcId": -1,
-        "cost": ".005",
-        "tableToGram": "6",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 16
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "paprika": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in various cuisines to add heat."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "gingerpowder": {
-        "displayName": "Ginger Powder",
-        "fdcId": -1,
-        "cost": ".004",
-        "tableToGram": "6",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 18
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "fresh ginger": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking and Asian cuisine."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "blackpepper": {
-        "displayName": "Black Pepper",
-        "fdcId": -1,
-        "cost": ".003",
-        "tableToGram": "2.3",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 6
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "white pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used for seasoning a variety of dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "butter": {
-        "displayName": "Butter",
-        "fdcId": 789828,
-        "cost": 0.008,
-        "tableToGram": 14,
-        "health": {
-            "calories": "N/A"
-        },
-        "type": "dairy",
-        "parent": "ingredients",
-        "substitutes": {
-            "margarine": 1
-        },
-        "specialized": false,
-        "restrictions": [
-            "Dairy-free diet"
-        ],
-        "notes": [
-            "Commonly used in cooking and baking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "bakingsoda": {
-        "displayName": "Baking Soda",
-        "fdcId": -1,
-        "cost": ".002",
-        "tableToGram": "14",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 0
-        },
-        "type": "leavening agent",
-        "parent": "ingredients",
-        "substitutes": {
-            "baking powder": "3"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking to help dough rise."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "eggs": {
-        "displayName": "Eggs",
-        "fdcId": 748967,
-        "cost": ".15",
-        "tableToGram": "50",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 1.5,
-            "calories": 1.48
-        },
-        "type": "protein",
-        "parent": "ingredients",
-        "substitutes": {
-            "flax eggs": "1"
-        },
-        "specialized": false,
-        "restrictions": [
-            "Vegan",
-            "Egg allergy"
-        ],
-        "notes": [
-            "Widely used in cooking and baking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "vanillaextract": {
-        "displayName": "Vanilla Extract",
-        "fdcId": -1,
-        "cost": ".05",
-        "tableToGram": "5",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 12
-        },
-        "type": "flavoring",
-        "parent": "ingredients",
-        "substitutes": {
-            "vanilla essence": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in baking and desserts."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "allpurposeflour": {
-        "displayName": "All Purpose Flour",
-        "fdcId": 790018,
-        "cost": 0.0018,
-        "tableToGram": 8,
-        "health": {
-            "calories": 3.62
-        },
-        "type": "grain",
-        "parent": "ingredients",
-        "substitutes": {
-            "whole wheat flour": 1
-        },
-        "specialized": false,
-        "restrictions": [
-            "Gluten-free diet"
-        ],
-        "notes": [
-            "Used in a wide range of baking and cooking applications."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "chocolatechips": {
-        "displayName": "Chocolate Chips",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 12,
-            "saturated fats": 3,
-            "calories": 70
-        },
-        "type": "sweetener",
-        "parent": "ingredients",
-        "substitutes": {
-            "carob chips": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking and as a topping."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "choppedwalnuts": {
-        "displayName": "Chopped Walnuts",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0.6,
-            "calories": 45
-        },
-        "type": "nut",
-        "parent": "ingredients",
-        "substitutes": {
-            "pecans": "1"
-        },
-        "specialized": false,
-        "restrictions": [
-            "Nut allergy"
-        ],
-        "notes": [
-            "Used in baking and as a topping."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "brownsugar": {
-        "displayName": "Brown Sugar",
-        "fdcId": -1,
-        "cost": ".003",
-        "tableToGram": "12",
-        "health": {
-            "sugars": 12,
-            "saturated fats": 0,
-            "calories": 48
-        },
-        "type": "sweetener",
-        "parent": "ingredients",
-        "substitutes": {
-            "white sugar": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking and cooking for a richer flavor."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "water": {
-        "displayName": "Water",
-        "fdcId": -1,
-        "cost": 0,
-        "tableToGram": 15,
-        "health": {
-            "calories": 0
-        },
-        "type": "liquid",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Essential for cooking and baking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "rhubarb": {
-        "displayName": "Rhubarb",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 8
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "cranberries": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in pies and desserts."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "strawberries": {
-        "displayName": "Strawberries",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 2,
-            "saturated fats": 0,
-            "calories": 6
-        },
-        "type": "fruit",
-        "parent": "ingredients",
-        "substitutes": {
-            "raspberries": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in desserts and as a fresh fruit."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "oats": {
-        "displayName": "Oats",
-        "fdcId": 2346397,
-        "cost": ".002",
-        "tableToGram": "10",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 3.81
-        },
-        "type": "grain",
-        "parent": "ingredients",
-        "substitutes": {
-            "quinoa": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking, breakfast dishes, and more."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "pecans": {
-        "displayName": "Pecans",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 2.7,
-            "calories": 196
-        },
-        "type": "nut",
-        "parent": "ingredients",
-        "substitutes": {
-            "walnuts": "1"
-        },
-        "specialized": false,
-        "restrictions": [
-            "Nut allergy"
-        ],
-        "notes": [
-            "Commonly used in baking and as a topping for desserts."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "honey": {
-        "displayName": "Honey",
-        "fdcId": -1,
-        "cost": 0.015,
-        "tableToGram": 21,
-        "health": {
-            "calories": 3.4
-        },
-        "type": "sweetener",
-        "parent": "ingredients",
-        "substitutes": {
-            "maple syrup": 1
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Natural sweetener often used in cooking and baking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "italianseasoning": {
-        "displayName": "Italian Seasoning",
-        "fdcId": -1,
-        "cost": ".006",
-        "tableToGram": "3",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 12
-        },
-        "type": "seasoning",
-        "parent": "ingredients",
-        "substitutes": {
-            "dried basil": "1",
-            "dried oregano": "1",
-            "dried thyme": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Blend of herbs commonly used in Italian cuisine."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "bakingpowder": {
-        "displayName": "Baking Powder",
-        "fdcId": -1,
-        "cost": ".002",
-        "tableToGram": "14",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 0
-        },
-        "type": "leavening agent",
-        "parent": "ingredients",
-        "substitutes": {
-            "baking soda": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Leavening agent used in baking to help dough rise."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "parsley": {
-        "displayName": "Parsley",
-        "fdcId": -1,
-        "cost": ".003",
-        "tableToGram": "3",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 5
-        },
-        "type": "herb",
-        "parent": "ingredients",
-        "substitutes": {
-            "cilantro": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used as a garnish or in cooking for added flavor."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "dill": {
-        "displayName": "Dill",
-        "fdcId": -1,
-        "cost": ".004",
-        "tableToGram": "1",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 3
-        },
-        "type": "herb",
-        "parent": "ingredients",
-        "substitutes": {
-            "parsley": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in pickling and as a garnish."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "yeast": {
-        "displayName": "Yeast",
-        "fdcId": -1,
-        "cost": ".005",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 16
-        },
-        "type": "leavening agent",
-        "parent": "ingredients",
-        "substitutes": {
-            "baking powder": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in baking to help dough rise."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "yogurt": {
-        "displayName": "Yogurt",
-        "fdcId": 2259793,
-        "cost": 0.04,
-        "tableToGram": 15,
-        "health": {
-            "calories": 0.78
-        },
-        "type": "dairy",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in cooking and baking, as well as a breakfast food or snack."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "garlic": {
-        "displayName": "Garlic",
-        "fdcId": 1104647,
-        "cost": ".003",
-        "tableToGram": "3",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 1.43
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "garlic powder": "3"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in cooking for flavoring savory dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "cornstarch": {
-        "displayName": "Cornstarch",
-        "fdcId": -1,
-        "cost": ".002",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 30
-        },
-        "type": "starch",
-        "parent": "ingredients",
-        "substitutes": {
-            "flour": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used as a thickening agent in cooking and baking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "iodine": {
-        "displayName": "Iodine",
-        "fdcId": -1,
-        "cost": ".003",
-        "health": {
-            "saturated fats": 0,
-            "calories": 0
-        },
-        "type": "mineral",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Essential nutrient for thyroid health."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "vinegar": {
-        "displayName": "Vinegar",
-        "fdcId": -1,
-        "cost": ".001",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 3
-        },
-        "type": "condiment",
-        "parent": "ingredients",
-        "substitutes": {
-            "lemon juice": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in cooking and as a condiment."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "garammasala": {
-        "displayName": "Garam Masala",
-        "fdcId": -1,
-        "cost": ".01",
-        "tableToGram": "5",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 12
-        },
-        "type": "spice blend",
-        "parent": "ingredients",
-        "substitutes": {
-            "curry powder": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in Indian cuisine for flavoring savory dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "kashmirichili": {
-        "displayName": "Kashmiri Chili",
-        "fdcId": -1,
-        "cost": ".008",
-        "tableToGram": "6",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 18
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "cayenne pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Milder chili pepper commonly used in South Asian cuisine."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "vegetableoil": {
-        "displayName": "Vegetable Oil",
-        "fdcId": 748608,
-        "cost": ".003",
-        "tableToGram": "14",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 1.9,
-            "calories": "N/A"
-        },
-        "type": "oil",
-        "parent": "ingredients",
-        "substitutes": {
-            "canola oil": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in cooking and baking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "canolaoil": {
-        "displayName": "Canola Oil",
-        "fdcId": 748278,
-        "cost": ".004",
-        "tableToGram": "14",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 1,
-            "calories": "N/A"
-        },
-        "type": "oil",
-        "parent": "ingredients",
-        "substitutes": {
-            "vegetable oil": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in cooking and baking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "onion": {
-        "displayName": "Onion",
-        "fdcId": 1104962,
-        "cost": 0.0015,
-        "tableToGram": 10,
-        "health": {
-            "calories": 0.35
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "shallot": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in cooking for flavoring savory dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "cardamom": {
-        "displayName": "Cardamom",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "5",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 18
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "cinnamon": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in baking and Indian cuisine."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "tomatopuree": {
-        "displayName": "Tomato Puree",
-        "fdcId": 2685582,
-        "cost": ".003",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 2,
-            "saturated fats": 0,
-            "calories": 0.41
-        },
-        "type": "condiment",
-        "parent": "ingredients",
-        "substitutes": {
-            "tomato paste": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used as a base for sauces and soups."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "redchilipowder": {
-        "displayName": "Red Chili Powder",
-        "fdcId": -1,
-        "cost": ".005",
-        "tableToGram": "6",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 16
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "cayenne pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in various cuisines to add heat."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "heavycream": {
-        "displayName": "Heavy Cream",
-        "fdcId": 746782,
-        "cost": 0.006,
-        "tableToGram": 15,
-        "health": {
-            "calories": 0.6
-        },
-        "type": "dairy",
-        "parent": "ingredients",
-        "substitutes": {
-            "half and half": 1
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in cooking and baking to add richness and creaminess."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "halfandhalf": {
-        "displayName": "Half and Half",
-        "fdcId": 746782,
-        "cost": 0.0045,
-        "tableToGram": 15,
-        "health": {
-            "sugars": 1,
-            "saturated fats": 3,
-            "calories": 0.6
-        },
-        "type": "dairy",
-        "parent": "ingredients",
-        "substitutes": {
-            "heavy cream": 1
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Mixture of milk and cream, used as a lighter alternative to cream."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "sweetredpepper": {
-        "displayName": "Sweet Red Pepper",
-        "fdcId": 2258590,
-        "cost": ".05",
-        "tableToGram": "8",
-        "health": {
-            "sugars": 4,
-            "saturated fats": 0,
-            "calories": 0.31
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "bell pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in cooking and salads for flavor and color."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "turmeric": {
-        "displayName": "Turmeric",
-        "fdcId": -1,
-        "cost": ".01",
-        "tableToGram": "5",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 24
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "curry powder": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in Indian and Southeast Asian cuisines for color and flavor."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "salmon": {
-        "displayName": "Salmon",
-        "fdcId": 2684441,
-        "cost": 0.03,
-        "tableToGram": 15,
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0.8,
-            "calories": 1.97
-        },
-        "type": "seafood",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Popular fish used in cooking, rich in omega-3 fatty acids."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "soysauce": {
-        "displayName": "Soy Sauce",
-        "fdcId": -1,
-        "cost": 0.005,
-        "tableToGram": 15,
-        "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 0.6
-        },
-        "type": "condiment",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in Asian cooking as a seasoning and flavor enhancer."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "gingersyrup": {
-        "displayName": "Ginger Syrup",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "20",
-        "health": {
-            "sugars": 21,
-            "saturated fats": 0,
-            "calories": 80
-        },
-        "type": "sweetener",
-        "parent": "ingredients",
-        "substitutes": {
-            "honey": ".75"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Sweet syrup flavored with ginger, used in cocktails and desserts."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "chiligarlicsauce": {
-        "displayName": "Chili Garlic Sauce",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 15
-        },
-        "type": "condiment",
-        "parent": "ingredients",
-        "substitutes": {
-            "sriracha": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Spicy sauce made from chili peppers and garlic, commonly used in Asian cooking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "limejuice": {
-        "displayName": "Lime Juice",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 8
-        },
-        "type": "fruit juice",
-        "parent": "ingredients",
-        "substitutes": {
-            "lemon juice": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in cooking, cocktails, and as a flavoring agent."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "slicedalmonds": {
-        "displayName": "Sliced Almonds",
-        "fdcId": 2346393,
-        "cost": ".03",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0.5,
-            "calories": 6.26
-        },
-        "type": "nut",
-        "parent": "ingredients",
-        "substitutes": {
-            "chopped walnuts": "1"
-        },
-        "specialized": false,
-        "restrictions": [
-            "Nut allergy"
-        ],
-        "notes": [
-            "Used as a topping in baking and cooking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "sesameseeds": {
-        "displayName": "Sesame Seeds",
-        "fdcId": -1,
-        "cost": ".01",
-        "tableToGram": "9",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 1.9,
-            "calories": 52
-        },
-        "type": "seed",
-        "parent": "ingredients",
-        "substitutes": {
-            "poppy seeds": "1"
-        },
-        "specialized": false,
-        "restrictions": [
-            "Seed allergy"
-        ],
-        "notes": [
-            "Commonly used as a topping in cooking and baking, especially in Asian cuisine."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "avocadooil": {
-        "displayName": "Avocado Oil",
-        "fdcId": 748608,
-        "cost": ".04",
-        "tableToGram": "14",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 1.6,
-            "calories": "N/A"
-        },
-        "type": "oil",
-        "parent": "ingredients",
-        "substitutes": {
-            "olive oil": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Oil extracted from avocados, commonly used in cooking and salads."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "groundbeef": {
-        "displayName": "Ground Beef",
-        "fdcId": 2514743,
-        "cost": 0.01,
-        "tableToGram": 15,
-        "health": {
-            "sugars": 0,
-            "saturated fats": 4.5,
-            "calories": 1.85
-        },
-        "type": "meat",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in cooking for various meat dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "celery": {
-        "displayName": "Celery",
-        "fdcId": 2346405,
-        "cost": ".01",
-        "tableToGram": "3",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 0.17
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "bok choy": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used as a flavoring agent in cooking and for snacking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "carrot": {
-        "displayName": "Carrot",
-        "fdcId": 2258586,
-        "cost": 0.0015,
-        "tableToGram": 10,
-        "health": {
-            "sugars": 2,
-            "saturated fats": 0,
-            "calories": 0.48
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "sweet potato": 1
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in cooking and salads for flavor and color."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "applecidervinegar": {
-        "displayName": "Apple Cider Vinegar",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 3
-        },
-        "type": "vinegar",
-        "parent": "ingredients",
-        "substitutes": {
-            "white vinegar": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in cooking and as a health tonic."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "tabascosauce": {
-        "displayName": "Tabasco Sauce",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 0
-        },
-        "type": "condiment",
-        "parent": "ingredients",
-        "substitutes": {
-            "sriracha": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Spicy sauce made from Tabasco peppers, commonly used as a condiment."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "ketchup": {
-        "displayName": "Ketchup",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 4,
-            "saturated fats": 0,
-            "calories": 20
-        },
-        "type": "condiment",
-        "parent": "ingredients",
-        "substitutes": {
-            "tomato paste": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used as a condiment for various dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "lard": {
-        "displayName": "Lard",
-        "fdcId": -1,
-        "cost": 0.0025,
-        "tableToGram": 13,
-        "health": {
-            "calories": 9
-        },
-        "type": "fat",
-        "parent": "ingredients",
-        "substitutes": {
-            "butter": 1
-        },
-        "specialized": false,
-        "restrictions": [
-            "Vegetarian"
-        ],
-        "notes": [
-            "Rendered pork fat used in cooking and baking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "rutabaga": {
-        "displayName": "Rutabaga",
-        "fdcId": -1,
-        "cost": ".04",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 6,
-            "saturated fats": 0,
-            "calories": 50
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "turnip": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Root vegetable commonly used in cooking and roasting."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "marjoram": {
-        "displayName": "Marjoram",
-        "fdcId": -1,
-        "cost": ".005",
-        "tableToGram": "1",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 3
-        },
-        "type": "herb",
-        "parent": "ingredients",
-        "substitutes": {
-            "oregano": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Herb commonly used in Mediterranean and Middle Eastern cuisines.",
-            "Confused with Margarine, which is similar to lard"
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "potato": {
-        "displayName": "Potato",
-        "fdcId": 2346401,
-        "cost": ".005",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 0.83
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "sweet potato": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Versatile vegetable used in cooking and baking in various forms."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "groundpork": {
-        "displayName": "Ground Pork",
-        "fdcId": 2514745,
-        "cost": ".05",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 8,
-            "calories": 2.28
-        },
-        "type": "meat",
-        "parent": "ingredients",
-        "substitutes": {
-            "ground turkey": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in cooking for various meat dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "groundvenison": {
-        "displayName": "Ground Venison",
-        "fdcId": 746758,
-        "cost": ".07",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 6,
-            "calories": 1.76
-        },
-        "type": "meat",
-        "parent": "ingredients",
-        "substitutes": {
-            "ground beef": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Lean ground meat from deer, commonly used in cooking.",
-            "(FDC) Food stats are based on beef"
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "eggyolk": {
-        "displayName": "Egg Yolk",
-        "fdcId": 748236,
-        "cost": ".01",
-        "tableToGram": "18",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 1.6,
-            "calories": 3.34
-        },
-        "type": "egg",
-        "parent": "ingredients",
-        "substitutes": {
-            "whole egg": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Part of the egg commonly used in baking and sauces."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "keylimejuice": {
-        "displayName": "Key Lime Juice",
-        "fdcId": -1,
-        "cost": ".04",
-        "tableToGram": "15",
-        "health": {
-            "calories": 0.25
-        },
-        "type": "fruit juice",
-        "parent": "ingredients",
-        "substitutes": {
-            "lime juice": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Juice from Key limes, commonly used in desserts and cocktails."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "creamcheese": {
-        "displayName": "Cream Cheese",
-        "fdcId": 328841,
-        "cost": ".05",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 1,
-            "saturated fats": 6,
-            "calories": 0.84
-        },
-        "type": "dairy",
-        "parent": "ingredients",
-        "substitutes": {
-            "ricotta cheese": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Soft cheese commonly used in baking, spreads, and desserts.",
-            "(FDC) Nutritional info is from cottage cheese"
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "sweetenedcondensedmilk": {
-        "displayName": "Sweetened Condensed Milk",
-        "fdcId": -1,
-        "cost": ".04",
-        "tableToGram": "20",
-        "health": {
-            "calories": 3
-        },
-        "type": "dairy",
-        "parent": "ingredients",
-        "substitutes": {
-            "evaporated milk": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Condensed milk with added sugar, commonly used in desserts and baking."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": false
-    },
-    "lemonjuice": {
-        "displayName": "Lemon Juice",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 8
-        },
-        "type": "fruit juice",
-        "parent": "ingredients",
-        "substitutes": {
-            "lime juice": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Used in cooking, baking, cocktails, and as a flavoring agent."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "lemonzest": {
-        "displayName": "Lemon Zest",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "5",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 2
-        },
-        "type": "fruit zest",
-        "parent": "ingredients",
-        "substitutes": {
-            "orange zest": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Outer yellow part of lemon peel, used as a flavoring agent."
-        ],
-        "needsMoreInfo": true
-    },
-    "avocado": {
-        "displayName": "Avocado",
-        "fdcId": -1,
-        "cost": 0.007,
-        "tableToGram": 20,
-        "health": {
-            "calories": 1.6
-        },
-        "type": "fruit",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Creamy fruit used in various dishes, particularly in salads, dips, and sandwiches."
-        ],
-        "needsMoreInfo": false
-    },
-    "cilantro": {
-        "displayName": "Cilantro",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "5",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 2
-        },
-        "type": "herb",
-        "parent": "ingredients",
-        "substitutes": {
-            "parsley": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in various cuisines, particularly in Mexican and Asian dishes, for its fresh and citrusy flavor."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "powderedsugar": {
-        "displayName": "Powdered Sugar",
-        "fdcId": 746784,
-        "cost": ".01",
-        "tableToGram": "8",
-        "health": {
-            "sugars": 4,
-            "saturated fats": 0,
-            "calories": 3.85
-        },
-        "type": "sweetener",
-        "parent": "ingredients",
-        "substitutes": {
-            "granulated sugar": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Also known as confectioner's sugar, used in baking and dessert making for frosting, icing, and dusting.",
-            "(FDC) Nutritional info is from granulated sugar"
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "shreddedcarrots": {
-        "displayName": "Shredded Carrots",
-        "fdcId": 746764,
-        "cost": ".02",
-        "tableToGram": "4",
-        "health": {
-            "sugars": 3,
-            "saturated fats": 0,
-            "calories": 0.37
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "grated carrots": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in salads, slaws, stir-fries, and as a garnish."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "dumplingwrapper": {
-        "displayName": "Dumpling Wrapper",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 20
-        },
-        "type": "grain",
-        "parent": "ingredients",
-        "substitutes": {
-            "wonton wrapper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Thin dough used to wrap various fillings for dumplings, potstickers, and wontons."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "paprikapowder": {
-        "displayName": "Paprika Powder",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "10",
-        "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 20
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "chili powder": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Ground spice made from dried peppers, used for flavor and color in various dishes."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "whitepepper": {
-        "displayName": "White Pepper",
-        "fdcId": -1,
-        "cost": ".04",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 20
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "black pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Milder version of black pepper, commonly used in Asian cooking for its flavor and light color."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "shreddednapacabbage": {
-        "displayName": "Shredded Napa Cabbage",
-        "fdcId": 2346407,
-        "cost": ".03",
-        "tableToGram": "8",
-        "health": {
-            "sugars": 2,
-            "saturated fats": 0,
-            "calories": 0.31
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "shredded green cabbage": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Commonly used in Asian cuisines, particularly in salads, slaws, and stir-fries."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "tofu": {
-        "displayName": "Tofu",
-        "fdcId": 1999630,
-        "cost": ".03",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0.5,
-            "calories": 0.39
-        },
-        "type": "protein",
-        "parent": "ingredients",
-        "substitutes": {
-            "tempeh": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Soybean curd with a neutral flavor and versatile texture, used in various cuisines as a meat substitute or in vegetarian dishes.",
-            "(FDC) Nutritional info is from unsweetened soy milk since it has a similar base"
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "scallion": {
-        "displayName": "Scallion",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "10",
-        "health": {
-            "sugars": 2,
-            "saturated fats": 0,
-            "calories": 15
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "green onion": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Also known as green onion or spring onion, used as a garnish or ingredient in various dishes for its mild onion flavor."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "ginger": {
-        "displayName": "Ginger",
-        "fdcId": -1,
-        "cost": ".04",
-        "tableToGram": "10",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 10
-        },
-        "type": "spice",
-        "parent": "ingredients",
-        "substitutes": {
-            "ground ginger": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Aromatic spice with a pungent and spicy flavor, used fresh, dried, or ground in various cuisines."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "hoisinsauce": {
-        "displayName": "Hoisin Sauce",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 8,
-            "saturated fats": 0,
-            "calories": 50
-        },
-        "type": "sauce",
-        "parent": "ingredients",
-        "substitutes": {
-            "plum sauce": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Thick, fragrant sauce used in Chinese cuisine, particularly in stir-fries, marinades, and as a dipping sauce."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "greenonion": {
-        "displayName": "Green Onion",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "10",
-        "health": {
-            "sugars": 2,
-            "saturated fats": 0,
-            "calories": 0.32
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "scallion": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Also known as scallion or spring onion, used as a garnish or ingredient in various dishes for its mild onion flavor."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "ricevinegar": {
-        "displayName": "Rice Vinegar",
-        "fdcId": -1,
-        "cost": ".02",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 0
-        },
-        "type": "vinegar",
-        "parent": "ingredients",
-        "substitutes": {
-            "white vinegar": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Mild and slightly sweet vinegar made from fermented rice, commonly used in Asian cuisines for dressings, marinades, and sauces."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "jalapeno": {
-        "displayName": "Jalapeno",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 4
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "serrano pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Medium-sized chili pepper with a mild to moderate heat level, commonly used in Mexican and Tex-Mex cuisines."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "anaheim": {
-        "displayName": "Anaheim",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 2,
-            "saturated fats": 0,
-            "calories": 10
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "poblano pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Mild chili pepper, often used in Mexican and Southwestern cuisines, particularly in sauces, salsas, and roasting."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "serrano": {
-        "displayName": "Serrano",
-        "fdcId": -1,
-        "cost": ".04",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 4
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "jalapeno pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Small chili pepper with a hot and biting flavor, commonly used in Mexican and Tex-Mex cuisines."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "poblano": {
-        "displayName": "Poblano",
-        "fdcId": -1,
-        "cost": ".05",
-        "tableToGram": "7",
-        "health": {
-            "sugars": 1,
-            "saturated fats": 0,
-            "calories": 20
-        },
-        "type": "vegetable",
-        "parent": "ingredients",
-        "substitutes": {
-            "anaheim pepper": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Mild chili pepper, often used in Mexican and Southwestern cuisines, particularly in sauces, salsas, and roasting."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "fishsauce": {
-        "displayName": "Fish Sauce",
-        "fdcId": -1,
-        "cost": ".03",
-        "tableToGram": "15",
-        "health": {
-            "sugars": 0,
-            "saturated fats": 0,
-            "calories": 10
-        },
-        "type": "sauce",
-        "parent": "ingredients",
-        "substitutes": {
-            "soy sauce": "1"
-        },
-        "specialized": false,
-        "restrictions": [],
-        "notes": [
-            "Condiment made from fermented fish, commonly used in Southeast Asian cuisines for its savory and umami flavor."
-        ],
-        "needsMoreInfo": false,
-        "usedGPT": true
-    },
-    "unclemike'sspices": {
-        "displayName": "Uncle Mike's Spices",
-        "fdcId": -1,
-        "cost": "-1",
-        "tableToGram": "-1",
-        "health": {
-            "saturated fats": -1,
-            "calories": -1
-        },
-        "type": "Spice Mix",
-        "parent": "ingredients",
-        "substitutes": {},
-        "specialized": true,
-        "restrictions": [
-            ""
-        ],
-        "notes": [
-            "This isn't a brand, it is literally Uncle Mike's spices and I don't know what is in it."
-        ],
-        "needsMoreInfo": true
-    }
+	"sugar": {
+		"displayName": "Sugar",
+		"fdcId": 746784,
+		"cost": 0.0015,
+		"tableToGram": 12.6,
+		"health": {
+			"calories": 3.85
+		},
+		"type": "carbohydrate",
+		"parent": "ingredients",
+		"substitutes": {
+			"honey": 0.75,
+			"powdered sugar": 1
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Can be substituted with honey, powdered sugar, and a lot more."
+		],
+		"needsMoreInfo": false
+	},
+	"milk": {
+		"displayName": "Milk",
+		"fdcId": 746772,
+		"cost": 0.001,
+		"tableToGram": 15.25,
+		"health": {
+			"calories": 0.43
+		},
+		"type": "dairy",
+		"parent": "ingredients",
+		"substitutes": {
+			"almond milk": 1,
+			"soy milk": 1
+		},
+		"specialized": false,
+		"restrictions": [
+			"Lactose intolerance",
+			"Dairy-free diet"
+		],
+		"notes": [
+			"Commonly used in cooking and baking. Available in various fat percentages (whole, skim, etc.)",
+			"Alternative taste different, but can be healthier"
+		],
+		"needsMoreInfo": false
+	},
+	"cocoapowder": {
+		"displayName": "Cocoa Powder",
+		"fdcId": -1,
+		"cost": 0.03,
+		"tableToGram": 5.4,
+		"health": {
+			"calories": 2.28
+		},
+		"type": "carbohydrate",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"None"
+		],
+		"notes": [
+			"Used in baking and making chocolate-flavored foods."
+		],
+		"needsMoreInfo": false
+	},
+	"salt": {
+		"displayName": "Salt",
+		"fdcId": 746775,
+		"cost": 0.0007,
+		"tableToGram": 18,
+		"health": {
+			"calories": "N/A"
+		},
+		"type": "seasoning",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			"Low sodium diet"
+		],
+		"notes": [
+			"Essential for seasoning. Can be used in a variety of dishes."
+		],
+		"needsMoreInfo": false
+	},
+	"chicken": {
+		"displayName": "Chicken",
+		"fdcId": 2646170,
+		"cost": 0.01,
+		"tableToGram": 15,
+		"health": {
+			"calories": 1.06
+		},
+		"type": "meat",
+		"parent": "ingredients",
+		"substitutes": {
+			"tofu": 1.2
+		},
+		"specialized": false,
+		"restrictions": [
+			"Vegetarian",
+			"Vegan"
+		],
+		"notes": [
+			"Widely used in various cuisines. Can be cooked in many ways such as grilling, baking, and frying."
+		],
+		"needsMoreInfo": false
+	},
+	"groundcumin": {
+		"displayName": "Ground Cumin",
+		"fdcId": -1,
+		"cost": 0.05,
+		"tableToGram": 12,
+		"health": {
+			"calories": 8
+		},
+		"type": "seasoning",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in Middle Eastern, Indian, and Mexican cuisines."
+		],
+		"needsMoreInfo": false
+	},
+	"basil": {
+		"displayName": "Basil",
+		"fdcId": -1,
+		"cost": 0.07,
+		"tableToGram": 0.7,
+		"health": {
+			"calories": 0.5
+		},
+		"type": "herb",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Often used in Italian and Mediterranean dishes."
+		],
+		"needsMoreInfo": false
+	},
+	"cinnamon": {
+		"displayName": "Cinnamon",
+		"fdcId": -1,
+		"cost": 0.075,
+		"tableToGram": 8,
+		"health": {
+			"calories": 2.5
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Widely used in baking and desserts."
+		],
+		"needsMoreInfo": false
+	},
+	"bayleaves": {
+		"displayName": "Bay Leaves",
+		"fdcId": -1,
+		"cost": 0.35,
+		"tableToGram": 0.5,
+		"health": {
+			"calories": 3
+		},
+		"type": "herb",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in soups, stews, and sauces for added flavor."
+		],
+		"needsMoreInfo": false
+	},
+	"smokedpaprika": {
+		"displayName": "Smoked Paprika",
+		"fdcId": -1,
+		"cost": 0.15,
+		"tableToGram": 7,
+		"health": {
+			"calories": 3.5
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"paprika": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Adds a smoky flavor to dishes."
+		],
+		"needsMoreInfo": false
+	},
+	"thyme": {
+		"displayName": "Thyme",
+		"fdcId": -1,
+		"cost": 0.07,
+		"tableToGram": 2.8,
+		"health": {
+			"calories": 2.6
+		},
+		"type": "herb",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Common in Mediterranean and French cuisine."
+		],
+		"needsMoreInfo": false
+	},
+	"garlicpowder": {
+		"displayName": "Garlic Powder",
+		"fdcId": -1,
+		"cost": 0.02,
+		"tableToGram": 9.4,
+		"health": {
+			"calories": 3.3
+		},
+		"type": "seasoning",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used for seasoning a variety of dishes."
+		],
+		"needsMoreInfo": false
+	},
+	"oregano": {
+		"displayName": "Oregano",
+		"fdcId": -1,
+		"cost": 0.07,
+		"tableToGram": 1.5,
+		"health": {
+			"calories": 3.2
+		},
+		"type": "herb",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in Italian and Mediterranean dishes."
+		],
+		"needsMoreInfo": false
+	},
+	"onionpowder": {
+		"displayName": "Onion Powder",
+		"fdcId": -1,
+		"cost": 0.015,
+		"tableToGram": 7.5,
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 3.6
+		},
+		"type": "seasoning",
+		"parent": "ingredients",
+		"substitutes": {
+			"fresh onion": "3"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used for seasoning a variety of dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"rosemary": {
+		"displayName": "Rosemary",
+		"fdcId": -1,
+		"cost": ".004",
+		"tableToGram": "1",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 3
+		},
+		"type": "herb",
+		"parent": "ingredients",
+		"substitutes": {
+			"thyme": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in Mediterranean cuisine."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"nutmegpowder": {
+		"displayName": "Nutmeg Powder",
+		"fdcId": -1,
+		"cost": ".006",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0.5,
+			"calories": 15
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"cinnamon": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking and desserts."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"redpepperflakes": {
+		"displayName": "Red Pepper Flakes",
+		"fdcId": -1,
+		"cost": ".005",
+		"tableToGram": "3",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 5
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"cayenne pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Adds heat to dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"corianderpowder": {
+		"displayName": "Coriander Powder",
+		"fdcId": -1,
+		"cost": ".005",
+		"tableToGram": "5",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 20
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"cumin": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in various cuisines around the world."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"cayennepepper": {
+		"displayName": "Cayenne Pepper",
+		"fdcId": -1,
+		"cost": ".005",
+		"tableToGram": "6",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 17
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"red pepper flakes": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Adds heat to dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"groundcloves": {
+		"displayName": "Ground Cloves",
+		"fdcId": -1,
+		"cost": ".007",
+		"tableToGram": "6",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 20
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"allspice": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking and savory dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"currrypowder": {
+		"displayName": "Curry Powder",
+		"fdcId": -1,
+		"cost": ".005",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 20
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"garam masala": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in Indian cuisine."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"yellowmustard": {
+		"displayName": "Yellow Mustard",
+		"fdcId": -1,
+		"cost": ".003",
+		"tableToGram": "5",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 5
+		},
+		"type": "condiment",
+		"parent": "ingredients",
+		"substitutes": {
+			"dijon mustard": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in various dishes and as a condiment."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"cardamompowder": {
+		"displayName": "Cardamom Powder",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "5",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 18
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"cinnamon": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking and Indian cuisine."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"cajunseasoning": {
+		"displayName": "Cajun Seasoning",
+		"fdcId": -1,
+		"cost": ".006",
+		"tableToGram": "6",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 20
+		},
+		"type": "spice blend",
+		"parent": "ingredients",
+		"substitutes": {
+			"creole seasoning": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in Cajun and Creole cuisines."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"allspicepowder": {
+		"displayName": "Allspice Powder",
+		"fdcId": -1,
+		"cost": ".007",
+		"tableToGram": "6",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 17
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"cloves": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking and savory dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"chilipowder": {
+		"displayName": "Chili Powder",
+		"fdcId": -1,
+		"cost": ".005",
+		"tableToGram": "6",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 16
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"paprika": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in various cuisines to add heat."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"gingerpowder": {
+		"displayName": "Ginger Powder",
+		"fdcId": -1,
+		"cost": ".004",
+		"tableToGram": "6",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 18
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"fresh ginger": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking and Asian cuisine."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"blackpepper": {
+		"displayName": "Black Pepper",
+		"fdcId": -1,
+		"cost": ".003",
+		"tableToGram": "2.3",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 6
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"white pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used for seasoning a variety of dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"butter": {
+		"displayName": "Butter",
+		"fdcId": 789828,
+		"cost": 0.008,
+		"tableToGram": 14,
+		"health": {
+			"calories": "N/A"
+		},
+		"type": "dairy",
+		"parent": "ingredients",
+		"substitutes": {
+			"margarine": 1
+		},
+		"specialized": false,
+		"restrictions": [
+			"Dairy-free diet"
+		],
+		"notes": [
+			"Commonly used in cooking and baking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"bakingsoda": {
+		"displayName": "Baking Soda",
+		"fdcId": -1,
+		"cost": ".002",
+		"tableToGram": "14",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 0
+		},
+		"type": "leavening agent",
+		"parent": "ingredients",
+		"substitutes": {
+			"baking powder": "3"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking to help dough rise."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"eggs": {
+		"displayName": "Eggs",
+		"fdcId": 748967,
+		"cost": ".15",
+		"tableToGram": "50",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 1.5,
+			"calories": 1.48
+		},
+		"type": "protein",
+		"parent": "ingredients",
+		"substitutes": {
+			"flax eggs": "1"
+		},
+		"specialized": false,
+		"restrictions": [
+			"Vegan",
+			"Egg allergy"
+		],
+		"notes": [
+			"Widely used in cooking and baking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"vanillaextract": {
+		"displayName": "Vanilla Extract",
+		"fdcId": -1,
+		"cost": ".05",
+		"tableToGram": "5",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 12
+		},
+		"type": "flavoring",
+		"parent": "ingredients",
+		"substitutes": {
+			"vanilla essence": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in baking and desserts."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"allpurposeflour": {
+		"displayName": "All Purpose Flour",
+		"fdcId": 790018,
+		"cost": 0.0018,
+		"tableToGram": 8,
+		"health": {
+			"calories": 3.62
+		},
+		"type": "grain",
+		"parent": "ingredients",
+		"substitutes": {
+			"whole wheat flour": 1
+		},
+		"specialized": false,
+		"restrictions": [
+			"Gluten-free diet"
+		],
+		"notes": [
+			"Used in a wide range of baking and cooking applications."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"chocolatechips": {
+		"displayName": "Chocolate Chips",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 12,
+			"saturated fats": 3,
+			"calories": 70
+		},
+		"type": "sweetener",
+		"parent": "ingredients",
+		"substitutes": {
+			"carob chips": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking and as a topping."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"choppedwalnuts": {
+		"displayName": "Chopped Walnuts",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0.6,
+			"calories": 45
+		},
+		"type": "nut",
+		"parent": "ingredients",
+		"substitutes": {
+			"pecans": "1"
+		},
+		"specialized": false,
+		"restrictions": [
+			"Nut allergy"
+		],
+		"notes": [
+			"Used in baking and as a topping."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"brownsugar": {
+		"displayName": "Brown Sugar",
+		"fdcId": -1,
+		"cost": ".003",
+		"tableToGram": "12",
+		"health": {
+			"sugars": 12,
+			"saturated fats": 0,
+			"calories": 3.8
+		},
+		"type": "sweetener",
+		"parent": "ingredients",
+		"substitutes": {
+			"white sugar": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking and cooking for a richer flavor."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"water": {
+		"displayName": "Water",
+		"fdcId": -1,
+		"cost": 0,
+		"tableToGram": 15,
+		"health": {
+			"calories": 0
+		},
+		"type": "liquid",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Essential for cooking and baking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"rhubarb": {
+		"displayName": "Rhubarb",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 0.213
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"cranberries": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in pies and desserts."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"strawberries": {
+		"displayName": "Strawberries",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 2,
+			"saturated fats": 0,
+			"calories": 6
+		},
+		"type": "fruit",
+		"parent": "ingredients",
+		"substitutes": {
+			"raspberries": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in desserts and as a fresh fruit."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"oats": {
+		"displayName": "Oats",
+		"fdcId": 2346397,
+		"cost": ".002",
+		"tableToGram": "10",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 3.81
+		},
+		"type": "grain",
+		"parent": "ingredients",
+		"substitutes": {
+			"quinoa": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking, breakfast dishes, and more."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"pecans": {
+		"displayName": "Pecans",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 2.7,
+			"calories": 196
+		},
+		"type": "nut",
+		"parent": "ingredients",
+		"substitutes": {
+			"walnuts": "1"
+		},
+		"specialized": false,
+		"restrictions": [
+			"Nut allergy"
+		],
+		"notes": [
+			"Commonly used in baking and as a topping for desserts."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"honey": {
+		"displayName": "Honey",
+		"fdcId": -1,
+		"cost": 0.015,
+		"tableToGram": 21,
+		"health": {
+			"calories": 3.4
+		},
+		"type": "sweetener",
+		"parent": "ingredients",
+		"substitutes": {
+			"maple syrup": 1
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Natural sweetener often used in cooking and baking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"italianseasoning": {
+		"displayName": "Italian Seasoning",
+		"fdcId": -1,
+		"cost": ".006",
+		"tableToGram": "3",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 12
+		},
+		"type": "seasoning",
+		"parent": "ingredients",
+		"substitutes": {
+			"dried basil": "1",
+			"dried oregano": "1",
+			"dried thyme": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Blend of herbs commonly used in Italian cuisine."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"bakingpowder": {
+		"displayName": "Baking Powder",
+		"fdcId": -1,
+		"cost": ".002",
+		"tableToGram": "14",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 0
+		},
+		"type": "leavening agent",
+		"parent": "ingredients",
+		"substitutes": {
+			"baking soda": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Leavening agent used in baking to help dough rise."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"parsley": {
+		"displayName": "Parsley",
+		"fdcId": -1,
+		"cost": ".003",
+		"tableToGram": "3",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 5
+		},
+		"type": "herb",
+		"parent": "ingredients",
+		"substitutes": {
+			"cilantro": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used as a garnish or in cooking for added flavor."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"dill": {
+		"displayName": "Dill",
+		"fdcId": -1,
+		"cost": ".004",
+		"tableToGram": "1",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 3
+		},
+		"type": "herb",
+		"parent": "ingredients",
+		"substitutes": {
+			"parsley": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in pickling and as a garnish."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"yeast": {
+		"displayName": "Yeast",
+		"fdcId": -1,
+		"cost": ".005",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 16
+		},
+		"type": "leavening agent",
+		"parent": "ingredients",
+		"substitutes": {
+			"baking powder": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in baking to help dough rise."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"yogurt": {
+		"displayName": "Yogurt",
+		"fdcId": 2259793,
+		"cost": 0.04,
+		"tableToGram": 15,
+		"health": {
+			"calories": 0.78
+		},
+		"type": "dairy",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in cooking and baking, as well as a breakfast food or snack."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"garlic": {
+		"displayName": "Garlic",
+		"fdcId": 1104647,
+		"cost": ".003",
+		"tableToGram": "3",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 1.43
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"garlic powder": "3"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in cooking for flavoring savory dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"cornstarch": {
+		"displayName": "Cornstarch",
+		"fdcId": -1,
+		"cost": ".002",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 30
+		},
+		"type": "starch",
+		"parent": "ingredients",
+		"substitutes": {
+			"flour": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used as a thickening agent in cooking and baking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"iodine": {
+		"displayName": "Iodine",
+		"fdcId": -1,
+		"cost": ".003",
+		"health": {
+			"saturated fats": 0,
+			"calories": 0
+		},
+		"type": "mineral",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Essential nutrient for thyroid health."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"vinegar": {
+		"displayName": "Vinegar",
+		"fdcId": -1,
+		"cost": ".001",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 3
+		},
+		"type": "condiment",
+		"parent": "ingredients",
+		"substitutes": {
+			"lemon juice": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in cooking and as a condiment."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"garammasala": {
+		"displayName": "Garam Masala",
+		"fdcId": -1,
+		"cost": ".01",
+		"tableToGram": "5",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 12
+		},
+		"type": "spice blend",
+		"parent": "ingredients",
+		"substitutes": {
+			"curry powder": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in Indian cuisine for flavoring savory dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"kashmirichili": {
+		"displayName": "Kashmiri Chili",
+		"fdcId": -1,
+		"cost": ".008",
+		"tableToGram": "6",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 18
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"cayenne pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Milder chili pepper commonly used in South Asian cuisine."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"vegetableoil": {
+		"displayName": "Vegetable Oil",
+		"fdcId": 748608,
+		"cost": ".003",
+		"tableToGram": "14",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 1.9,
+			"calories": "N/A"
+		},
+		"type": "oil",
+		"parent": "ingredients",
+		"substitutes": {
+			"canola oil": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in cooking and baking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"canolaoil": {
+		"displayName": "Canola Oil",
+		"fdcId": 748278,
+		"cost": ".004",
+		"tableToGram": "14",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 1,
+			"calories": "N/A"
+		},
+		"type": "oil",
+		"parent": "ingredients",
+		"substitutes": {
+			"vegetable oil": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in cooking and baking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"onion": {
+		"displayName": "Onion",
+		"fdcId": 1104962,
+		"cost": 0.0015,
+		"tableToGram": 10,
+		"health": {
+			"calories": 0.35
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"shallot": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in cooking for flavoring savory dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"cardamom": {
+		"displayName": "Cardamom",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "5",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 18
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"cinnamon": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in baking and Indian cuisine."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"tomatopuree": {
+		"displayName": "Tomato Puree",
+		"fdcId": 2685582,
+		"cost": ".003",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 2,
+			"saturated fats": 0,
+			"calories": 0.41
+		},
+		"type": "condiment",
+		"parent": "ingredients",
+		"substitutes": {
+			"tomato paste": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used as a base for sauces and soups."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"redchilipowder": {
+		"displayName": "Red Chili Powder",
+		"fdcId": -1,
+		"cost": ".005",
+		"tableToGram": "6",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 16
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"cayenne pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in various cuisines to add heat."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"heavycream": {
+		"displayName": "Heavy Cream",
+		"fdcId": 746782,
+		"cost": 0.006,
+		"tableToGram": 15,
+		"health": {
+			"calories": 0.6
+		},
+		"type": "dairy",
+		"parent": "ingredients",
+		"substitutes": {
+			"half and half": 1
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in cooking and baking to add richness and creaminess."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"halfandhalf": {
+		"displayName": "Half and Half",
+		"fdcId": 746782,
+		"cost": 0.0045,
+		"tableToGram": 15,
+		"health": {
+			"sugars": 1,
+			"saturated fats": 3,
+			"calories": 0.6
+		},
+		"type": "dairy",
+		"parent": "ingredients",
+		"substitutes": {
+			"heavy cream": 1
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Mixture of milk and cream, used as a lighter alternative to cream."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"sweetredpepper": {
+		"displayName": "Sweet Red Pepper",
+		"fdcId": 2258590,
+		"cost": ".05",
+		"tableToGram": "8",
+		"health": {
+			"sugars": 4,
+			"saturated fats": 0,
+			"calories": 0.31
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"bell pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in cooking and salads for flavor and color."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"turmeric": {
+		"displayName": "Turmeric",
+		"fdcId": -1,
+		"cost": ".01",
+		"tableToGram": "5",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 24
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"curry powder": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in Indian and Southeast Asian cuisines for color and flavor."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"salmon": {
+		"displayName": "Salmon",
+		"fdcId": 2684441,
+		"cost": 0.03,
+		"tableToGram": 15,
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0.8,
+			"calories": 1.97
+		},
+		"type": "seafood",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Popular fish used in cooking, rich in omega-3 fatty acids."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"soysauce": {
+		"displayName": "Soy Sauce",
+		"fdcId": -1,
+		"cost": 0.005,
+		"tableToGram": 15,
+		"health": {
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 0.6
+		},
+		"type": "condiment",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in Asian cooking as a seasoning and flavor enhancer."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"gingersyrup": {
+		"displayName": "Ginger Syrup",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "20",
+		"health": {
+			"sugars": 21,
+			"saturated fats": 0,
+			"calories": 80
+		},
+		"type": "sweetener",
+		"parent": "ingredients",
+		"substitutes": {
+			"honey": ".75"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Sweet syrup flavored with ginger, used in cocktails and desserts."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"chiligarlicsauce": {
+		"displayName": "Chili Garlic Sauce",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 15
+		},
+		"type": "condiment",
+		"parent": "ingredients",
+		"substitutes": {
+			"sriracha": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Spicy sauce made from chili peppers and garlic, commonly used in Asian cooking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"limejuice": {
+		"displayName": "Lime Juice",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 8
+		},
+		"type": "fruit juice",
+		"parent": "ingredients",
+		"substitutes": {
+			"lemon juice": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in cooking, cocktails, and as a flavoring agent."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"slicedalmonds": {
+		"displayName": "Sliced Almonds",
+		"fdcId": 2346393,
+		"cost": ".03",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0.5,
+			"calories": 6.26
+		},
+		"type": "nut",
+		"parent": "ingredients",
+		"substitutes": {
+			"chopped walnuts": "1"
+		},
+		"specialized": false,
+		"restrictions": [
+			"Nut allergy"
+		],
+		"notes": [
+			"Used as a topping in baking and cooking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"sesameseeds": {
+		"displayName": "Sesame Seeds",
+		"fdcId": -1,
+		"cost": ".01",
+		"tableToGram": "9",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 1.9,
+			"calories": 52
+		},
+		"type": "seed",
+		"parent": "ingredients",
+		"substitutes": {
+			"poppy seeds": "1"
+		},
+		"specialized": false,
+		"restrictions": [
+			"Seed allergy"
+		],
+		"notes": [
+			"Commonly used as a topping in cooking and baking, especially in Asian cuisine."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"avocadooil": {
+		"displayName": "Avocado Oil",
+		"fdcId": 748608,
+		"cost": ".04",
+		"tableToGram": "14",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 1.6,
+			"calories": "N/A"
+		},
+		"type": "oil",
+		"parent": "ingredients",
+		"substitutes": {
+			"olive oil": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Oil extracted from avocados, commonly used in cooking and salads."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"groundbeef": {
+		"displayName": "Ground Beef",
+		"fdcId": 2514743,
+		"cost": 0.01,
+		"tableToGram": 15,
+		"health": {
+			"sugars": 0,
+			"saturated fats": 4.5,
+			"calories": 1.85
+		},
+		"type": "meat",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in cooking for various meat dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"celery": {
+		"displayName": "Celery",
+		"fdcId": 2346405,
+		"cost": ".01",
+		"tableToGram": "3",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 0.17
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"bok choy": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used as a flavoring agent in cooking and for snacking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"carrot": {
+		"displayName": "Carrot",
+		"fdcId": 2258586,
+		"cost": 0.0015,
+		"tableToGram": 10,
+		"health": {
+			"sugars": 2,
+			"saturated fats": 0,
+			"calories": 0.48
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"sweet potato": 1
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in cooking and salads for flavor and color."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"applecidervinegar": {
+		"displayName": "Apple Cider Vinegar",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 3
+		},
+		"type": "vinegar",
+		"parent": "ingredients",
+		"substitutes": {
+			"white vinegar": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in cooking and as a health tonic."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"tabascosauce": {
+		"displayName": "Tabasco Sauce",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 0
+		},
+		"type": "condiment",
+		"parent": "ingredients",
+		"substitutes": {
+			"sriracha": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Spicy sauce made from Tabasco peppers, commonly used as a condiment."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"ketchup": {
+		"displayName": "Ketchup",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 4,
+			"saturated fats": 0,
+			"calories": 20
+		},
+		"type": "condiment",
+		"parent": "ingredients",
+		"substitutes": {
+			"tomato paste": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used as a condiment for various dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"lard": {
+		"displayName": "Lard",
+		"fdcId": -1,
+		"cost": 0.0025,
+		"tableToGram": 13,
+		"health": {
+			"calories": 9
+		},
+		"type": "fat",
+		"parent": "ingredients",
+		"substitutes": {
+			"butter": 1
+		},
+		"specialized": false,
+		"restrictions": [
+			"Vegetarian"
+		],
+		"notes": [
+			"Rendered pork fat used in cooking and baking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"rutabaga": {
+		"displayName": "Rutabaga",
+		"fdcId": -1,
+		"cost": ".04",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 6,
+			"saturated fats": 0,
+			"calories": 50
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"turnip": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Root vegetable commonly used in cooking and roasting."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"marjoram": {
+		"displayName": "Marjoram",
+		"fdcId": -1,
+		"cost": ".005",
+		"tableToGram": "1",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 3
+		},
+		"type": "herb",
+		"parent": "ingredients",
+		"substitutes": {
+			"oregano": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Herb commonly used in Mediterranean and Middle Eastern cuisines.",
+			"Confused with Margarine, which is similar to lard"
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"potato": {
+		"displayName": "Potato",
+		"fdcId": 2346401,
+		"cost": ".005",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 0.83
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"sweet potato": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Versatile vegetable used in cooking and baking in various forms."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"groundpork": {
+		"displayName": "Ground Pork",
+		"fdcId": 2514745,
+		"cost": ".05",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 8,
+			"calories": 2.28
+		},
+		"type": "meat",
+		"parent": "ingredients",
+		"substitutes": {
+			"ground turkey": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in cooking for various meat dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"groundvenison": {
+		"displayName": "Ground Venison",
+		"fdcId": 746758,
+		"cost": ".07",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 6,
+			"calories": 1.76
+		},
+		"type": "meat",
+		"parent": "ingredients",
+		"substitutes": {
+			"ground beef": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Lean ground meat from deer, commonly used in cooking.",
+			"(FDC) Food stats are based on beef"
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"eggyolk": {
+		"displayName": "Egg Yolk",
+		"fdcId": 748236,
+		"cost": ".01",
+		"tableToGram": "18",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 1.6,
+			"calories": 3.34
+		},
+		"type": "egg",
+		"parent": "ingredients",
+		"substitutes": {
+			"whole egg": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Part of the egg commonly used in baking and sauces."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"keylimejuice": {
+		"displayName": "Key Lime Juice",
+		"fdcId": -1,
+		"cost": ".04",
+		"tableToGram": "15",
+		"health": {
+			"calories": 0.25
+		},
+		"type": "fruit juice",
+		"parent": "ingredients",
+		"substitutes": {
+			"lime juice": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Juice from Key limes, commonly used in desserts and cocktails."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"creamcheese": {
+		"displayName": "Cream Cheese",
+		"fdcId": 328841,
+		"cost": ".05",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 1,
+			"saturated fats": 6,
+			"calories": 0.84
+		},
+		"type": "dairy",
+		"parent": "ingredients",
+		"substitutes": {
+			"ricotta cheese": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Soft cheese commonly used in baking, spreads, and desserts.",
+			"(FDC) Nutritional info is from cottage cheese"
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"sweetenedcondensedmilk": {
+		"displayName": "Sweetened Condensed Milk",
+		"fdcId": -1,
+		"cost": ".04",
+		"tableToGram": "20",
+		"health": {
+			"calories": 3
+		},
+		"type": "dairy",
+		"parent": "ingredients",
+		"substitutes": {
+			"evaporated milk": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Condensed milk with added sugar, commonly used in desserts and baking."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": false
+	},
+	"lemonjuice": {
+		"displayName": "Lemon Juice",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 8
+		},
+		"type": "fruit juice",
+		"parent": "ingredients",
+		"substitutes": {
+			"lime juice": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Used in cooking, baking, cocktails, and as a flavoring agent."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"lemonzest": {
+		"displayName": "Lemon Zest",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "5",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 2
+		},
+		"type": "fruit zest",
+		"parent": "ingredients",
+		"substitutes": {
+			"orange zest": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Outer yellow part of lemon peel, used as a flavoring agent."
+		],
+		"needsMoreInfo": true
+	},
+	"avocado": {
+		"displayName": "Avocado",
+		"fdcId": -1,
+		"cost": 0.007,
+		"tableToGram": 20,
+		"health": {
+			"calories": 1.6
+		},
+		"type": "fruit",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Creamy fruit used in various dishes, particularly in salads, dips, and sandwiches."
+		],
+		"needsMoreInfo": false
+	},
+	"cilantro": {
+		"displayName": "Cilantro",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "5",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 2
+		},
+		"type": "herb",
+		"parent": "ingredients",
+		"substitutes": {
+			"parsley": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in various cuisines, particularly in Mexican and Asian dishes, for its fresh and citrusy flavor."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"powderedsugar": {
+		"displayName": "Powdered Sugar",
+		"fdcId": 746784,
+		"cost": ".01",
+		"tableToGram": "8",
+		"health": {
+			"sugars": 4,
+			"saturated fats": 0,
+			"calories": 3.85
+		},
+		"type": "sweetener",
+		"parent": "ingredients",
+		"substitutes": {
+			"granulated sugar": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Also known as confectioner's sugar, used in baking and dessert making for frosting, icing, and dusting.",
+			"(FDC) Nutritional info is from granulated sugar"
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"shreddedcarrots": {
+		"displayName": "Shredded Carrots",
+		"fdcId": 746764,
+		"cost": ".02",
+		"tableToGram": "4",
+		"health": {
+			"sugars": 3,
+			"saturated fats": 0,
+			"calories": 0.37
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"grated carrots": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in salads, slaws, stir-fries, and as a garnish."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"dumplingwrapper": {
+		"displayName": "Dumpling Wrapper",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 20
+		},
+		"type": "grain",
+		"parent": "ingredients",
+		"substitutes": {
+			"wonton wrapper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Thin dough used to wrap various fillings for dumplings, potstickers, and wontons."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"paprikapowder": {
+		"displayName": "Paprika Powder",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "10",
+		"health": {
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 20
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"chili powder": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Ground spice made from dried peppers, used for flavor and color in various dishes."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"whitepepper": {
+		"displayName": "White Pepper",
+		"fdcId": -1,
+		"cost": ".04",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 20
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"black pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Milder version of black pepper, commonly used in Asian cooking for its flavor and light color."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"shreddednapacabbage": {
+		"displayName": "Shredded Napa Cabbage",
+		"fdcId": 2346407,
+		"cost": ".03",
+		"tableToGram": "8",
+		"health": {
+			"sugars": 2,
+			"saturated fats": 0,
+			"calories": 0.31
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"shredded green cabbage": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Commonly used in Asian cuisines, particularly in salads, slaws, and stir-fries."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"tofu": {
+		"displayName": "Tofu",
+		"fdcId": 1999630,
+		"cost": ".03",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0.5,
+			"calories": 0.39
+		},
+		"type": "protein",
+		"parent": "ingredients",
+		"substitutes": {
+			"tempeh": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Soybean curd with a neutral flavor and versatile texture, used in various cuisines as a meat substitute or in vegetarian dishes.",
+			"(FDC) Nutritional info is from unsweetened soy milk since it has a similar base"
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"scallion": {
+		"displayName": "Scallion",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "10",
+		"health": {
+			"sugars": 2,
+			"saturated fats": 0,
+			"calories": 15
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"green onion": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Also known as green onion or spring onion, used as a garnish or ingredient in various dishes for its mild onion flavor."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"ginger": {
+		"displayName": "Ginger",
+		"fdcId": -1,
+		"cost": ".04",
+		"tableToGram": "10",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 10
+		},
+		"type": "spice",
+		"parent": "ingredients",
+		"substitutes": {
+			"ground ginger": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Aromatic spice with a pungent and spicy flavor, used fresh, dried, or ground in various cuisines."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"hoisinsauce": {
+		"displayName": "Hoisin Sauce",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 8,
+			"saturated fats": 0,
+			"calories": 50
+		},
+		"type": "sauce",
+		"parent": "ingredients",
+		"substitutes": {
+			"plum sauce": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Thick, fragrant sauce used in Chinese cuisine, particularly in stir-fries, marinades, and as a dipping sauce."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"greenonion": {
+		"displayName": "Green Onion",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "10",
+		"health": {
+			"sugars": 2,
+			"saturated fats": 0,
+			"calories": 0.32
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"scallion": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Also known as scallion or spring onion, used as a garnish or ingredient in various dishes for its mild onion flavor."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"ricevinegar": {
+		"displayName": "Rice Vinegar",
+		"fdcId": -1,
+		"cost": ".02",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 0
+		},
+		"type": "vinegar",
+		"parent": "ingredients",
+		"substitutes": {
+			"white vinegar": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Mild and slightly sweet vinegar made from fermented rice, commonly used in Asian cuisines for dressings, marinades, and sauces."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"jalapeno": {
+		"displayName": "Jalapeno",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 4
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"serrano pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Medium-sized chili pepper with a mild to moderate heat level, commonly used in Mexican and Tex-Mex cuisines."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"anaheim": {
+		"displayName": "Anaheim",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 2,
+			"saturated fats": 0,
+			"calories": 10
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"poblano pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Mild chili pepper, often used in Mexican and Southwestern cuisines, particularly in sauces, salsas, and roasting."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"serrano": {
+		"displayName": "Serrano",
+		"fdcId": -1,
+		"cost": ".04",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 4
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"jalapeno pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Small chili pepper with a hot and biting flavor, commonly used in Mexican and Tex-Mex cuisines."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"poblano": {
+		"displayName": "Poblano",
+		"fdcId": -1,
+		"cost": ".05",
+		"tableToGram": "7",
+		"health": {
+			"sugars": 1,
+			"saturated fats": 0,
+			"calories": 20
+		},
+		"type": "vegetable",
+		"parent": "ingredients",
+		"substitutes": {
+			"anaheim pepper": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Mild chili pepper, often used in Mexican and Southwestern cuisines, particularly in sauces, salsas, and roasting."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"fishsauce": {
+		"displayName": "Fish Sauce",
+		"fdcId": -1,
+		"cost": ".03",
+		"tableToGram": "15",
+		"health": {
+			"sugars": 0,
+			"saturated fats": 0,
+			"calories": 10
+		},
+		"type": "sauce",
+		"parent": "ingredients",
+		"substitutes": {
+			"soy sauce": "1"
+		},
+		"specialized": false,
+		"restrictions": [],
+		"notes": [
+			"Condiment made from fermented fish, commonly used in Southeast Asian cuisines for its savory and umami flavor."
+		],
+		"needsMoreInfo": false,
+		"usedGPT": true
+	},
+	"unclemike'sspices": {
+		"displayName": "Uncle Mike's Spices",
+		"fdcId": -1,
+		"cost": "-1",
+		"tableToGram": "-1",
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "Spice Mix",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": true,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			"This isn't a brand, it is literally Uncle Mike's spices and I don't know what is in it."
+		],
+		"needsMoreInfo": true
+	},
+	"sourdoughstarter": {
+		"displayName": "Sourdough Starter",
+		"cost": -1,
+		"tableToGram": -1,
+		"health": {
+			"saturated fats": -1,
+			"calories": -1
+		},
+		"type": "",
+		"parent": "ingredients",
+		"substitutes": {},
+		"specialized": false,
+		"restrictions": [
+			""
+		],
+		"notes": [
+			""
+		],
+		"needsMoreInfo": true
+	}
 }

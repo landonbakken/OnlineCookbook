@@ -278,7 +278,7 @@
 		"parent": "recipes",
 		"ethnicity": "None",
 		"difficulty": "4",
-		"defaultServings": "10",
+		"defaultServings": "12",
 		"directions": [
 			"Pre-heat oven to 325F",
 			"Mix all dry ingredients for the crust",
@@ -292,7 +292,8 @@
 		],
 		"cookersNotes": [
 			"Really good with vanilla ice cream",
-			"Reduce sugar in the filling or increase rhubarb for more tart-ness"
+			"Reduce sugar in the filling or increase rhubarb for more tart-ness",
+			"Cut the water in half for the filling if rhubarb is in sauce form"
 		],
 		"needsMoreInfo": false,
 		"ingredients": {
@@ -1246,6 +1247,59 @@
 					"unit": "teaspoon",
 					"amount": ".125"
 				}
+			}
+		}
+	},
+	"bread": {
+		"displayName": "Bread",
+		"totalTime": "120",
+		"effortTime": "15",
+		"type": "All",
+		"parent": "recipes",
+		"ethnicity": "None",
+		"difficulty": "3",
+		"defaultServings": "8",
+		"directions": [
+			"Mix all ingredients ({2.5} of the {3} cups of flour)",
+			"kneed for 10ish minutes, slowly adding the last {.5} cups of flour ",
+			"Put olive oil on ball of dough",
+			"Let it rise for 45 minutes (covered)",
+			"Reform into loaf",
+			"Use olive oil in the bread pan so it doesn’t stick",
+			"Proof in oven for 45 minutes ",
+			"Turn on oven to 350 for 35 minutes",
+			"Take out of bread pan and cook for another 5 minutes"
+		],
+		"cookersNotes": [
+			"Water needs to be warm",
+			"",
+			"When proofing, put a pan with water under it for best crust"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"sourdoughstarter": {
+				"unit": "cup",
+				"amount": "2"
+			},
+			"yeast": {
+				"unit": "teaspoon",
+				"amount": "1"
+			},
+			"salt": {
+				"unit": "teaspoon",
+				"amount": "1.25"
+			},
+			"honey": {
+				"unit": "drizzle",
+				"amount": "1"
+			},
+			"water": {
+				"unit": "cup",
+				"amount": "0.5"
+			},
+			"allpurposeflour": {
+				"unit": "cup",
+				"amount": "3"
 			}
 		}
 	}
