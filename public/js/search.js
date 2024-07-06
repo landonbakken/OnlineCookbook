@@ -19,13 +19,13 @@ function updateSettings(setting){
   let checked = document.getElementById(setting).checked
 
   if(setting == "ingredients"){
-    showIngredients = checked
+	showIngredients = checked
   }
   //if(setting == "meals"){
   //  showMeals = checked
   //}
   if(setting == "recipes"){
-    showRecipes = checked
+	showRecipes = checked
   }
   updateList()
 }
@@ -54,38 +54,38 @@ function updateList(){
 
 function hide(dataList, show){
   if(!show){
-    for(let dataID in dataList){
-      let div = document.getElementById(dataID)
-      div.classList.add("hide")
-    }
+	for(let dataID in dataList){
+	  let div = document.getElementById(dataID)
+	  div.classList.add("hide")
+	}
   }
 }
 
 function showOrHide(dataList, value){
   for(let dataID in dataList){
-    let data = dataList[dataID]
-    let div = document.getElementById(dataID)
-    let show = true
+	let data = dataList[dataID]
+	let div = document.getElementById(dataID)
+	let show = true
 
-    if(!(value.length == 1 && value[0] == "")){
-      for(let wordID in value){
-        let word = value[wordID]
-        if(word.length > 0){
-          if(!(data["displayName"].toLowerCase().includes(word) || data["type"].toLowerCase().includes(word))){
-            show = false
-          }
-        }
-      }
-    }
-    if(show){
-      //console.log("show " + recipe)
-      div.classList.remove("hide")
-    }
-    else{
-      //console.log("hide " + recipe)
-      div.classList.add("hide")
-    }
-    //data.element.classList.toggle("hide", !isVisible)
+	if(!(value.length == 1 && value[0] == "")){
+	  for(let wordID in value){
+		let word = value[wordID]
+		if(word.length > 0){
+		  if(!(data["displayName"].toLowerCase().includes(word) || data["type"].toLowerCase().includes(word))){
+			show = false
+		  }
+		}
+	  }
+	}
+	if(show){
+	  //console.log("show " + recipe)
+	  div.classList.remove("hide")
+	}
+	else{
+	  //console.log("hide " + recipe)
+	  div.classList.add("hide")
+	}
+	//data.element.classList.toggle("hide", !isVisible)
   }
 }
 
@@ -96,28 +96,28 @@ function getIngredientGrams(ingredient, ingredientID){
 
   //metric weight (unit -> grams)
   if(initialUnit in units["weight"]["metric"]){
-    multiplier = units["weight"]["metric"][initialUnit]
+	multiplier = units["weight"]["metric"][initialUnit]
   }
   //imperial weight (unit -> grams)
   if(initialUnit in units["weight"]["imperial"]){
-    multiplier = units["weight"]["imperial"][initialUnit]
+	multiplier = units["weight"]["imperial"][initialUnit]
   }
   //metric volume (unit -> tablespoons -> grams)
   if(initialUnit in units["volume"]["metric"] && tbspToGram != "-1"){
-    multiplier = units["volume"]["metric"][initialUnit] * tbspToGram
+	multiplier = units["volume"]["metric"][initialUnit] * tbspToGram
   }
   //imperial volume (unit -> tablespoons -> grams)
   if(initialUnit in units["volume"]["imperial"] && tbspToGram != "-1"){
-    multiplier = units["volume"]["imperial"][initialUnit] * tbspToGram
+	multiplier = units["volume"]["imperial"][initialUnit] * tbspToGram
   }
   //unofficial (unit -> grams)
   if(initialUnit in units["unofficial"]){
-    multiplier = units["unofficial"][initialUnit]
+	multiplier = units["unofficial"][initialUnit]
   }
 
   
   if(multiplier != null){
-    return ingredient["amount"] * multiplier
+	return ingredient["amount"] * multiplier
   }
 
   //couldnt find it
@@ -133,7 +133,7 @@ function getIngredientCals(ingredient, ingredientID){
   grams = getIngredientGrams(ingredient, ingredientID);
   cals = ingredients[ingredientID]["health"]["calories"]
   if(cals != "N/A"){
-    return grams * cals
+	return grams * cals
   }
   return 0
 }
@@ -142,85 +142,85 @@ function getIngredientCals(ingredient, ingredientID){
 getJsonData().then(() => {
   //recipes
   for(let recipe in recipes){
-    let data = recipes[recipe]
-    const card = recipeCardTemplate.content.cloneNode(true).children[0]
-    const header = card.querySelector("[data-header]")
-    const type = card.querySelector("[data-type]")
-    const cardTotalTime = card.querySelector("[data-total-time]");
-    const cardCalories = card.querySelector("[data-calories]");
-    const cardCost = card.querySelector("[data-cost]");
-    const cardDefaultServings = card.querySelector("[data-default-servings]");
+	let data = recipes[recipe]
+	const card = recipeCardTemplate.content.cloneNode(true).children[0]
+	const header = card.querySelector("[data-header]")
+	const type = card.querySelector("[data-type]")
+	const cardTotalTime = card.querySelector("[data-total-time]");
+	const cardCalories = card.querySelector("[data-calories]");
+	const cardCost = card.querySelector("[data-cost]");
+	const cardDefaultServings = card.querySelector("[data-default-servings]");
 
-    card.id = recipe
-    header.textContent = data["displayName"]
-    if(data["needsMoreInfo"] != false){
-      header.textContent += "*";
-    }
+	card.id = recipe
+	header.textContent = data["displayName"]
+	if(data["needsMoreInfo"] != false){
+	  header.textContent += "*";
+	}
 
-    //set info
-    card.href = "/recipe/" + recipe;
-    type.textContent = data["type"];
-    cardTotalTime.textContent = data["totalTime"] + " mins";
-    cardDefaultServings.textContent = data["defaultServings"] + " defualt servings";
+	//set info
+	card.href = "/recipe/" + recipe;
+	type.textContent = data["type"];
+	cardTotalTime.textContent = data["totalTime"] + " mins";
+	cardDefaultServings.textContent = data["defaultServings"] + " defualt servings";
 
-    //find cost and cals
-    cost = 0;
-    cals = 0;
-    for(var ingredientID in data["ingredients"]){
-      //sublist
-      ingredient = data["ingredients"][ingredientID]
-      if(ingredient.amount == undefined){
-        for(var subIngredientID in ingredient){
-          subIngredient = ingredient[subIngredientID]
-          cost += getIngredientCost(subIngredient, subIngredientID);
-          cals += getIngredientCals(subIngredient, subIngredientID);
-        }
-      }
-      else{
-        cost += getIngredientCost(ingredient, ingredientID);
-        cals += getIngredientCals(ingredient, ingredientID);
-      }
-    }
-    
-    cals /= data["defaultServings"]
-    cost /= data["defaultServings"]
+	//find cost and cals
+	cost = 0;
+	cals = 0;
+	for(var ingredientID in data["ingredients"]){
+	  //sublist
+	  ingredient = data["ingredients"][ingredientID]
+	  if(ingredient.amount == undefined){
+		for(var subIngredientID in ingredient){
+		  subIngredient = ingredient[subIngredientID]
+		  cost += getIngredientCost(subIngredient, subIngredientID);
+		  cals += getIngredientCals(subIngredient, subIngredientID);
+		}
+	  }
+	  else{
+		cost += getIngredientCost(ingredient, ingredientID);
+		cals += getIngredientCals(ingredient, ingredientID);
+	  }
+	}
+	
+	cals /= data["defaultServings"]
+	cost /= data["defaultServings"]
 
-    cardCost.textContent = "$" + cost.toFixed(2) + " /serving"
-    cardCalories.textContent = cals.toFixed(0) + " cals/serving"
+	cardCost.textContent = "$" + cost.toFixed(2) + " /serving"
+	cardCalories.textContent = cals.toFixed(0) + " cals/serving"
 
-    //add to html
-    recipeCardContainer.append(card)
+	//add to html
+	recipeCardContainer.append(card)
   }
 
   //ingredients
   for(let ingredient in ingredients){
-    //console.log(ingredient)
-    let data = ingredients[ingredient]
-    const card = recipeCardTemplate.content.cloneNode(true).children[0]
-    const header = card.querySelector("[data-header]")
-    const type = card.querySelector("[data-type]")
-    const cardCalories = card.querySelector("[data-calories]");
-    const cardCost = card.querySelector("[data-cost]");
+	//console.log(ingredient)
+	let data = ingredients[ingredient]
+	const card = recipeCardTemplate.content.cloneNode(true).children[0]
+	const header = card.querySelector("[data-header]")
+	const type = card.querySelector("[data-type]")
+	const cardCalories = card.querySelector("[data-calories]");
+	const cardCost = card.querySelector("[data-cost]");
 
-    //get rid of time infos because ingredients don't need time
-    card.querySelector("[data-total-time]").remove()
-    card.querySelector("[data-default-servings]").remove()
+	//get rid of time infos because ingredients don't need time
+	card.querySelector("[data-total-time]").remove()
+	card.querySelector("[data-default-servings]").remove()
 
-    card.id = ingredient
-    header.textContent = data["displayName"]
-    if(data["needsMoreInfo"]){
-      header.textContent += "*";
-    }
-    //if(data["usedGPT"]){
-    //  header.textContent += "^";
-    //}
+	card.id = ingredient
+	header.textContent = data["displayName"]
+	if(data["needsMoreInfo"]){
+	  header.textContent += "*";
+	}
+	//if(data["usedGPT"]){
+	//  header.textContent += "^";
+	//}
 
-    //add info and link
-    card.href = "/ingredient/" + ingredient
-    type.textContent = data["type"]
-    cardCalories.textContent = data["health"]["calories"] + " cals/gram"
-    cardCost.textContent = "$" + data["cost"] + "/gram"
-    recipeCardContainer.append(card)
+	//add info and link
+	card.href = "/ingredient/" + ingredient
+	type.textContent = data["type"]
+	cardCalories.textContent = data["health"]["calories"] + " cals/gram"
+	cardCost.textContent = "$" + data["cost"] + "/gram"
+	recipeCardContainer.append(card)
 
   }
   updateSettings("ingredients");

@@ -66,7 +66,7 @@ function correctServings(sentence){
 				measurementBuilder += sentence[letterID]
 				letterID++
 			}
-			measurementBuilder = parseInt(measurementBuilder) * servings / data.defaultServings
+			measurementBuilder = parseFloat(measurementBuilder) * servings / data.defaultServings
 			stringBuilder += measurementBuilder
 		}
 		else if(sentence[letterID] != "}"){
