@@ -1,7 +1,7 @@
 {
 	"chocolatesauce": {
 		"displayName": "Chocolate Sauce",
-		"totalTime": "10",
+		"totalTime": "11",
 		"effortTime": "10",
 		"type": "Condiment",
 		"parent": "recipes",
