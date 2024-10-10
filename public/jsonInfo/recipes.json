@@ -125,7 +125,7 @@
 		"difficulty": "6",
 		"defaultServings": "5",
 		"directions": [
-			"In a bowl, combine chicken with all of the ingredients for the chicken marinade; let marinate for 10 minutes to an hour (or overnight if time allows).",
+			"In a bowl, combine chicken with all of the ingredients for the chicken marinade; let marinate for 10 minutes to an hour (or overnight if time allows). {10}",
 			"",
 			"Heat oil in a large skillet or pot over medium-high heat. When sizzling, add chicken pieces in batches of two or three, making sure not to crowd the pan. Fry until browned for only 3 minutes on each side. Set aside and keep warm. (You will finish cooking the chicken in the sauce.)",
 			"",
@@ -1007,8 +1007,8 @@
 	},
 	"dumplingsauce": {
 		"displayName": "Dumpling Sauce",
-		"totalTime": "-1",
-		"effortTime": "-1",
+		"totalTime": "5",
+		"effortTime": "5",
 		"type": "Condiment ",
 		"parent": "recipes",
 		"ethnicity": "None",
@@ -1024,7 +1024,7 @@
 			"",
 			"make sure ginger is fresh"
 		],
-		"needsMoreInfo": true,
+		"needsMoreInfo": false,
 		"ingredients": {
 			"soysauce": {
 				"unit": "part",
@@ -1054,12 +1054,12 @@
 	},
 	"chilligarlicsauce": {
 		"displayName": "Chilli Garlic Sauce",
-		"totalTime": "-1",
-		"effortTime": "-1",
+		"totalTime": "10",
+		"effortTime": "10",
 		"type": "Sauce",
 		"parent": "recipes",
 		"ethnicity": "Vietnamese",
-		"difficulty": "-1",
+		"difficulty": "3",
 		"defaultServings": "100",
 		"directions": [
 			"Food process everything (cut up really small)",
@@ -1081,7 +1081,7 @@
 			"{1} Serranoes",
 			"{1} Poblanos"
 		],
-		"needsMoreInfo": true,
+		"needsMoreInfo": false,
 		"ingredients": {
 			"jalapeno": {
 				"unit": "gram",
@@ -1127,8 +1127,8 @@
 	},
 	"tofudumplings": {
 		"displayName": "Tofu Dumplings",
-		"totalTime": "-1",
-		"effortTime": "-1",
+		"totalTime": "30",
+		"effortTime": "30",
 		"type": "Dinner",
 		"parent": "recipes",
 		"ethnicity": "Chinese",
@@ -1301,6 +1301,61 @@
 			"allpurposeflour": {
 				"unit": "cup",
 				"amount": "3"
+			}
+		}
+	},
+	"pancakes": {
+		"displayName": "Pancakes",
+		"totalTime": "15",
+		"effortTime": "10",
+		"type": "breakfast",
+		"parent": "recipes",
+		"ethnicity": "",
+		"difficulty": "2",
+		"defaultServings": "2",
+		"directions": [
+			"- Mix all dry ingredients together",
+			"- Add in wets",
+			"- Put butter in pan and turn to medium-low",
+			"- Pour in roughly a half cup of batter",
+			"- Cook until the bottom side is darkened",
+			"- Flip and wait until other side is darkened",
+			"- Eat!"
+		],
+		"cookersNotes": [
+			"Yogurt should preferably be Greek (thicker)",
+			"Set the heat lower if inside isn't cooked enough",
+			"You can let them sit for a day to make it more like crepes"
+		],
+		"needsMoreInfo": false,
+		"ingredients": {
+			"allpurposeflour": {
+				"unit": "tablespoon",
+				"amount": "7"
+			},
+			"eggs": {
+				"unit": "item",
+				"amount": "2"
+			},
+			"vanillaextract": {
+				"unit": "teaspoon",
+				"amount": "0.5"
+			},
+			"yogurt": {
+				"unit": "cup",
+				"amount": "1"
+			},
+			"salt": {
+				"unit": "teaspoon",
+				"amount": "0.5"
+			},
+			"sugar": {
+				"unit": "tablespoon",
+				"amount": "2"
+			},
+			"bakingsoda": {
+				"unit": "teaspoon",
+				"amount": "1"
 			}
 		}
 	}
