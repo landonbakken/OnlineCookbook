@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const fs = require("fs");
 
 const app = express();
-const port = 4080;
+const port = 4081;
 const host = "0.0.0.0";
 
 app.use(bodyParser.json());
@@ -113,6 +113,10 @@ app.get("/jsonInfo/units", (req, res) => {
 	res.sendFile(__dirname + "/public/jsonInfo/units.json");
 });
 
+//pdf cookbook
+app.get("/pdf", (req, res) => {
+	res.sendFile(__dirname + "/public/pdf/Cookbook.pdf");
+});
 
 //start
 app.listen(port, host, () => {

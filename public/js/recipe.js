@@ -86,6 +86,7 @@ function newDynamicIngredient(ingredient, ingredientID, parent){
 	card = ingredientTemplate.content.cloneNode(true).children[0]
 	header = card.querySelector("[ingredient-link]")
 	body = card.querySelector("[ingredient-measurement]")
+	infoPiece = card.querySelector("[ingredient-info-provider]")
 
 	//set static info
 	try{
@@ -100,6 +101,10 @@ function newDynamicIngredient(ingredient, ingredientID, parent){
 	body.textContent = ingredient.amount + " " + ingredient.unit
 	if(ingredient.amount != 1){
 		body.textContent += "s"
+	}
+
+	if(ingredients[ingredientID].usedGPT){
+		infoPiece = "*"
 	}
 
 	//put in HTML
